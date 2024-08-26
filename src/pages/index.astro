@@ -1,16 +1,56 @@
 ---
-
+import MailchimpForm from "../components/mailchimp-form.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/button.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>JumboCode</title>
+  </head>
+  <body class="antialiased bg-background text-white">
+    <div>
+      <img
+        src="/button.png"
+        class="w-24 shadow-xl border-2 border-accent rounded-xl"
+        alt=""
+      />
+      <p>JumboCode</p>
+      <p>Building apps for nonprofits at Tufts University.</p>
+    </div>
+
+    <div>
+      <p>
+        For the past 9 years, JumboCode has built pro-bono web and mobile apps
+        for nonprofit clients.
+      </p>
+      <p>
+        We set up 10-12 teams with 1 project manager, 1 tech lead, 1 designer,
+        10 developers, and a client that we’ve found. Over the course of a year,
+        the team builds a custom app for the nonprofit client.
+      </p>
+      <p>JumboCode is one of Tufts’ largest clubs, with over 160 members.</p>
+    </div>
+
+    <div>
+      <p>
+        Applications open in early September and close towards the end of
+        September.
+      </p>
+      <p>To stay updated:</p>
+      <ul>
+        <li>
+          Follow us on <a href="https://instagram.com/jumbocode">Instagram</a>.
+        </li>
+        <li>Find us at the club fair on September 6th.</li>
+        <li>Join our email list:</li>
+      </ul>
+
+      <div>
+        <MailchimpForm />
+      </div>
+    </div>
+  </body>
 </html>
