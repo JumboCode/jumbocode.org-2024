@@ -4,7 +4,7 @@ export default function Button({
   text,
   route,
   variant,
-  icon = null,
+  icon = undefined,
 }: {
   text: string;
   route: string;
@@ -24,7 +24,7 @@ export default function Button({
         variant === "ghost" && "text-white hover:ring-white"
       )}
     >
-      {icon && <Icon className="w-4 h-4" />}
+      {Icon && <Icon className="w-4 h-4" />}
       <span>{text}</span>
     </a>
   );
