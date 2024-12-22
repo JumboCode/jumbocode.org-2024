@@ -1,5 +1,5 @@
 import Button from "@/app/components/button";
-import { EnvelopeIcon } from "@heroicons/react/20/solid";
+import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
 export default function Home() {
   return (
@@ -24,6 +24,8 @@ export default function Home() {
         variant="ghost"
         icon={EnvelopeIcon}
       />
+
+      <Button text="Email Us" route="/testing" variant="primary" />
     </div>
   );
 }
