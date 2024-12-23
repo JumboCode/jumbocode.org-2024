@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Footer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      font-size: 22px;
+      border-top: 1px solid #777778; 
+
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 40px 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .footer-left {
+      flex: 1 1 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-columns {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .footer-section {
+      flex: 1 1 calc(33.33% - 20px);
+      margin-right: 20px;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 10px;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-section ul li {
+      margin: 20px 0;
+    }
+
+    .footer-section ul li a {
+      color: #A1A1A1;
+      text-decoration: none;
+      font-size: 22px;
+    }
+
+    .footer-section ul li a:hover {
+      color: #fff;
+    }
+
+    .footer-right {
+      flex: 1 1 50%;
+      text-align: right;
+      text-decoration: none;
+
+    }
+
+    .footer-contact p {
+      margin: 0;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 25px;
+      margin-top: -10px;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+    }
+
+    .social-icons img {
+      width: 32px;
+      height: 32px;
+      filter: brightness(0) invert(1);
+    }
+
+    .footer-bottom {
+      margin-top: 100px;
+      font-size: 22px;
+      color: #A1A1A1;
+    }
+
+    #email-header a {
+      color: #fff; 
+      text-decoration: none; 
+      font-weight: 700; 
+      font-size: 22px; 
+    }
+
+    #email-header a:hover {
+    text-decoration: underline;
+    }
+
+    @media (max-width: 950px) {
+  .footer-container {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align the content */
+  }
+
+  .footer-left, .footer-right {
+    flex: 1 1 100%; /* Make both sections take full width */
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Add spacing between sections */
+  }
+
+  .footer-columns {
+    flex-direction: row; /* Keep columns in a row */
+    flex-wrap: wrap; /* Allow wrapping to avoid squishing */
+    justify-content: center; /* Center columns */
+    gap: 20px; /* Add spacing between columns */
+  }
+
+  .footer-section {
+    flex: 1 1 calc(45% - 20px); /* Adjust column width */
+  }
+
+  .footer-right {
+    margin-top: 20px; /* Add some space from the left section */
+  }
+}
+
+@media (max-width: 950px) {
+  /* Hide all sections except the contact section */
+  .footer-columns, /* Hide the main headers */
+  .footer-bottom { /* Hide the copyright section */
+    display: none;
+  }
+
+  /* Center the contact section */
+  .footer-right {
+    text-align: center; /* Center-align the email and icons */
+    align-items: center;
+    flex: 1 1 100%; /* Make it take full width */
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center; /* Center-align icons */
+    gap: 15px; /* Add spacing between icons */
+  }
+
+  /* Resize social icons */
+  .social-icons img {
+    width: 28px; /* Smaller icon size */
+    height: 28px;
+  }
+}
+
+@media (max-width: 450px) {
+  /* Keep the contact section centered */
+  .footer-right {
+    text-align: center; /* Center-align email and icons */
+    flex: 1 1 100%; /* Ensure full width for contact section */
+  }
+
+  /* Resize the email heading */
+  .footer-right h4 {
+    font-size: 16px; /* Smaller font size for the email heading */
+    margin-bottom: 10px; /* Add spacing below the email */
+  }
+
+  /* Center and resize social icons */
+  .social-icons {
+    display: flex;
+    justify-content: center; /* Center-align icons */
+    gap: 10px; /* Reduce spacing between icons */
+  }
+
+  .social-icons img {
+    width: 24px; /* Smaller icon size */
+    height: 24px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <footer>
+    <div class="footer-container">
+      <!-- Left Side: 3 Columns and Copyright -->
+      <div class="footer-left">
+        <div class="footer-columns">
+          <div class="footer-section">
+            <h4>JumboCode</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#work">Our Work</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Students</h4>
+            <ul>
+              <li><a href="#applications">Applications</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#faqs">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Non-profits</h4>
+            <ul>
+              <li><a href="#work-with-us">Work with us</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#faqs">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 JumboCode. All Rights Reserved.</p>
+        </div>
+      </div>
+
+      <!-- Right Side: Email and Social Media -->
+      <div class="footer-right">
+        <h4 id="email-header"><a href="mailto:board@jumbocode.org" target="_blank">board@jumbocode.org</a></h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/JumboCode/" target="_blank"><img src="social icons/fb.png" alt="Facebook"></a>
+          <a href="https://www.linkedin.com/company/tuftsjumbocode/posts/?feedView=all" target="_blank"><img src="social icons/LinkedIn.png" alt="LinkedIn"></a>
+          <a href="https://www.instagram.com/jumbocode/?hl=en" target="_blank"><img src="social icons/Insta.png" alt="Instagram"></a>
+          <a href="https://github.com/JumboCode" target="_blank"><img src="social icons/Git.png" alt="GitHub"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
