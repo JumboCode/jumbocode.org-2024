@@ -26,8 +26,5 @@ jobs:
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
-            ### 🚀 Vercel Deployment
-            ```
             ${{ steps.deployment.outputs.output }}
-            ```
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
