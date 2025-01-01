@@ -18,7 +18,7 @@ jobs:
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
       - name: Deploy Project Artifacts to Vercel
-        run: vercel deploy --token=${{ secrets.VERCEL_TOKEN }} --no-wait > deployment_output.txt
+        run: vercel deploy --token=${{ secrets.VERCEL_TOKEN }} > deployment_output.txt
       - name: Read deployment output
         id: deployment
         run: echo "output=$(cat deployment_output.txt)" >> $GITHUB_OUTPUT
