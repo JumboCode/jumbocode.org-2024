@@ -20,15 +20,4 @@ jobs:
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
       - name: Deploy Project Artifacts to Vercel
-        id: deploy
-        run: vercel deploy --no-wait --token=${{ secrets.VERCEL_TOKEN }} > deployment_output.txt
-
-      - name: Comment Deployment Output
-        uses: thollander/actions-comment-pull-request@v2
-        with:
-          message: |
-            ### Vercel Deployment Output
-            ```
-            ${{ cat deployment_output.txt }}
-            ```
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: vercel deploy --no-wait --token=${{ secrets.VERCEL_TOKEN }}
