@@ -25,6 +25,6 @@ jobs:
           message: |
             ### 🚀 Vercel Deployment
             ```
-            $(cat deployment_output.txt)
+            ${{ cat deployment_output.txt }}
             ```
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
