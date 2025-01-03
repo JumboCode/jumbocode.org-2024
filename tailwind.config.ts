@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         gray: colors.slate,
         brand: "#32C89E",
+        background: "#171719",
+        subtext: "#A1A1A1"
       },
     },
   },
