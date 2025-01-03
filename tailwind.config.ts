@@ -8,9 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif']
+      },
       colors: {
         gray: colors.slate,
         brand: "#32C89E",
+        background: "#171719",
+        subtext: "#A1A1A1"
       },
     },
   },
