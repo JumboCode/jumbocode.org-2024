@@ -1,6 +1,6 @@
 import FeaturedStatistics from "./FeaturedStatistics";
 import FeaturedTextBlock from "./FeaturedTextBlock";
-import ImageGallery from "./ImageGallery";
+import ImageCarousel from "./ImageCarousel";
 
 const whoWeAreText = {
   title: "Who we are",
@@ -43,9 +43,15 @@ const featuredStatistics = [
 export default function WhoWeAre() {
   return (
     <>
-      <FeaturedTextBlock {...whoWeAreText}/>
-      <ImageGallery images={whoWeAreImages} />
-      <FeaturedStatistics statistics={featuredStatistics} />
+      <FeaturedTextBlock {...whoWeAreText} />
+      <ImageCarousel
+        images={whoWeAreImages}
+        className="md:py-6 md:pb-8 lg:py-20"
+      />
+      <FeaturedStatistics
+        statistics={featuredStatistics}
+        className={"py-8 md:mt-8 lg:py-12 lg:pb-20"}
+      />
     </>
   )
 }
