@@ -1,3 +1,11 @@
+/**
+ * @fileoverview The "Who We Are" section of the JumboCode homepage.
+ * 
+ * @file WhoWeAre.tsx
+ * @date January 5th, 2025
+ * @author Gabriel Sessions
+ */
+
 import FeaturedStatistics from "./FeaturedStatistics";
 import FeaturedTextBlock from "./FeaturedTextBlock";
 import ImageCarousel from "./ImageCarousel";

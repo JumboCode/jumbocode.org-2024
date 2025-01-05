@@ -1,3 +1,11 @@
+/**
+ * @fileoverview The "Our Mission" section on the JumboCode homepage
+ * 
+ * @file OurMission.tsx
+ * @date January 5th, 2025
+ * @author Gabriel Sessions
+ */
+
 import FeaturedTextBlock from "./FeaturedTextBlock"
 
 const ourMissionText = {

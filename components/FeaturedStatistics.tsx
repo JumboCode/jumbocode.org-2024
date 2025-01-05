@@ -1,3 +1,13 @@
+/**
+ * @fileoverview A section that displays a set of large statistics 
+ * and statistic descriptions.
+ * 
+ * @file FeaturedStatistics.tsx
+ * @date January 5th, 2023
+ * @author Gabriel Sessions
+ *  
+ */
+
 import clsx from "clsx"
 
 interface FeaturedStatisticsProps {
@@ -5,6 +15,11 @@ interface FeaturedStatisticsProps {
   className?: string
 }
 
+/**
+ * Displays a set of statistics in a row (or column depending on screen size)
+ * 
+ * @param props - An array of statistics to be fed into DisplayStatistic 
+ */
 export default function FeaturedStatistics(props: FeaturedStatisticsProps) {
   return (
     <div className={
@@ -27,12 +42,17 @@ export default function FeaturedStatistics(props: FeaturedStatisticsProps) {
   )
 }
 
-
 interface Statistic {
   statistic: string,
   label: string
 }
 
+/**
+ * Displays a bold statistic (e.g. number) 
+ * and a short description of the statistic
+ * 
+ * @param props - A statistic and a descriptor (label)
+ */
 function DisplayStatistic(props: Statistic) {
   return (
     <>

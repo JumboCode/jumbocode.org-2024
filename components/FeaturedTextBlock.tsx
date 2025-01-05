@@ -2,20 +2,20 @@
  * @fileoverview A simple section with a small title and a block of bolded text
  * 
  * @file FeaturedTextBlock.tsx
- * @date January 3rd, 2025
+ * @date January 5th, 2025
  * @author Gabriel Sessions
  * 
  */
 
-import { FC } from "react"
-
 interface FeaturedTextBlockProps {
-  title: FC,
-  featuredText: FC
+  title: HTMLParagraphElement,
+  featuredText: HTMLParagraphElement
 }
 
 /**
+ * Displays a header and descriptor text below the header.
  * 
+ * @param Takes in a title (header) and featured text (descriptor)
  */
 export default function FeaturedTextBlock(props: FeaturedTextBlockProps) {
   return (
