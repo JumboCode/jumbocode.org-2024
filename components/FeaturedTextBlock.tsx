@@ -7,9 +7,11 @@
  * 
  */
 
+import { ReactNode } from "react"
+
 interface FeaturedTextBlockProps {
-  title: HTMLParagraphElement,
-  featuredText: HTMLParagraphElement
+  title: ReactNode,
+  featuredText: ReactNode
 }
 
 /**
