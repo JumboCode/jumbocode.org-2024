@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 import colors from "tailwindcss/colors";
+import containerQueries from "@tailwindcss/container-queries";
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,6 +16,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [containerQueries],
 };
 export default config;
