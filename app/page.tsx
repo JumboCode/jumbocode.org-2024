@@ -1,7 +1,9 @@
+import WhatWeDo from "@/app/components/what-we-do";
 import Button from "@/components/button";
 import Hero from "@/components/hero";
 import OurMission from "@/components/OurMission";
 import WhoWeAre from "@/components/WhoWeAre";
+
 
 
 export default function HomePage() {
@@ -13,7 +15,7 @@ export default function HomePage() {
             Jumbo<span className="text-brand">Code</span>
           </>
         }
-        subtitle={<>Empowering students, Elevating non-profits.</>}
+        subtitle={<><b>Empowering students, Elevating non-profits.</b></>} //to-do: needs to be white
         buttons={
           <>
             <Button text="What we do" href="/about" variant="secondary" />
@@ -24,6 +26,7 @@ export default function HomePage() {
 
       <WhoWeAre />
       <OurMission />
+      <WhatWeDo variant="compact" />
     </div>
   );
 }

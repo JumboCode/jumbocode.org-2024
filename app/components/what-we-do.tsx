@@ -6,12 +6,12 @@ export default function WhatWeDo({
   variant: "compact" | "full-width";
 }) {
   return (
-    <div>
-      <h2 className="text-3xl font-semibold text-white">What We Do</h2>
+    <div className={"py-8 md:mt-8 lg:py-12 lg:pb-20"}>
+      <h2 className="text-5xl font-semibold text-white">What We Do</h2>
 
       <div
         className={clsx(
-          "mt-6 grid gap-6",
+          "mt-10 grid gap-6",
           variant === "compact" && "md:grid-cols-2"
         )}
       >

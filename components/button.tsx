@@ -18,8 +18,8 @@ export default function Button({
     <Element
       href={href}
       className={clsx(
-        "block max-w-max px-4 py-2 rounded-lg font-semibold",
-        "flex items-center gap-2",
+        "block max-w-max px-4 py-2.5 rounded-lg font-semibold",
+        "flex items-center gap-2.5",
         "hover:ring-2 hover:ring-offset-2 hover:ring-offset-black transition-shadow duration-200",
         variant === "primary" && "bg-brand text-gray-900 hover:ring-brand",
         variant === "secondary" && "bg-white text-gray-900 hover:ring-white",
