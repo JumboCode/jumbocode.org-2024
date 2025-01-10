@@ -1,6 +1,6 @@
+import containerQueries from "@tailwindcss/container-queries";
 import type { Config } from "tailwindcss";
 import colors from "tailwindcss/colors";
-import containerQueries from "@tailwindcss/container-queries";
 
 const config: Config = {
   content: [
@@ -11,11 +11,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        gray: colors.slate,
+        gray: colors.zinc,
         brand: "#32C89E",
       },
     },
   },
   plugins: [containerQueries],
 };
+
 export default config;
