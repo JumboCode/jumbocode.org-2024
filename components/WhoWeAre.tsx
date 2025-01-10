@@ -20,6 +20,10 @@ const whoWeAreText = {
 
 const whoWeAreImages = [
   {
+    path: "/homepage/who-we-are-4.png",
+    altText: "Project presentation"    
+  },
+  {
     path: "/homepage/who-we-are-1.png",
     altText: "A live demo at JumboCode final presentations"
   },
@@ -30,6 +34,10 @@ const whoWeAreImages = [
   {
     path: "/homepage/who-we-are-3.png",
     altText: "A team having fun at a JumboCode hack night"
+  },
+  {
+    path: "/homepage/who-we-are-5.png",
+    altText: "JumboHack programmers working on their projects"
   }
 ];
 
