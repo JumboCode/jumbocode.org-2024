@@ -110,7 +110,11 @@ function Card({
     <section className="@container border border-white/60 rounded-2xl p-6">
       <div className="@lg:grid @lg:grid-cols-2 @lg:gap-16">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={imageSrc} alt="" className="w-full h-auto rounded-lg" />
+        <img
+          src={imageSrc}
+          alt=""
+          className="w-full h-auto rounded-lg aspect-[3/2] object-cover"
+        />
         <div className="pt-6">
           <h3 className="text-white text-2xl font-semibold">{title}</h3>
           <div className="text-white/90 mt-6 space-y-6 [&_a]:text-brand [&_a]:font-semibold">
