@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import colors from "tailwindcss/colors";
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,7 +13,7 @@ const config: Config = {
         inter: ['Inter', 'sans-serif']
       },
       colors: {
-        gray: colors.slate,
+        gray: colors.zinc,
         brand: "#32C89E",
         background: "#171719",
         subtext: "#A1A1A1"
@@ -21,4 +22,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;
