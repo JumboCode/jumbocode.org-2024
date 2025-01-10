@@ -113,7 +113,7 @@ export default function WhatWeDo({
                   area students to develop software for social good.{" "}
                 </p>
                 <p>
-                  It's a fast-paced, collaborative event designed to inspire
+                  It’s a fast-paced, collaborative event designed to inspire
                   creativity and drive impact. To learn more, visit the{" "}
                   <a href="https://jumbohack.org">JumboHack website</a>.
                 </p>
