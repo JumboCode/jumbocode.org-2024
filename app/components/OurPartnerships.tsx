@@ -6,7 +6,7 @@ export default function OurPartnerships() {
             header="Our Partnerships"
             headerAlignment="center"
         >
-            <div className="w-full max-w-[1280px] justify-between bg-red-700 p-4">
+            <div className="w-full max-w-[1280px] justify-between p-4">
                 <div className="flex justify-between">
                     <img src="/partnerships/Peace_corps_logo.png" alt="Peace Corps" className="object-contain" />
                     <img src="/partnerships/HomeStart_logo.png" alt="HomeStart" className="object-contain self-start mt-2 ml-8 mr-9" />
