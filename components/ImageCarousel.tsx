@@ -12,9 +12,9 @@
 
 "use client"
 
+import { clsx } from 'clsx';
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { clsx } from 'clsx';
 
 const IMG_HEIGHT = 389;
 const IMG_WIDTH = 665;
@@ -64,16 +64,17 @@ export default function ImageCarousel(props: ImageCarouselProps) {
   }, []);
 
   return (
-    <div className={
-      clsx(
-        "flex justify-center transition-opacity duration-300",
-        isVisible ? 'opacity-100' : 'opacity-0',
-        props.className
-      )
-    }
+    <div
+      className={
+        clsx(
+          "relative transition-opacity duration-300",
+          isVisible ? 'opacity-100' : 'opacity-0',
+          props.className
+        )
+      }
     >
       <div
-        className="relative flex overflow-x-auto hide-scrollbar scroll-snap-x space-x-6 px-2 max-w-full"
+        className="relative flex overflow-x-auto hide-scrollbar space-x-6 xl:-mx-32"
         ref={scrollContainerRef}
       >
         {props.images.map((image, idx) => (
@@ -108,7 +109,7 @@ function ImageContainer(props: ImageProps) {
       width={IMG_WIDTH}
       height={IMG_HEIGHT}
       className={
-        `border-background rounded-xl scroll-snap-center 
+        `border-transparent rounded-xl scroll-snap-center 
         w-[300px] h-auto
         md:w-[450px] 
         xl:w-[600px] ${props.className}`

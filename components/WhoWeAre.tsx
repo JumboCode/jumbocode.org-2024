@@ -21,7 +21,7 @@ const whoWeAreText = {
 const whoWeAreImages = [
   {
     path: "/homepage/who-we-are-4.png",
-    altText: "Project presentation"    
+    altText: "Project presentation"
   },
   {
     path: "/homepage/who-we-are-1.png",
@@ -59,15 +59,18 @@ const featuredStatistics = [
 export default function WhoWeAre() {
   return (
     <>
-      <FeaturedTextBlock {...whoWeAreText} />
-      <ImageCarousel
-        images={whoWeAreImages}
-        className="md:py-6 md:pb-8 lg:py-20"
-      />
-      <FeaturedStatistics
-        statistics={featuredStatistics}
-        className={"py-8 md:mt-8 lg:py-12 lg:pb-20"}
-      />
+      <div>
+        <FeaturedTextBlock {...whoWeAreText} />
+        <ImageCarousel
+          images={whoWeAreImages}
+          className="py-8 md:pb-8 lg:py-20"
+        />
+        <FeaturedStatistics
+          statistics={featuredStatistics}
+          className={"py-8 md:mt-8 lg:py-12 lg:pb-20"}
+        />
+
+      </div>
     </>
   )
 }

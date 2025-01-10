@@ -1,5 +1,8 @@
 import Button from "@/components/button";
 import Hero from "@/components/hero";
+import OurMission from "@/components/OurMission";
+import WhoWeAre from "@/components/WhoWeAre";
+
 
 export default function HomePage() {
   return (
@@ -18,6 +21,9 @@ export default function HomePage() {
           </>
         }
       />
+
+      <WhoWeAre />
+      <OurMission />
     </div>
   );
 }

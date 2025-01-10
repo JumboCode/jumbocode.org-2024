@@ -24,7 +24,7 @@ export default function FeaturedStatistics(props: FeaturedStatisticsProps) {
   return (
     <div className={
       clsx(
-        "block md:flex justify-center md:space-x-6 lg:space-x-16 flex-wrap space-y-8 md:space-y-0 text-center",
+        "block sm:flex justify-center sm:space-x-6 lg:space-x-16 flex-wrap space-y-8 sm:space-y-0 text-center",
         props.className
       )
     }>

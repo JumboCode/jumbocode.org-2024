@@ -6,7 +6,7 @@ export default function WhoWeArePage() {
 
   return (
     <>
-      <div className="bg-background font-inter">
+      <div className="font-inter">
         <WhoWeAre />
         <OurMission />
       </div>
