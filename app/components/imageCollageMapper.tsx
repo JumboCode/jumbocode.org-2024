@@ -25,11 +25,11 @@ type Props = {
 */
 const imageCollageMapper: React.FC<Props> = ({ logos, rows }) => {
   return (
-    <div className="flex flex-col sm:gap-4 px-20">
+    <div className="flex flex-col gap-[1px] sm:gap-2 px-20">
       {rows.map((row, rowIndex) => (
         <div
           key={rowIndex}
-          className="flex justify-between gap-[2%] w-full"
+          className="flex justify-between gap-[1px] w-full"
         >
           {row.map((logo, logoIndex) => {
             if (logoIndex === 0 || logoIndex === row.length - 1) {
@@ -41,7 +41,7 @@ const imageCollageMapper: React.FC<Props> = ({ logos, rows }) => {
                   <img
                     src={logo.src}
                     alt={logo.alt}
-                    className="object-contain h-16 sm:h-20"
+                    className="object-contain h-10 sm:h-20"
                   />
                 </div>
               );
@@ -54,7 +54,7 @@ const imageCollageMapper: React.FC<Props> = ({ logos, rows }) => {
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="object-contain h-16 sm:h-20"
+                  className="object-contain h-10 sm:h-20"
                 />
               </div>
             );
