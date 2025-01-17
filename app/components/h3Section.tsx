@@ -12,7 +12,7 @@ export default function H3Section({
     return (
         <div className="flex flex-col items-center gap-y-12">
             <h3 className={clsx(
-                "text-2xl font-semibold text-white",
+                "text-2xl font-bold text-white",
                 { "self-start": headerAlignment === "right" }
             )}>{header}</h3>
             {children}
