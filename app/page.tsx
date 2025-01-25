@@ -6,6 +6,7 @@ import OurPartnerShips from "@/app/components/OurPartnerships";
 
 export default function Home() {
   return (
+    <div>
       <div className="p-4 space-y-4 bg-black">
         <Button
           text="Email Us"
@@ -31,5 +32,10 @@ export default function Home() {
         <Button text="Email Us" route="/testing" variant="primary" />
 
       </div>
+      <div className="p-4 space-y-4 bg-black">
+        <MemberCareerPaths />
+        <OurPartnerShips />
+      </div>
+    </div>
   );
 }
