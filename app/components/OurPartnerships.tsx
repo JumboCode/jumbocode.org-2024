@@ -35,8 +35,8 @@ export default function OurPartnerships() {
     */
     const rows = [
         logos.slice(0, 4), // First row
-        logos.slice(4, 8), // Second row
-        logos.slice(8), // Third row
+        logos.slice(4, 9), // Second row
+        logos.slice(9), // Third row
     ];
 
     /* returns the h3 section component with a title and its children */
@@ -49,10 +49,12 @@ export default function OurPartnerships() {
             header="Our Partnerships"
             headerAlignment="center"
         >
-            <ImageCollageMapper
+            <div>
+                <ImageCollageMapper
                 rows={rows}
                 logos={logos}
-            />
+                />
+            </div>
         </H3Section>
     );
 

@@ -23,9 +23,9 @@ type Props = {
 /* the component that takes in the logos and rows and maps them into a 
    collage 
 */
-const imageCollageMapper: React.FC<Props> = ({ logos, rows }) => {
+const imageCollageMapper: React.FC<Props> = ({ rows }) => {
   return (
-    <div className="flex flex-col gap-[1px] sm:gap-2 px-20">
+    <div className="flex flex-col gap-[1px] sm:gap-2 px-2 md:px-20 pb-6 md:pb-10 lg:pb-20">
       {rows.map((row, rowIndex) => (
         <div
           key={rowIndex}

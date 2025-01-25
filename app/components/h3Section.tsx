@@ -10,10 +10,11 @@ export default function H3Section({
     children: React.ReactNode;
 }) {
     return (
-        <div className="flex flex-col items-center gap-y-12">
+        <div className="flex flex-col items-center gap-y-6 md:gap-y-10 lg:gap-y-20">
             <h3 className={clsx(
-                "text-2xl font-bold text-white",
-                { "self-start": headerAlignment === "right" }
+            "font-bold text-white",
+            { "self-start": headerAlignment === "right" },
+            "text-2xl md:text-3xl lg:text-4xl"
             )}>{header}</h3>
             {children}
         </div >

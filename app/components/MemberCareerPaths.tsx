@@ -49,7 +49,7 @@ export default function MemberCareerPaths() {
     */
     return (
         <H3Section
-            header="Our Partnerships"
+            header="Member Career Paths"
             headerAlignment="center"
         >
             <ImageCollageMapper
