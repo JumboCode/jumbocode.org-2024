@@ -5,7 +5,7 @@ export default function GetInvolved() {
     <section>
       <h2 className="text-4xl font-semibold text-white">Get Involved</h2>
 
-      <div className="mt-16 grid grid-cols-[3fr,2fr] gap-16">
+      <div className="mt-16 grid sm:grid-cols-[3fr,2fr] gap-16">
         <div>
           <p className="text-white font-semibold text-2xl">
             🐘 Tufts University Students
@@ -43,10 +43,14 @@ export default function GetInvolved() {
         </div>
 
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/jumbohack-checkin.jpg" alt="" className="rounded-2xl" />
+        <img
+          src="/jumbohack-checkin.jpg"
+          alt=""
+          className="rounded-2xl max-sm:-order-1"
+        />
       </div>
 
-      <div className="mt-20 grid grid-cols-[2fr,3fr] gap-16">
+      <div className="mt-20 grid sm:grid-cols-[2fr,3fr] gap-16">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/jumbohack-checkin.jpg" alt="" className="rounded-2xl" />
 
