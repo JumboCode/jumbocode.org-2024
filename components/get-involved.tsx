@@ -64,14 +64,17 @@ export default function GetInvolved() {
               encourage you to apply! We accept NPO applications every June.
             </p>
             <p>
-              <a href="/" className="font-medium text-brand hover:underline">
+              <a
+                href="/about"
+                className="font-medium text-brand hover:underline"
+              >
                 Contact us
               </a>{" "}
               to learn more!
             </p>
           </div>
           <div className="mt-8">
-            <Button text="Learn more" href="/" variant="secondary" />
+            <Button text="Learn more" href="/apply" variant="secondary" />
           </div>
         </div>
       </div>
