@@ -3,7 +3,7 @@
  * a set of height weights.
  * 
  * @file ImageCollage.tsx
- * @date January 16th, 2025
+ * @date January 26th, 2025
  * @author Gabriel Sessions
  *  
  * @todo Make this component more modular if reused
