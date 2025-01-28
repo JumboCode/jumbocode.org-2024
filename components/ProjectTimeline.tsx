@@ -27,16 +27,18 @@ const timelineMonths = [
 export default function ProjectTimeline(props: ProjectTimelineProps) {
   return (
     <>
-      <div className={props.className}>
-        <h3 className="text-center mb-12 text-3xl text-white font-semibold">Project Timeline</h3>
-        <div className="grid grid-cols-9 grid-rows-3 gap-y-1">
+      <div className={clsx(props.className)}>
+        <h3 className="text-center mb-8 lg:mb-16 text-3xl text-white font-semibold">Project Timeline</h3>
+
+        {/* Desktop/Large Screen View */}
+        <div className="hidden lg:grid lg:grid-cols-9 lg:grid-rows-3 lg:gap-y-2 items-center">
           {
             timelineMonths.map((month, idx) => {
               return (
                 <div
                   className={clsx(
                     idx === 0 && "border-l",
-                    "border-white border-r mb-3"
+                    "border-white border-r mb-1"
                   )
                   } key={idx}
                 >
@@ -48,44 +50,86 @@ export default function ProjectTimeline(props: ProjectTimelineProps) {
           }
 
           {/* Second Row */}
-          <div className="bg-brand border-transparent rounded-[41px] col-span-2 align-middle w-full m-auto">
-            <p className="text-2xl text-center font-semibold text-black px-7 py-3">
-              Onboarding
-            </p>
-          </div>
+          <TimelineBlob
+            className="bg-brand col-span-2"
+            textClassName="text-black"
+            text="Onboarding"
+          />
 
           <div className="col-span-4" />
 
-          <div className="bg-brand border-transparent rounded-[41px] col-span-2 align-middle w-full m-auto">
-            <p className="text-2xl text-center font-semibold text-black px-7 py-3">
-              Deployment
-            </p>
-          </div>
-  
+          <TimelineBlob
+            className="bg-brand col-span-2"
+            textClassName="text-black"
+            text="Deployment"
+          />
+
           <div />
 
           {/* Third Row */}
           <div />
 
-          <div className="bg-[#5745E2] border-transparent rounded-[41px] w-full col-span-6 align-middle m-auto">
-            <p className="text-2xl text-center font-semibold text-white px-7 py-3">
-              Project Development
-            </p>
-          </div>
+          <TimelineBlob
+            className="bg-[#5745E2] col-span-6"
+            textClassName="text-white"
+            text="Project Development"
+          />
 
-          <div />
+          <TimelineBlob
+            className="bg-[#828282] col-span-2 ml-16"
+            textClassName="text-white"
+            text="Handoff"
+          />
 
+        </div>
 
-          <div className="bg-[#828282] border-transparent rounded-[41px] col-span-1 align-middle m-auto">
-            <p className="text-2xl text-center font-semibold text-white px-7 py-3">
-              Handoff
-            </p>
-          </div>
+        {/* Mobile View */}
+        <div className="mx-4 space-y-4 lg:hidden">
+          <TimelineBlob
+            className="bg-brand"
+            textClassName="text-black"
+            text="Sep - Oct: Onboarding"
+          />
 
+          <TimelineBlob
+            className="bg-[#5745E2]"
+            textClassName="text-white"
+            text="Oct - Mar: Project Development"
+          />
+
+          <TimelineBlob
+            className="bg-brand"
+            textClassName="text-black"
+            text="Mar - May: Deployment"
+          />
+
+          <TimelineBlob
+            className="bg-[#828282]"
+            textClassName="text-white"
+            text="Apr - May: Handoff"
+          />
 
         </div>
 
       </div>
     </>
+  )
+}
+
+interface TimelineBlobProps {
+  className?: string,
+  textClassName?: string,
+  text: string
+}
+
+function TimelineBlob(props: TimelineBlobProps) {
+
+  return (
+    <div className={clsx("border-transparent rounded-[41px] align-middle", props.className)}>
+      <p className={clsx("text-lg lg:text-[26px] text-center font-semibold px-7 py-1 lg:py-2", props.textClassName)}>
+        {props.text}
+      </p>
+    </div>
+
   )
 }
