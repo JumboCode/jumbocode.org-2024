@@ -1,32 +1,28 @@
-import Button from "@/app/components/button";
-import { EnvelopeIcon } from "@heroicons/react/24/outline";
+import Button from "@/components/button";
+import Hero from "@/components/hero";
+import OurMission from "@/components/OurMission";
+import WhoWeAre from "@/components/WhoWeAre";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="p-4 space-y-4 bg-black">
-        <Button
-          text="Email Us"
-          route="/testing"
-          variant="primary"
-          icon={EnvelopeIcon}
-        />
+    <div>
+      <Hero
+        title={
+          <>
+            Jumbo<span className="text-brand">Code</span>
+          </>
+        }
+        subtitle={<>Empowering students, Elevating non-profits.</>}
+        buttons={
+          <>
+            <Button text="What we do" href="/about" variant="secondary" />
+            <Button text="Get involved" href="/apply" variant="primary" />
+          </>
+        }
+      />
 
-        <Button
-          text="Email Us"
-          route="/testing"
-          variant="secondary"
-          icon={EnvelopeIcon}
-        />
-
-        <Button
-          text="Email Us"
-          route="/testing"
-          variant="ghost"
-          icon={EnvelopeIcon}
-        />
-
-        <Button text="Email Us" route="/testing" variant="primary" />
-
+      <WhoWeAre />
+      <OurMission />
     </div>
   );
 }

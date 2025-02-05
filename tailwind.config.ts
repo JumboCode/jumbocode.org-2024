@@ -1,5 +1,7 @@
+import containerQueries from "@tailwindcss/container-queries";
 import type { Config } from "tailwindcss";
 import colors from "tailwindcss/colors";
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,14 +10,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif']
+      },
       colors: {
-        gray: colors.slate,
+        gray: colors.zinc,
         brand: "#32C89E",
         background: "#171719",
         subtext: "#A1A1A1"
       },
     },
   },
-  plugins: [],
+  plugins: [containerQueries],
 };
+
 export default config;

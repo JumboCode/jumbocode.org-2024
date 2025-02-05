@@ -6,26 +6,26 @@ export default function Home() {
     <div className="p-4 space-y-4 bg-black">
       <Button
         text="Email Us"
-        route="/testing"
+        href="/testing"
         variant="primary"
         icon={EnvelopeIcon}
       />
 
       <Button
         text="Email Us"
-        route="/testing"
+        href="/testing"
         variant="secondary"
         icon={EnvelopeIcon}
       />
 
       <Button
         text="Email Us"
-        route="/testing"
+        href="/testing"
         variant="ghost"
         icon={EnvelopeIcon}
       />
 
-      <Button text="Email Us" route="/testing" variant="primary" />
+      <Button text="Email Us" href="/testing" variant="primary" />
     </div>
   );
 }
