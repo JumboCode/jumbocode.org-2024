@@ -15,8 +15,8 @@ const LINKS = [
         title: "JumboCode",
         items: [
             { name: "Home", url: "/" },
-            { name: "About", url: "/" },
-            { name: "Our Work", url: "/" },
+            { name: "About", url: "/about" },
+            { name: "Our Work", url: "/projects" },
         ],
     },
     {
@@ -30,7 +30,7 @@ const LINKS = [
     {
         title: "Non-profits",
         items: [
-            { name: "Work with us", url: "/" },
+            { name: "Work with us", url: "/apply" },
             { name: "Testimonials", url: "/" },
             { name: "FAQs", url: "/" },
         ],
