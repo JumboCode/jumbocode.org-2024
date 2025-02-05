@@ -11,8 +11,8 @@ const imgs = [
     altText: "The Documentary Songwriters team presenting their work"
   },
   {
-    path: "/about-us/image-collage-4.jpg",
-    altText: "JumboCode Executive Board 2023-24"
+    path: "/about-us/image-collage-4.png",
+    altText: "A team working on a game at JumboHack"
   },
   {
     path: "/about-us/image-collage-2.png",
