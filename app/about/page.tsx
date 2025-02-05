@@ -1,4 +1,5 @@
 import Hero from "@/components/hero";
+import OurPartnerships from "@/components/OurPartnerships";
 
 export default function AboutPage() {
   return (
@@ -13,6 +14,7 @@ export default function AboutPage() {
           </>
         }
       />
+      <OurPartnerships />
     </div>
   );
 }
