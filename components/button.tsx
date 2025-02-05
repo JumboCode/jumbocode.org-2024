@@ -1,20 +1,22 @@
 import clsx from "clsx";
+import Link from "next/link";
 
 export default function Button({
   text,
-  route,
+  href,
   variant,
   icon = undefined,
 }: {
   text: string;
-  route: string;
+  href: string;
   variant: "primary" | "secondary" | "ghost";
   icon?: React.ElementType;
 }) {
+  const Element = href.startsWith("/") ? Link : "a";
   const Icon = icon;
   return (
-    <a
-      href={route}
+    <Element
+      href={href}
       className={clsx(
         "block max-w-max px-4 py-2 rounded-lg font-semibold",
         "flex items-center gap-2",
@@ -26,6 +28,6 @@ export default function Button({
     >
       {Icon && <Icon className="w-4 h-4" />}
       <span>{text}</span>
-    </a>
+    </Element>
   );
 }
