@@ -17,7 +17,7 @@ const daBoard = [
     {src: "/eboard/wilson_skinner.png", name: "Wilson Skinner", description: "Head of Design"},
     {src: "/eboard/ella_lesperance.png", name: "Ella Lesperance", description: "Head of Operations"},
     {src: "/eboard/lillian_tran.png", name: "Lillian Tran", description: "Head of Communications"},
-    {src: "/eboard/megan_yi.png", name: "Social Chair", description: "Social Chair"},
+    {src: "/eboard/megan_yi.png", name: "Megan Yi", description: "Social Chair"},
     {src: "/eboard/stephanie_kim.png", name: "Stephanie Kim", description: "Co-Head of Client Management"},
     {src: "/eboard/anika_kapoor.png", name: "Anika Kapoor", description: "Co-Head of Client Management"},
     {src: "/eboard/holden_kittelberger.png", name: "Holden Kittelberger", description: "JumboHack Liaison"},
@@ -26,10 +26,10 @@ const daBoard = [
 const eboard: React.FC = () => {
     return (
         <div className="flex flex-col gap-4">
-            <div className="flex flex-col items-center">
-                <h2 className="text-2xl font-bold">Executive Board 2024-2025</h2>
+            <div className="flex flex-col md:mb-4 lg:mb-8">
+                <h2 className="text-2xl md:text-3xl lg:text-5xl text-white font-bold">Executive Board 2024-2025</h2>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-4 gap-y-8">
                 {daBoard.map((member, index) => (
                     <PictureFrame key={index} src={member.src} name={member.name} description={member.description} />
                 ))}
