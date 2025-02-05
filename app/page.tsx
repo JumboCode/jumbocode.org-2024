@@ -1,5 +1,6 @@
 import Button from "@/components/button";
 import Hero from "@/components/hero";
+import MemberCareerPaths from "@/components/MemberCareerPaths";
 import OurMission from "@/components/OurMission";
 import WhoWeAre from "@/components/WhoWeAre";
 
@@ -23,6 +24,7 @@ export default function HomePage() {
 
       <WhoWeAre />
       <OurMission />
+      <MemberCareerPaths />
     </div>
   );
 }
