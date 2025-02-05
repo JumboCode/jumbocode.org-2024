@@ -1,8 +1,6 @@
 import Button from "@/app/components/button";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import H3Section from "@/app/components/h3Section";
-import MemberCareerPaths from "@/app/components/MemberCareerPaths";
-import OurPartnerShips from "@/app/components/OurPartnerships";
 
 export default function Home() {
   return (
@@ -33,8 +31,6 @@ export default function Home() {
 
       </div>
       <div className="p-4 space-y-4 bg-black">
-        <MemberCareerPaths />
-        <OurPartnerShips />
       </div>
     </div>
   );

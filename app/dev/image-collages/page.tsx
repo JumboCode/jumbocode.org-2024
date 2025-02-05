@@ -1,5 +1,5 @@
-import MemberCareerPaths from "@/app/components/MemberCareerPaths";
-import OurPartnerships from "@/app/components/OurPartnerships";
+import MemberCareerPaths from "@/components/MemberCareerPaths";
+import OurPartnerships from "@/components/OurPartnerships";
 
 export default function ImageCollages() {
     return (
