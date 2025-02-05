@@ -1,8 +1,8 @@
+import Footer from "@/components/footer";
 import Nav from "@/components/nav";
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
-import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "JumboCode",
@@ -30,7 +30,7 @@ export default function RootLayout({
           </header>
           <main>{children}</main>
         </div>
-        </Footer >
+        <Footer />
       </body>
     </html>
   );
