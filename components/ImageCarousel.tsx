@@ -3,7 +3,7 @@
  * next/previous images.
  * 
  * @file ImageCarousel.tsx
- * @date January 5th, 2023
+ * @date January 5th, 2025
  * @author Gabriel Sessions
  *  
  * @todo Remove hardcoded width/height values if this component is reused
@@ -24,7 +24,7 @@ const IMG_WIDTH = 665;
  * @param altText - A text descriptor of the image
  * @param className - Optional field to add CSS styles
  */
-interface ImageProps {
+export interface ImageProps {
   path: string,
   altText: string,
   className?: string
@@ -34,7 +34,7 @@ interface ImageProps {
  * @param images - An array of objects to be fed into the Image component
  * @param className - Optional field to add CSS styles
  */
-interface ImageCarouselProps {
+export interface ImageCarouselProps {
   images: Array<ImageProps>,
   className?: string
 }
