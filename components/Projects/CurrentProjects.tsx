@@ -31,7 +31,7 @@ export default function CurrentProjects(props: CurrentProjectsProps) {
 function CurrentProjectCard(props: ProjectProps) {
   return (
     <>
-      <div className="border border-gray rounded-xl p-8 space-y-6">
+      <div className="border border-gray rounded-xl p-8">
         <Image
           src={props.img.src}
           alt={props.img.altText}
@@ -39,9 +39,9 @@ function CurrentProjectCard(props: ProjectProps) {
           height={312}
           className="border border-transparent rounded-xl mx-auto h-48 object-cover md:h-fit"
         />
-        <h3 className="text-white text-2xl font-semibold">{props.name}</h3>
-        <p className="text-white text-md leading-4">{props.description}</p>
-        <div>
+        <h3 className="text-white text-2xl font-semibold my-4 lg:my-6">{props.name}</h3>
+        <p className="text-white/90 text-md leading-4">{props.description}</p>
+        <div className="mt-8">
           <Button
             text="Read More"
             href={props.href}

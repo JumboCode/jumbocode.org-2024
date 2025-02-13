@@ -135,7 +135,7 @@ function TextSection(props: TextSectionProps) {
   return (
     <div>
       <h3 className={h3Class}>{props.title}</h3>
-      <div className="text-gray-200 my-4 mb-12">{props.text}</div>
+      <div className="text-white/90 my-4 mb-12">{props.text}</div>
     </div>
   )
 }
