@@ -1,6 +1,7 @@
 import clsx from "clsx"
 import Image from "next/image"
 import React from "react"
+import Button from "../button"
 import Hero from "../hero"
 import { ImageProps } from "../ImageCarousel"
 import ImageCollage from "../ImageCollage"
@@ -104,11 +105,20 @@ export default function ProjectPage(props: ProjectPageProps) {
         }
       </div>
 
-      <h3 className={clsx(h3Class, "mb-12")}>Final Screens</h3>
+      <h3 className={clsx(h3Class, "my-12 md:mt-4")}>Final Screens</h3>
       <ImageCollage
         images={props.finalScreens}
         className="object-top-left"
       />
+
+
+      <div className="flex justify-center mt-28 mb-8">
+        <Button
+          text="Back to Projects"
+          href="/projects"
+          variant="secondary"
+        />
+      </div>
     </>
   )
 }
