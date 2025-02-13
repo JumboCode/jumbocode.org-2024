@@ -27,7 +27,7 @@ export default function Hero({
 
       {buttons && <div className="mt-8 flex gap-x-4">{buttons}</div>}
 
-      {image && <div className="-mt-24">{image}</div>}
+      {image && <div className="mt-8 md:-mt-28">{image}</div>}
     </div>
   );
 }
