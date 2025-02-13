@@ -20,13 +20,13 @@ const IMG_HEIGHT = 389;
 const IMG_WIDTH = 665;
 
 /**
- * @param path - Local or absolute path to an image asset
+ * @param src - Local or absolute path to an image asset
  * @param altText - A text descriptor of the image
  * @param className - Optional field to add CSS styles
  */
-interface ImageProps {
-  path: string,
-  altText: string,
+export interface ImageProps {
+  src: string,
+  alt: string,
   className?: string
 }
 
@@ -80,7 +80,7 @@ export default function ImageCarousel(props: ImageCarouselProps) {
         {props.images.map((image, idx) => (
           <ImageContainer
             key={idx}
-            path={image.path}
+            src={image.src}
             altText={image.altText}
             className="scroll-snap-center"
           />
@@ -95,7 +95,7 @@ export default function ImageCarousel(props: ImageCarouselProps) {
  * An image container generator. Creates a responsive, rounded box 
  * for images with a max width of 600px.
  * 
- * @param props - Image path, alt text. Width and height are defined globally.
+ * @param props - Image src, alt text. Width and height are defined globally.
  * @returns A React component
  * 
  * @todo Change width/height to props values if the component needs to be reused
@@ -104,7 +104,7 @@ export default function ImageCarousel(props: ImageCarouselProps) {
 function ImageContainer(props: ImageProps) {
   return (
     <Image
-      src={props.path}
+      src={props.src}
       alt={props.altText}
       width={IMG_WIDTH}
       height={IMG_HEIGHT}

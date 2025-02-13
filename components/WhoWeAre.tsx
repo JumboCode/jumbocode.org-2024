@@ -20,23 +20,23 @@ const whoWeAreText = {
 
 const whoWeAreImages = [
   {
-    path: "/homepage/who-we-are-4.png",
+    src: "/homepage/who-we-are-4.png",
     altText: "Project presentation"
   },
   {
-    path: "/homepage/who-we-are-1.png",
+    src: "/homepage/who-we-are-1.png",
     altText: "A live demo at JumboCode final presentations"
   },
   {
-    path: "/homepage/who-we-are-2.png",
+    src: "/homepage/who-we-are-2.png",
     altText: "JumboCode Team Photo"
   },
   {
-    path: "/homepage/who-we-are-3.png",
+    src: "/homepage/who-we-are-3.png",
     altText: "A team having fun at a JumboCode hack night"
   },
   {
-    path: "/homepage/who-we-are-5.png",
+    src: "/homepage/who-we-are-5.png",
     altText: "JumboHack programmers working on their projects"
   }
 ];
