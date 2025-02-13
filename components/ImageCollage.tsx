@@ -24,29 +24,29 @@ export default function ImageCollage(props: ImageCarouselProps) {
   return (
     <div className="grid justify-center md:grid-cols-2 gap-x-7 gap-y-6">
       <Image
-        src={props.images[0].path}
-        alt={props.images[0].path}
+        src={props.images[0].src}
+        alt={props.images[0].src}
         className={clsx(baseClass, longerImageClass, hideOnMobile)}
         width={597}
         height={450}
       />
       <Image
-        src={props.images[1].path}
-        alt={props.images[1].path}
+        src={props.images[1].src}
+        alt={props.images[1].src}
         className={clsx(baseClass, shorterImageClass)}
         width={597}
         height={349}
       />
       <Image
-        src={props.images[2].path}
-        alt={props.images[2].path}
+        src={props.images[2].src}
+        alt={props.images[2].src}
         className={clsx(baseClass, longerImageClass, hideOnMobile)}
         width={597}
         height={450}
       />
       <Image
-        src={props.images[3].path}
-        alt={props.images[3].path}
+        src={props.images[3].src}
+        alt={props.images[3].src}
         className={clsx(baseClass, shorterImageClass)}
         width={597}
         height={349} 
