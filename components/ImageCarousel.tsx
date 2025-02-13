@@ -21,7 +21,7 @@ const IMG_WIDTH = 665;
 
 /**
  * @param src - Local or absolute path to an image asset
- * @param altText - A text descriptor of the image
+ * @param alt - A text descriptor of the image
  * @param className - Optional field to add CSS styles
  */
 export interface ImageProps {
@@ -81,7 +81,7 @@ export default function ImageCarousel(props: ImageCarouselProps) {
           <ImageContainer
             key={idx}
             src={image.src}
-            altText={image.altText}
+            alt={image.alt}
             className="scroll-snap-center"
           />
         ))}
@@ -105,7 +105,7 @@ function ImageContainer(props: ImageProps) {
   return (
     <Image
       src={props.src}
-      alt={props.altText}
+      alt={props.alt}
       width={IMG_WIDTH}
       height={IMG_HEIGHT}
       className={

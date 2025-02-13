@@ -10,7 +10,7 @@ export interface ProjectProps {
 }
 
 interface CurrentProjectsProps {
-  projects: Array<Project>
+  projects: Array<ProjectProps>
 }
 
 export default function CurrentProjects(props: CurrentProjectsProps) {
@@ -34,7 +34,7 @@ function CurrentProjectCard(props: ProjectProps) {
       <div className="border border-gray rounded-xl p-8">
         <Image
           src={props.img.src}
-          alt={props.img.altText}
+          alt={props.img.alt}
           width={296}
           height={312}
           className="border border-transparent rounded-xl mx-auto h-48 object-cover md:h-fit"

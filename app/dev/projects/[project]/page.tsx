@@ -1,7 +1,9 @@
+import { ImageProps } from "@/components/ImageCarousel";
 import ProjectPage, { ProjectPageProps } from "@/components/Projects/ProjectPage";
 import { notFound } from "next/navigation";
 
-const getTechStack = ((displayName, name) => {
+
+const getTechStack = ((displayName: string, name: string): { name: string; logo: ImageProps } => {
   return {
     name: displayName,
     logo: {
@@ -12,7 +14,8 @@ const getTechStack = ((displayName, name) => {
 })
 
 // Example JSON for HomeStart
-const projects: ProjectPageProps = {
+
+const projects: Record<string, ProjectPageProps> = {
   homestart: {
     hero: {
       projectName: "HomeStart",
@@ -68,14 +71,19 @@ const projects: ProjectPageProps = {
     ]
   },
 
+};
+
+interface ProjectShowcasePageProps {
+  params: {
+    project?: string;
+  };
 }
 
+export default function ProjectShowcasePage(props: ProjectShowcasePageProps) {
 
-export default function ProjectShowcasePage({ params }) {
+  const { project } = props.params;
 
-  const { project } = params;
-
-  if (!project || !projects[project])
+  if (!project || !(project in projects))
     return notFound();
 
   return (

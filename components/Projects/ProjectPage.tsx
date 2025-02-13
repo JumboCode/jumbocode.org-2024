@@ -6,7 +6,7 @@ import Hero from "../hero"
 import { ImageProps } from "../ImageCarousel"
 import ImageCollage from "../ImageCollage"
 
-// Layout of a JumboCode project page in JSON format
+// Layout of a Jumb...oCode project page in JSON format
 export interface ProjectPageProps {
   hero: {
     projectName: string,
@@ -29,6 +29,7 @@ export interface ProjectPageProps {
   }>,
   finalScreens: Array<ImageProps>
 }
+
 
 const h3Class = "text-white text-3xl font-semibold";
 

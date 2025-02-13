@@ -4,19 +4,19 @@ import OurMission from "@/components/OurMission"
 const imgs = [
   {
     src: "/about-us/image-collage-1.png",
-    altText: "JumboCode banner"
+    alt: "JumboCode banner"
   },
   {
     src: "/about-us/image-collage-3.png",
-    altText: "The Documentary Songwriters team presenting their work"
+    alt: "The Documentary Songwriters team presenting their work"
   },
   {
     src: "/about-us/image-collage-4.png",
-    altText: "A team working on a game at JumboHack"
+    alt: "A team working on a game at JumboHack"
   },
   {
     src: "/about-us/image-collage-2.png",
-    altText: "JumboCode developers working during hack night"
+    alt: "JumboCode developers working during hack night"
   },
 ]
 
