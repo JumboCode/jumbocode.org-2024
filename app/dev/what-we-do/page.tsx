@@ -1,4 +1,4 @@
-import WhatWeDo from "@/app/components/what-we-do";
+import WhatWeDo from "@/components/what-we-do";
 
 export default function WhatWeDoPage() {
   return (
