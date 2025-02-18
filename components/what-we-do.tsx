@@ -147,7 +147,7 @@ function Card({
         />
         <div className="pt-6">
           <h3 className="text-white text-2xl font-semibold">{title}</h3>
-          <div className="text-white/90 mt-6 space-y-6 [&_a]:text-brand [&_a]:font-semibold">
+          <div className="text-white/90 mt-6 space-y-6 [&_a]:text-brand [&_a]:font-medium [&_a]:hover:underline">
             {body}
           </div>
         </div>
