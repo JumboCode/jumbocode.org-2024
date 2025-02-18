@@ -44,7 +44,7 @@ export default function GetInvolved() {
 
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/jumbohack-checkin.jpg"
+          src="/jumbohack-austen.jpg"
           alt=""
           className="rounded-2xl max-sm:-order-1"
         />
@@ -52,7 +52,7 @@ export default function GetInvolved() {
 
       <div className="mt-20 grid sm:grid-cols-[2fr,3fr] gap-16">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/jumbohack-checkin.jpg" alt="" className="rounded-2xl" />
+        <img src="/homestart.png" alt="" className="rounded-2xl" />
 
         <div>
           <p className="text-white font-semibold text-2xl">
