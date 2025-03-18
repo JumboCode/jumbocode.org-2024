@@ -21,7 +21,7 @@ export default function ApplyPage() {
         }
       />
 
-      <section className="mt-48">
+      <section className="mt-20">
         <h1 className="text-white font-semibold text-4xl">
           Tufts University Students
         </h1>
