@@ -23,7 +23,6 @@ export default function RootLayout({
 
           <header className="flex justify-between items-center">
             <Link href="/">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/logo.svg" alt="JumboCode" className="h-8" />
             </Link>
             <Nav />
