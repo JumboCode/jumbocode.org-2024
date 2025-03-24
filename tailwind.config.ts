@@ -17,7 +17,8 @@ const config: Config = {
         gray: colors.zinc,
         brand: "#32C89E",
         background: "#171719",
-        subtext: "#A1A1A1"
+        subtext: "#A1A1A1",
+        off_white: "#D9D9D9",
       },
     },
   },
