@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import clsx from "clsx";
 import FAQ from "./faq";
 import MemberTestimonialCarousel from "./member-testimonial-carousel";
+import NonProfitFAQ from "./non-profit-faq";
 import NonProfitTestimonialCarousel from "./non-profit-testimonial-carousel";
 
 export default function ApplyPage() {
@@ -206,6 +207,8 @@ export default function ApplyPage() {
           <NonProfitTestimonialCarousel />
         </div>
       </section>
+
+      <NonProfitFAQ />
     </div>
   );
 }
