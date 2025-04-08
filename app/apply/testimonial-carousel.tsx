@@ -47,7 +47,7 @@ export default function TestimonialCarousel({
         </button>
 
         <div className="flex-1 mx-8">
-          <div className="bg-white/5 rounded-2xl p-8 flex flex-col justify-center">
+          <div className="bg-white/5 rounded-2xl p-8 flex flex-col justify-center min-h-72">
             <div className="flex items-center gap-6">
               <img
                 src={activeTestimonial.image}
