@@ -9,7 +9,7 @@ export default function ApplyPage() {
         title={<>Apply</>}
         subtitle={
           <>
-            Join us — we’re a passionate community of developers and designers
+            Join us — we're a passionate community of developers and designers
             committed to building meaningful products for non-profits.
           </>
         }
@@ -115,6 +115,35 @@ export default function ApplyPage() {
           </div>
         </div>
       </section>
+
+      <section className="mt-24">
+        <h2 className="text-white font-semibold text-2xl">
+          Application Process
+        </h2>
+
+        <div className="mt-8 grid grid-cols-4 gap-12">
+          <ApplicationProcessCard
+            src="/apply/icons/application-icon.png"
+            title="Application"
+            subtitle="Apply to our open roles so we know you are interested."
+          />
+          <ApplicationProcessCard
+            src="/apply/icons/interview-icon.png"
+            title="Interview"
+            subtitle="If you are selected for an interview, we will contact you via email to set up a time. (Note that we do not require interviews for developers.)"
+          />
+          <ApplicationProcessCard
+            src="/apply/icons/decision-icon.png"
+            title="Decision"
+            subtitle="Our board will inform you directly via email."
+          />
+          <ApplicationProcessCard
+            src="/apply/icons/onboarding-icon.png"
+            title="Onboarding"
+            subtitle="Onboarding for most roles begins the summer before the school year starts."
+          />
+        </div>
+      </section>
     </div>
   );
 }
@@ -139,5 +168,23 @@ const PositionCard = ({
         <p className="mt-1 text-background/60">{subtitle}</p>
       </div>
     </Wrapper>
+  );
+};
+
+const ApplicationProcessCard = ({
+  src,
+  title,
+  subtitle,
+}: {
+  src: string;
+  title: string;
+  subtitle: string;
+}) => {
+  return (
+    <div>
+      <img src={src} alt="" className="" />
+      <h3 className="mt-4 text-white font-semibold text-xl">{title}</h3>
+      <p className="mt-2 text-white/80">{subtitle}</p>
+    </div>
   );
 };
