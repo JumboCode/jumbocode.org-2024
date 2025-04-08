@@ -27,7 +27,7 @@ export default function ApplyPage() {
         }
       />
 
-      <section id="students" className="mt-20">
+      <section id="students" className="mt-20 scroll-mt-20">
         <h1 className="text-white font-semibold text-4xl">
           Tufts University Students
         </h1>
@@ -167,7 +167,7 @@ export default function ApplyPage() {
         </div>
       </section>
 
-      <section id="nonprofits" className="mt-20">
+      <section id="nonprofits" className="mt-20 scroll-mt-20">
         <h1 className="text-white font-semibold text-4xl">
           Non-Profit Organizations
         </h1>
