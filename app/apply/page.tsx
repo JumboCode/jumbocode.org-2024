@@ -11,7 +11,7 @@ export default function ApplyPage() {
         title={<>Apply</>}
         subtitle={
           <>
-            Join us — we're a passionate community of developers and designers
+            Join us — we’re a passionate community of developers and designers
             committed to building meaningful products for non-profits.
           </>
         }
@@ -160,6 +160,36 @@ export default function ApplyPage() {
         <h2 className="text-white font-semibold text-2xl">FAQs</h2>
         <div className="mt-8">
           <FAQ />
+        </div>
+      </section>
+
+      <section className="mt-20">
+        <h1 className="text-white font-semibold text-4xl">
+          Non-Profit Organizations
+        </h1>
+
+        <div className="mt-12 grid grid-cols-[1fr_1.5fr] items-center gap-20">
+          <img
+            src="/apply/homestart-team.png"
+            alt="The team of the non-profit Homestart."
+            className="rounded-xl object-cover w-full h-full"
+          />
+          <div className="text-white/80 space-y-2">
+            <p>
+              If you’re a nonprofit organization with a project in mind, we
+              encourage you to apply! We accept NPO applications every May–July.
+            </p>
+            <p>
+              Contact us at{" "}
+              <a
+                href="mailto:board@jumbocode.org"
+                className="text-brand font-medium underline decoration-brand/30"
+              >
+                board@jumbocode.org
+              </a>{" "}
+              to learn more!
+            </p>
+          </div>
         </div>
       </section>
     </div>
