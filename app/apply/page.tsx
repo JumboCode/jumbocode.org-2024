@@ -1,6 +1,7 @@
 import Button from "@/components/button";
 import Hero from "@/components/hero";
 import clsx from "clsx";
+import FAQ from "./faq";
 import TestimonialCarousel from "./testimonial-carousel";
 
 export default function ApplyPage() {
@@ -10,7 +11,7 @@ export default function ApplyPage() {
         title={<>Apply</>}
         subtitle={
           <>
-            Join us — we’re a passionate community of developers and designers
+            Join us — we're a passionate community of developers and designers
             committed to building meaningful products for non-profits.
           </>
         }
@@ -152,6 +153,13 @@ export default function ApplyPage() {
         </h2>
         <div className="mt-8">
           <TestimonialCarousel />
+        </div>
+      </section>
+
+      <section className="mt-24">
+        <h2 className="text-white font-semibold text-2xl">FAQs</h2>
+        <div className="mt-8">
+          <FAQ />
         </div>
       </section>
     </div>
