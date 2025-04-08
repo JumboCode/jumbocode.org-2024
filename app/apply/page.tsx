@@ -17,13 +17,17 @@ export default function ApplyPage() {
         }
         buttons={
           <>
-            <Button text="For students" href="/" variant="secondary" />
-            <Button text="For non-profits" href="/" variant="secondary" />
+            <Button text="For students" href="#students" variant="secondary" />
+            <Button
+              text="For non-profits"
+              href="#nonprofits"
+              variant="secondary"
+            />
           </>
         }
       />
 
-      <section className="mt-20">
+      <section id="students" className="mt-20">
         <h1 className="text-white font-semibold text-4xl">
           Tufts University Students
         </h1>
@@ -163,7 +167,7 @@ export default function ApplyPage() {
         </div>
       </section>
 
-      <section className="mt-20">
+      <section id="nonprofits" className="mt-20">
         <h1 className="text-white font-semibold text-4xl">
           Non-Profit Organizations
         </h1>
