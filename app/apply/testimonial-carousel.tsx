@@ -69,9 +69,10 @@ export default function TestimonialCarousel({
         <div className="bg-white/5 rounded-2xl p-8 flex flex-col justify-center min-h-72">
           <div className="flex items-center gap-6">
             <img
+              key={activeTestimonial.image}
               src={activeTestimonial.image}
               alt={activeTestimonial.name}
-              className="w-16 h-16 rounded-full object-cover flex-shrink-0"
+              className="w-16 h-16 rounded-full object-cover flex-shrink-0 bg-gray-800"
             />
             <div className="flex-1">
               <h3 className="text-white font-semibold text-xl">

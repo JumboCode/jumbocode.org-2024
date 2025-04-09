@@ -247,7 +247,7 @@ const ApplicationProcessCard = ({
 }) => {
   return (
     <div>
-      <img src={src} alt="" className="max-md:size-20" />
+      <img src={src} alt="" className="max-lg:size-20" />
       <h3 className="mt-4 text-white font-semibold text-xl">{title}</h3>
       <p className="mt-2 text-white/80">{subtitle}</p>
     </div>
