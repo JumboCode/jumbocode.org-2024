@@ -30,7 +30,7 @@ export default function ApplyPage() {
       />
 
       <section id="students" className="mt-12 lg:mt-20 scroll-mt-20">
-        <h1 className="text-white font-semibold text-4xl">
+        <h1 className="text-white font-semibold text-3xl lg:text-4xl">
           Tufts University Students
         </h1>
 
@@ -170,7 +170,7 @@ export default function ApplyPage() {
       </section>
 
       <section id="nonprofits" className="mt-12 lg:mt-20 scroll-mt-20">
-        <h1 className="text-white font-semibold text-4xl">
+        <h1 className="text-white font-semibold text-3xl lg:text-4xl">
           Non-Profit Organizations
         </h1>
 
@@ -247,7 +247,7 @@ const ApplicationProcessCard = ({
 }) => {
   return (
     <div>
-      <img src={src} alt="" className="" />
+      <img src={src} alt="" className="max-md:size-20" />
       <h3 className="mt-4 text-white font-semibold text-xl">{title}</h3>
       <p className="mt-2 text-white/80">{subtitle}</p>
     </div>
