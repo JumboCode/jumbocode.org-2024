@@ -13,8 +13,8 @@ export default function ApplyPage() {
         title={<>Apply</>}
         subtitle={
           <>
-            Join us — we’re a passionate community of developers and designers
-            committed to building meaningful products for non-profits.
+            Join us &mdash; we&apos;re a passionate community of developers and
+            designers committed to building meaningful products for non-profits.
           </>
         }
         buttons={
@@ -29,12 +29,12 @@ export default function ApplyPage() {
         }
       />
 
-      <section id="students" className="mt-20 scroll-mt-20">
+      <section id="students" className="mt-12 lg:mt-20 scroll-mt-20">
         <h1 className="text-white font-semibold text-4xl">
           Tufts University Students
         </h1>
 
-        <div className="mt-12 grid grid-cols-[1.5fr_1fr] gap-20">
+        <div className="mt-8 lg:mt-12 grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-12 lg:gap-20">
           <div>
             <h2 className="text-white font-medium text-2xl">
               Leadership Positions Open in March
@@ -67,7 +67,7 @@ export default function ApplyPage() {
                 to stay updated!
               </p>
             </div>
-            <h2 className="mt-12 text-white font-medium text-2xl">
+            <h2 className="mt-8 lg:mt-12 text-white font-medium text-2xl">
               Developer Positions Open in September
             </h2>
             <div className="mt-4 text-white/80 space-y-2">
@@ -87,14 +87,14 @@ export default function ApplyPage() {
           <img
             src="/apply/homestart.jpg"
             alt="Developers and team leadership for the Homestart team. Two rows of students standing in front of a white wall."
-            className="rounded-xl"
+            className="rounded-xl hidden lg:block"
           />
         </div>
 
-        <div className="mt-24">
+        <div className="mt-16 lg:mt-24">
           <h2 className="text-white font-semibold text-xl">Open Positions</h2>
 
-          <div className="mt-6 grid grid-cols-3 gap-6">
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
             <PositionCard
               title="Developer"
               subtitle="Applications open in September"
@@ -124,12 +124,12 @@ export default function ApplyPage() {
         </div>
       </section>
 
-      <section className="mt-24">
+      <section className="mt-16 lg:mt-24">
         <h2 className="text-white font-semibold text-2xl">
           Application Process
         </h2>
 
-        <div className="mt-8 grid grid-cols-4 gap-12">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <ApplicationProcessCard
             src="/apply/icons/application-icon.png"
             title="Application"
@@ -153,7 +153,7 @@ export default function ApplyPage() {
         </div>
       </section>
 
-      <section className="mt-24">
+      <section className="mt-16 lg:mt-24">
         <h2 className="text-white font-semibold text-2xl">
           Member Testimonials
         </h2>
@@ -162,27 +162,27 @@ export default function ApplyPage() {
         </div>
       </section>
 
-      <section className="mt-24">
+      <section className="mt-16 lg:mt-24">
         <h2 className="text-white font-semibold text-2xl">FAQs</h2>
         <div className="mt-8">
           <FAQ />
         </div>
       </section>
 
-      <section id="nonprofits" className="mt-20 scroll-mt-20">
+      <section id="nonprofits" className="mt-12 lg:mt-20 scroll-mt-20">
         <h1 className="text-white font-semibold text-4xl">
           Non-Profit Organizations
         </h1>
 
-        <div className="mt-12 grid grid-cols-[1fr_1.5fr] items-center gap-20">
+        <div className="mt-8 lg:mt-12 grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] items-center gap-12 lg:gap-20">
           <img
             src="/apply/homestart-team.png"
             alt="The team of the non-profit Homestart."
-            className="rounded-xl object-cover w-full h-full"
+            className="rounded-xl object-cover w-full h-full hidden lg:block"
           />
           <div className="text-white/80 space-y-2">
             <p>
-              If you’re a nonprofit organization with a project in mind, we
+              If you&apos;re a nonprofit organization with a project in mind, we
               encourage you to apply! We accept NPO applications every May–July.
             </p>
             <p>
@@ -199,7 +199,7 @@ export default function ApplyPage() {
         </div>
       </section>
 
-      <section className="mt-24">
+      <section className="mt-16 lg:mt-24">
         <h2 className="text-white font-semibold text-2xl">
           Non-Profit Testimonials
         </h2>
