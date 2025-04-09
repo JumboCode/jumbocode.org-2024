@@ -32,7 +32,7 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <div className="grid grid-cols-[1fr_0.8fr] gap-12">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.8fr] gap-12">
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="bg-white/5 rounded-xl p-6">
@@ -41,7 +41,7 @@ export default function FAQ() {
           </div>
         ))}
       </div>
-      <div className="relative">
+      <div className="relative hidden lg:block">
         <img
           src="/apply/jumbohack-podium.jpg"
           alt="JumboHack podium"

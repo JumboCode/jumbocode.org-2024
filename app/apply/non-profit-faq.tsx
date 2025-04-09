@@ -59,7 +59,7 @@ const AccordionItem = ({
 // Main NonProfitFAQ Component
 export default function NonProfitFAQ() {
   return (
-    <section className="mt-24 pb-20">
+    <section className="mt-24 md:pb-20">
       <h2 className="text-white font-semibold text-2xl">Non-Profit FAQs</h2>
       <div className="mt-8 grid grid-cols-1 md:grid-cols-[1.5fr_1fr] gap-12 md:gap-20">
         <div className="space-y-4">
