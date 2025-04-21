@@ -1,4 +1,4 @@
-import CurrentProjects from "@/components/projects/CurrentProjects";
+import CurrentProjects from "@/components/Projects/CurrentProjects";
 import PastProjects from "@/components/Projects/PastProjects";
 import projects from "./projectCards.json";
 

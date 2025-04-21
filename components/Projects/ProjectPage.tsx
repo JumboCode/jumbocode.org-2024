@@ -10,7 +10,7 @@ export interface ProjectPageProps {
   hero: {
     projectName: string,
     schoolYear: string,
-    image: ImageProps
+    image: ImageProps | null
   },
   overview: {
     logo: ImageProps,

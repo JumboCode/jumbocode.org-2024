@@ -111,9 +111,9 @@ for year, projects in data_2.items():
                 "schoolYear": year if year != current_year else f"Current Project ({year})",
                 
                 "image": {
-                    "src": f"/projects/{year}/{key}/hero.png" if year != current_year else None,
-                    "alt": f"{name} Project Page Image" if year != current_year else None
-                }
+                    "src": f"/projects/{year}/{key}/hero.png",
+                    "alt": f"{name} Project Page Image"
+                } if year != current_year else None,
                 
             },
             "overview": {
