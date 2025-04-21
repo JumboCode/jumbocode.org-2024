@@ -1,4 +1,5 @@
 .vercel
+.next
 
 # build output
 dist/
