@@ -1,4 +1,62 @@
 {
+  "2022-2023": {
+    "potencia": {
+      "name": "Potencia",
+      "img": {
+        "src": "/projects/2022-2023/potencia/potencia.png",
+        "alt": "Potencia Logo"
+      },
+      "description": "Connecting adult immigrants and college students for English lessons in the greater Boston area",
+      "href": "/dev/projects/potencia"
+    }
+  },
+  "2023-2024": {
+    "homestart": {
+      "name": "HomeStart Survey Website",
+      "img": {
+        "src": "/projects/2023-2024/homestart/homestart.png",
+        "alt": "HomeStart Survey Website Logo"
+      },
+      "description": "Centralizing feedback data to allow for easier distribution of  essential housing services and solutions",
+      "href": "/dev/projects/homestart"
+    },
+    "theater-at-first": {
+      "name": "Theatre@First Inventory Management Website",
+      "img": {
+        "src": "/projects/2023-2024/theater-at-first/theater-at-first.png",
+        "alt": "Theatre@First Inventory Management Website Logo"
+      },
+      "description": "An all-in-once inventory management system for designers to check items that are in or out of stock.",
+      "href": "/dev/projects/theater-at-first"
+    },
+    "the-legacy-project": {
+      "name": "Website and Management System for The Legacy Project",
+      "img": {
+        "src": "/projects/2023-2024/the-legacy-project/the-legacy-project.png",
+        "alt": "Website and Management System for The Legacy Project Logo"
+      },
+      "description": "Documenting and preserving the stories of the elder generation.",
+      "href": "/dev/projects/the-legacy-project"
+    },
+    "dress-for-success": {
+      "name": "Dress for Success Inventory Management Websitee",
+      "img": {
+        "src": "/projects/2023-2024/dress-for-success/dress-for-success.png",
+        "alt": "Dress for Success Inventory Management Websitee Logo"
+      },
+      "description": "Tracking and managing professional attire inventory to empower women on their path to economic independence.",
+      "href": "/dev/projects/dress-for-success"
+    },
+    "bi-women-quarterly": {
+      "name": "Bi Women Quarterly Submission Portal Website",
+      "img": {
+        "src": "/projects/2023-2024/bi-women-quarterly/bi-women-quarterly.png",
+        "alt": "Bi Women Quarterly Submission Portal Website Logo"
+      },
+      "description": "Creating a submission portal to streamline writer submissions and simplify management for BWQ staff.",
+      "href": "/dev/projects/bi-women-quarterly"
+    }
+  },
   "2024-2025": {
     "english-at-large": {
       "name": "English at Large",

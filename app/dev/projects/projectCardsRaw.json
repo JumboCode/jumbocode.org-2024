@@ -1,4 +1,32 @@
 {
+  "2022-2023": {
+    "potencia": {
+      "name": "Potencia",
+      "description": "Connecting adult immigrants and college students for English lessons in the greater Boston area"
+    }
+  },
+  "2023-2024": {
+    "homestart": {
+      "name": "HomeStart Survey Website",
+      "description": "Centralizing feedback data to allow for easier distribution of  essential housing services and solutions"
+    },
+    "theater-at-first": {
+      "name": "Theatre@First Inventory Management Website",
+      "description": "An all-in-once inventory management system for designers to check items that are in or out of stock."
+    },
+    "the-legacy-project": {
+      "name": "Website and Management System for The Legacy Project",
+      "description": "Documenting and preserving the stories of the elder generation."
+    },
+    "dress-for-success": {
+      "name": "Dress for Success Inventory Management Websitee",
+      "description": "Tracking and managing professional attire inventory to empower women on their path to economic independence."
+    },
+    "bi-women-quarterly": {
+      "name": "Bi Women Quarterly Submission Portal Website",
+      "description": "Creating a submission portal to streamline writer submissions and simplify management for BWQ staff."
+    }
+  },
   "2024-2025": {
     "english-at-large": {
       "name": "English at Large",
