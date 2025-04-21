@@ -139,7 +139,6 @@ function Card({
   return (
     <section className="@container border border-white/60 rounded-2xl p-6">
       <div className="@lg:grid @lg:grid-cols-2 @lg:gap-16">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={imageSrc}
           alt=""

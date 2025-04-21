@@ -42,7 +42,6 @@ export default function GetInvolved() {
           </div>
         </div>
 
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/jumbohack-austen.jpg"
           alt=""
@@ -51,7 +50,6 @@ export default function GetInvolved() {
       </div>
 
       <div className="mt-20 grid sm:grid-cols-[2fr,3fr] gap-16">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/homestart.png" alt="" className="rounded-2xl" />
 
         <div>
