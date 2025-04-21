@@ -4,7 +4,6 @@ import React from "react"
 import Button from "../button"
 import Hero from "../hero"
 import { ImageProps } from "../ImageCarousel"
-import ImageCollage from "../ImageCollage"
 
 // Layout of a JumboCode project page in JSON format
 export interface ProjectPageProps {
@@ -39,12 +38,12 @@ export default function ProjectPage(props: ProjectPageProps) {
       <Hero
         title={<>{props.hero.projectName}</>}
         subtitle={<>{props.hero.schoolYear}</>}
-        
+
         image={props.hero.image && props.hero.image.src ?
           <Image
             src={props.hero.image.src}
             alt={props.hero.image.alt}
-            width={550}
+            width={650}
             height={400}
           />
           : <></>
@@ -111,10 +110,32 @@ export default function ProjectPage(props: ProjectPageProps) {
         props.finalScreens.length > 0 &&
         <>
           <h3 className={clsx(h3Class, "my-12 md:mt-4")}>Final Screens</h3>
-          <ImageCollage
-            images={props.finalScreens}
-            className="object-top-left"
-          />
+          <div className="grid justify-center md:grid-cols-2 gap-x-7 gap-y-6">
+            <Image
+              src={props.finalScreens[0].src}
+              alt={props.finalScreens[0].alt}
+              width={597}
+              height={450}
+            />
+            <Image
+              src={props.finalScreens[1].src}
+              alt={props.finalScreens[1].alt}
+              width={597}
+              height={450}
+            />
+            <Image
+              src={props.finalScreens[2].src}
+              alt={props.finalScreens[2].alt}
+              width={597}
+              height={450}
+            />
+            <Image
+              src={props.finalScreens[3].src}
+              alt={props.finalScreens[3].alt}
+              width={597}
+              height={450}
+            />
+          </div>
         </>
       }
 

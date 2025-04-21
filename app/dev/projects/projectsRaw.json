@@ -73,8 +73,18 @@
       ]
     },
     "bi-women-quarterly": {
-      "name": "Bi Women Quarterly Submission Portal Website",
-      "description": "Creating a submission portal to streamline writer submissions and simplify management for BWQ staff."
+      "name": "Bi Women Quarterly",
+      "summary": "Bi Women Quarterly features the voices of women with bi+ sexualities (i.e., bi, pan, fluid, and other non-binary sexualities). We see “woman” as a broad category with space for an array of gender identities and expressions. We welcome contributions from bi+ women who identify as trans, non-binary, cis, and beyond.",
+      "project-goal": "A website that would allow users to provide necessary information/ submission while allowing BWQ staff to easily collect submissions without excess work, streamlining the submission process for all parties. BWQ staff would be able to access all submissions from a single place as well as submitters having an interface where they are prompted for information BWQ staff determine. Essentially, this technical solution creates a submission portal for writers.",
+      "leadership": "Austen Money (PM), Shreya Ravi (TL), Jessie Huang (Designer)",
+      "developers": "Vanessa Rose, Allison Zhang, Lydia Chen, Walid Nejmi, Lucien Bao, Alana Sendlakowski, So Hyun Kim, Geneva Cheng, Kevin Yuan, Avery Hanna",
+      "tech-stack": ["react", "nextjs", "mongodb", "typescript", "tailwind"],
+      "final-screens": [
+        "solution-1.png",
+        "solution-2.png",
+        "solution-3.png",
+        "solution-4.png"
+      ]
     }
   },
   "2024-2025": {

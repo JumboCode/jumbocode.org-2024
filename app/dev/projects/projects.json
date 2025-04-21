@@ -434,31 +434,84 @@
   },
   "bi-women-quarterly": {
     "hero": {
-      "projectName": "Bi Women Quarterly Submission Portal Website",
+      "projectName": "Bi Women Quarterly",
       "schoolYear": "2023-2024",
       "image": {
         "src": "/projects/2023-2024/bi-women-quarterly/hero.png",
-        "alt": "Bi Women Quarterly Submission Portal Website Project Page Image"
+        "alt": "Bi Women Quarterly Project Page Image"
       }
     },
     "overview": {
       "logo": {
         "src": "/projects/2023-2024/bi-women-quarterly/logo.png",
-        "alt": "Bi Women Quarterly Submission Portal Website Logo"
+        "alt": "Bi Women Quarterly Logo"
       },
-      "summary": "",
-      "projectGoal": "",
+      "summary": "Bi Women Quarterly features the voices of women with bi+ sexualities (i.e., bi, pan, fluid, and other non-binary sexualities). We see \u201cwoman\u201d as a broad category with space for an array of gender identities and expressions. We welcome contributions from bi+ women who identify as trans, non-binary, cis, and beyond.",
+      "projectGoal": "A website that would allow users to provide necessary information/ submission while allowing BWQ staff to easily collect submissions without excess work, streamlining the submission process for all parties. BWQ staff would be able to access all submissions from a single place as well as submitters having an interface where they are prompted for information BWQ staff determine. Essentially, this technical solution creates a submission portal for writers.",
       "teamMembers": {
-        "leadership": "",
-        "developers": ""
+        "leadership": "Austen Money (PM), Shreya Ravi (TL), Jessie Huang (Designer)",
+        "developers": "Vanessa Rose, Allison Zhang, Lydia Chen, Walid Nejmi, Lucien Bao, Alana Sendlakowski, So Hyun Kim, Geneva Cheng, Kevin Yuan, Avery Hanna"
       },
       "teamPicture": {
         "src": "/projects/2023-2024/bi-women-quarterly/team-photo.png",
-        "alt": "Bi Women Quarterly Submission Portal Website Team Photo"
+        "alt": "Bi Women Quarterly Team Photo"
       }
     },
-    "techStack": [],
-    "finalScreens": []
+    "techStack": [
+      {
+        "name": "React",
+        "logo": {
+          "src": "/projects/tech-stacks/react.png",
+          "alt": "React Logo"
+        }
+      },
+      {
+        "name": "Next.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nextjs.png",
+          "alt": "Nextjs Logo"
+        }
+      },
+      {
+        "name": "MongoDB",
+        "logo": {
+          "src": "/projects/tech-stacks/mongodb.png",
+          "alt": "Mongodb Logo"
+        }
+      },
+      {
+        "name": "TypeScript",
+        "logo": {
+          "src": "/projects/tech-stacks/typescript.png",
+          "alt": "Typescript Logo"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": {
+          "src": "/projects/tech-stacks/tailwind.png",
+          "alt": "Tailwind Logo"
+        }
+      }
+    ],
+    "finalScreens": [
+      {
+        "src": "/projects/2023-2024/bi-women-quarterly/solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2023-2024/bi-women-quarterly/solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2023-2024/bi-women-quarterly/solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2023-2024/bi-women-quarterly/solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
   },
   "english-at-large": {
     "hero": {
