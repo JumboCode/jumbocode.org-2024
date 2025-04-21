@@ -39,13 +39,15 @@ export default function ProjectPage(props: ProjectPageProps) {
       <Hero
         title={<>{props.hero.projectName}</>}
         subtitle={<>{props.hero.schoolYear}</>}
-        image={
+        
+        image={props.hero.image && props.hero.image.src ?
           <Image
             src={props.hero.image.src}
             alt={props.hero.image.alt}
-            width={800}
+            width={400}
             height={400}
           />
+          : <></>
         }
       />
 
@@ -105,12 +107,17 @@ export default function ProjectPage(props: ProjectPageProps) {
           })
         }
       </div>
+      {
+        props.finalScreens.length > 0 &&
+        <>
+          <h3 className={clsx(h3Class, "my-12 md:mt-4")}>Final Screens</h3>
+          <ImageCollage
+            images={props.finalScreens}
+            className="object-top-left"
+          />
+        </>
+      }
 
-      <h3 className={clsx(h3Class, "my-12 md:mt-4")}>Final Screens</h3>
-      <ImageCollage
-        images={props.finalScreens}
-        className="object-top-left"
-      />
 
 
       <div className="flex justify-center mt-28 mb-8">

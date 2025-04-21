@@ -1,8 +1,8 @@
-import { ImageProps } from "@/components/ImageCarousel";
-import ProjectPage, { ProjectPageProps } from "@/components/Projects/ProjectPage";
+import ProjectPage from "@/components/Projects/ProjectPage";
 import { notFound } from "next/navigation";
+import projects from "../projects.json";
 
-
+/*
 const getTechStack = ((displayName: string, name: string): { name: string; logo: ImageProps } => {
   return {
     name: displayName,
@@ -72,6 +72,8 @@ const projects: Record<string, ProjectPageProps> = {
   },
 
 };
+*/
+
 
 interface ProjectShowcasePageProps {
   params: {

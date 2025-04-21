@@ -1,0 +1,821 @@
+{
+  "english-at-large": {
+    "hero": {
+      "projectName": "English at Large",
+      "schoolYear": "Current Project (2024-2025)",
+      "image": {
+        "alt": "English at Large Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2024-2025/english-at-large/logo.png",
+        "alt": "English at Large Logo"
+      },
+      "summary": "English At Large is a non-profit organization dedicated to providing English language and American culture learning services for adult immigrants across Greater Boston.",
+      "projectGoal": "Currently, tutors face challenges when searching for resources to use with their tutees, relying on a physical library and a shared Google Drive folder. This process often takes significant time, resulting in a lengthy trial-and-error period to find materials that best fit their tutees' needs. Additionally, as the collection of books and resources continues to grow, admins are seeking a more reliable and scalable solution for inventory management.",
+      "teamMembers": {
+        "leadership": "Jennifer Luo (PM), Clarence Yeh (TL), Fa Taepaisitphongse (Designer)",
+        "developers": "Ava Sim, Gaby Dozortsev, Hannah Wang, Jet Yotsuuye, Kabir Goklani, Keiji Numata, Natalie Phua, Owen Prendergast, Sela Alonso, Rakshi Rangaprasad, Javier Laveaga"
+      },
+      "teamPicture": {
+        "src": "/projects/2024-2025/english-at-large/team-photo.png",
+        "alt": "English at Large Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "JavaScript",
+        "logo": {
+          "src": "/projects/tech-stacks/javascript.png",
+          "alt": "Javascript Logo"
+        }
+      },
+      {
+        "name": "React",
+        "logo": {
+          "src": "/projects/tech-stacks/react.png",
+          "alt": "React Logo"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": {
+          "src": "/projects/tech-stacks/tailwind.png",
+          "alt": "Tailwind Logo"
+        }
+      },
+      {
+        "name": "MongoDB",
+        "logo": {
+          "src": "/projects/tech-stacks/mongodb.png",
+          "alt": "Mongodb Logo"
+        }
+      },
+      {
+        "name": "Prisma",
+        "logo": {
+          "src": "/projects/tech-stacks/prisma.png",
+          "alt": "Prisma Logo"
+        }
+      },
+      {
+        "name": "Next.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nextjs.png",
+          "alt": "Nextjs Logo"
+        }
+      }
+    ],
+    "finalScreens": []
+  },
+  "bread-and-roses": {
+    "hero": {
+      "projectName": "Bread & Roses",
+      "schoolYear": "Current Project (2024-2025)",
+      "image": {
+        "alt": "Bread & Roses Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2024-2025/bread-and-roses/logo.png",
+        "alt": "Bread & Roses Logo"
+      },
+      "summary": "Bread & Roses\u2019 mission is to address the core necessities of the Merrimack Valley\u2019s community members with a holistic and welcoming approach focusing on food insecurity and promoting self-empowerment.",
+      "projectGoal": "Bread & Roses\u2019 admin currently manually schedules volunteering events through a form on the website and in person talks. Also, it\u2019s difficult to mass communicate to all their active members in case of any schedule/shift changes + announcements. Our goal is to create a centralized system that facilitates the event scheduling process for both volunteers and admins, as well as allowing admins to mass communicate with volunteers on any schedule changes.",
+      "teamMembers": {
+        "leadership": "Johnny Tan (PM), Won Kim (TL), An Tran (Designer)",
+        "developers": "Tomas Maranga, Hanah Kim, Justin Paik, Tammi Tran, Jason Miller, Manuel Pena, Conrad Hsu, Vina Le, Amelia Bermack, Katie Yang, Jonah Pflaster"
+      },
+      "teamPicture": {
+        "src": "/projects/2024-2025/bread-and-roses/team-photo.png",
+        "alt": "Bread & Roses Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "Next.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nextjs.png",
+          "alt": "Nextjs Logo"
+        }
+      },
+      {
+        "name": "NextAuth",
+        "logo": {
+          "src": "/projects/tech-stacks/nextauth.png",
+          "alt": "Nextauth Logo"
+        }
+      },
+      {
+        "name": "Nodemailer",
+        "logo": {
+          "src": "/projects/tech-stacks/nodemailer.png",
+          "alt": "Nodemailer Logo"
+        }
+      },
+      {
+        "name": "Prisma",
+        "logo": {
+          "src": "/projects/tech-stacks/prisma.png",
+          "alt": "Prisma Logo"
+        }
+      },
+      {
+        "name": "MongoDB",
+        "logo": {
+          "src": "/projects/tech-stacks/mongodb.png",
+          "alt": "Mongodb Logo"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": {
+          "src": "/projects/tech-stacks/tailwind.png",
+          "alt": "Tailwind Logo"
+        }
+      }
+    ],
+    "finalScreens": []
+  },
+  "leonard-carmichael-society": {
+    "hero": {
+      "projectName": "Leonard Carmichael Society",
+      "schoolYear": "Current Project (2024-2025)",
+      "image": {
+        "alt": "Leonard Carmichael Society Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2024-2025/leonard-carmichael-society/logo.png",
+        "alt": "Leonard Carmichael Society Logo"
+      },
+      "summary": "LCS Tutoring is a community service organization at Tufts devoted to pairing Jumbos with K-12 students in the Medford/Somerville areas for free tutoring.",
+      "projectGoal": "Our goal is to create a web-app that collects tutor-tutee preferences and automates the matching process to reduce administrative efforts.",
+      "teamMembers": {
+        "leadership": "Dilanur Bayraktar (PM), Brandon Dionisio (TL), Moya Techakalayatum (Designer)",
+        "developers": "Anne Wu, Aray Arigngazina, Caitlyn Wei, Charlie Fitzpatrick, Hunter Niimi, Rachel Snyder, Rainier Hardjanto, Seth Morton, Sheza Chaudhry, Valentina Henao"
+      },
+      "teamPicture": {
+        "src": "/projects/2024-2025/leonard-carmichael-society/team-photo.png",
+        "alt": "Leonard Carmichael Society Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "logo": {
+          "src": "/projects/tech-stacks/typescript.png",
+          "alt": "Typescript Logo"
+        }
+      },
+      {
+        "name": "React",
+        "logo": {
+          "src": "/projects/tech-stacks/react.png",
+          "alt": "React Logo"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": {
+          "src": "/projects/tech-stacks/tailwind.png",
+          "alt": "Tailwind Logo"
+        }
+      },
+      {
+        "name": "Vite",
+        "logo": {
+          "src": "/projects/tech-stacks/vite.png",
+          "alt": "Vite Logo"
+        }
+      },
+      {
+        "name": "PostgreSQL",
+        "logo": {
+          "src": "/projects/tech-stacks/postgresql.png",
+          "alt": "Postgresql Logo"
+        }
+      },
+      {
+        "name": "Drizzle",
+        "logo": {
+          "src": "/projects/tech-stacks/drizzle.png",
+          "alt": "Drizzle Logo"
+        }
+      }
+    ],
+    "finalScreens": []
+  },
+  "a2empowerment": {
+    "hero": {
+      "projectName": "A2Empowerment",
+      "schoolYear": "Current Project (2024-2025)",
+      "image": {
+        "alt": "A2Empowerment Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2024-2025/a2empowerment/logo.png",
+        "alt": "A2Empowerment Logo"
+      },
+      "summary": "A2Empowerment is a nonprofit that empowers women through education by working with Cameroonian Partners to provide academic scholarships and mentorship to students.\u00a0",
+      "projectGoal": "A2Empowerment needs a streamlined process to receive student feedback and documents from their partners in Cameroon. Currently, they use emails and paper to complete this process. Our goal is to create a web-app that collects student and mentor survey feedback as well as any receipts and report cards that need to be collected for processing.",
+      "teamMembers": {
+        "leadership": "Rofeeah Ayeni (PM), Will Soylemez (TL), Jessie Huang (Designer)",
+        "developers": "Wendan Jiang, Jessie Katz, Owen Thomas, Yodahie Ermias, Gabriel Klaris, Madison Johnson, Helena Fu, Sara AbuHamra, Jasmine Schaber, Oluwaponmile(Wesley) Fafowora, Fadhili Mboya"
+      },
+      "teamPicture": {
+        "src": "/projects/2024-2025/a2empowerment/team-photo.png",
+        "alt": "A2Empowerment Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "React",
+        "logo": {
+          "src": "/projects/tech-stacks/react.png",
+          "alt": "React Logo"
+        }
+      },
+      {
+        "name": "Vite",
+        "logo": {
+          "src": "/projects/tech-stacks/vite.png",
+          "alt": "Vite Logo"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": {
+          "src": "/projects/tech-stacks/tailwind.png",
+          "alt": "Tailwind Logo"
+        }
+      },
+      {
+        "name": "MongoDB",
+        "logo": {
+          "src": "/projects/tech-stacks/mongodb.png",
+          "alt": "Mongodb Logo"
+        }
+      },
+      {
+        "name": "Node.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nodejs.png",
+          "alt": "Nodejs Logo"
+        }
+      },
+      {
+        "name": "Drizzle",
+        "logo": {
+          "src": "/projects/tech-stacks/drizzle.png",
+          "alt": "Drizzle Logo"
+        }
+      }
+    ],
+    "finalScreens": []
+  },
+  "village-food-hub": {
+    "hero": {
+      "projectName": "Village Food Hub",
+      "schoolYear": "Current Project (2024-2025)",
+      "image": {
+        "alt": "Village Food Hub Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2024-2025/village-food-hub/logo.png",
+        "alt": "Village Food Hub Logo"
+      },
+      "summary": "Village Food Hub is a non-profit food pantry located in Andover, MA that increases access to healthy, nutritious food to create a more equitable food system.",
+      "projectGoal": "Currently, the pantry has no system to track its food inventory or to record information about the individuals who donate or receive food, which is key for grant applications. Our goal is to create a web application that keeps track of Village Food Hub\u2019s overall pantry inventory and collects demographics of the food pantry customers.",
+      "teamMembers": {
+        "leadership": "Idil Kolabas (PM), Jiyoon Choi (TL), Arcadia Ohnemus (Designer)",
+        "developers": "Charlie Koenig, Zoya Amrit, Ella Hou, Sofia Alvazzi, Daniel Jakab, Vanessa Rose, Tanisha Laud, Amanda Wu, Alex Violet, Emily Yuan "
+      },
+      "teamPicture": {
+        "src": "/projects/2024-2025/village-food-hub/team-photo.png",
+        "alt": "Village Food Hub Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "TypeScript",
+        "logo": {
+          "src": "/projects/tech-stacks/typescript.png",
+          "alt": "Typescript Logo"
+        }
+      },
+      {
+        "name": "React",
+        "logo": {
+          "src": "/projects/tech-stacks/react.png",
+          "alt": "React Logo"
+        }
+      },
+      {
+        "name": "TypeScript",
+        "logo": {
+          "src": "/projects/tech-stacks/typescript.png",
+          "alt": "Typescript Logo"
+        }
+      },
+      {
+        "name": "PostgreSQL",
+        "logo": {
+          "src": "/projects/tech-stacks/postgresql.png",
+          "alt": "Postgresql Logo"
+        }
+      },
+      {
+        "name": "Prisma",
+        "logo": {
+          "src": "/projects/tech-stacks/prisma.png",
+          "alt": "Prisma Logo"
+        }
+      },
+      {
+        "name": "Next.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nextjs.png",
+          "alt": "Nextjs Logo"
+        }
+      }
+    ],
+    "finalScreens": []
+  },
+  "somerville-museum": {
+    "hero": {
+      "projectName": "Somerville Museum",
+      "schoolYear": "Current Project (2024-2025)",
+      "image": {
+        "alt": "Somerville Museum Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2024-2025/somerville-museum/logo.png",
+        "alt": "Somerville Museum Logo"
+      },
+      "summary": "The Somerville Museum is a local cultural institution that serves to educate and preserve the historical, artistical, and musical significance of the area.",
+      "projectGoal": "Create a web application that allows Somerville Museum to easily keep track of inventory for historical clothing. Display items, which can be searched, sorted, and filtered.",
+      "teamMembers": {
+        "leadership": "Holden Kittelberger (PM), Zachary White (TL), Hannah Jiang (Designer)",
+        "developers": "Daniel Glorioso, Shayne Sidman, Arietta Goshtasby, Peter Morganelli, Elisa Yu, Elias Swartz, Massimo Bottari, William Goldman"
+      },
+      "teamPicture": {
+        "src": "/projects/2024-2025/somerville-museum/team-photo.png",
+        "alt": "Somerville Museum Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "React",
+        "logo": {
+          "src": "/projects/tech-stacks/react.png",
+          "alt": "React Logo"
+        }
+      },
+      {
+        "name": "PostgreSQL",
+        "logo": {
+          "src": "/projects/tech-stacks/postgresql.png",
+          "alt": "Postgresql Logo"
+        }
+      },
+      {
+        "name": "Node.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nodejs.png",
+          "alt": "Nodejs Logo"
+        }
+      },
+      {
+        "name": "Neon",
+        "logo": {
+          "src": "/projects/tech-stacks/neon.png",
+          "alt": "Neon Logo"
+        }
+      },
+      {
+        "name": "Next.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nextjs.png",
+          "alt": "Nextjs Logo"
+        }
+      }
+    ],
+    "finalScreens": []
+  },
+  "new-england-innocence-project": {
+    "hero": {
+      "projectName": "New England Innocence Project",
+      "schoolYear": "Current Project (2024-2025)",
+      "image": {
+        "alt": "New England Innocence Project Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2024-2025/new-england-innocence-project/logo.png",
+        "alt": "New England Innocence Project Logo"
+      },
+      "summary": "The New England Innocence Project works to correct and prevent wrongful convictions and ensure justice within the criminal legal system for innocent people throughout New England who are imprisoned for a crime they did not commit. They provide legal and support services for exonerees as well as education and advocacy support for reforms.",
+      "projectGoal": "This project is to create an exoneree database web application that allows NEIP employees to easily access, store, and analyze client profiles and information, which will help them fight for more legislation rather than just relying on \u201cknowing it\u201d.",
+      "teamMembers": {
+        "leadership": "Sarah Svahn (PM), Sierra Small (TL), Lizzie Pimentel (Designer)",
+        "developers": "Kevin Aka, Henri Comer, Leann Dinh, Mallory Ewing, Eleanor Harty, Brandon Huang, Nelson Huang, Dhruvii Mehta, M\u00e4rten Tropp, Kelly Tsidji"
+      },
+      "teamPicture": {
+        "src": "/projects/2024-2025/new-england-innocence-project/team-photo.png",
+        "alt": "New England Innocence Project Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "Clerk",
+        "logo": {
+          "src": "/projects/tech-stacks/clerk.png",
+          "alt": "Clerk Logo"
+        }
+      },
+      {
+        "name": "React",
+        "logo": {
+          "src": "/projects/tech-stacks/react.png",
+          "alt": "React Logo"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": {
+          "src": "/projects/tech-stacks/tailwind.png",
+          "alt": "Tailwind Logo"
+        }
+      },
+      {
+        "name": "Prisma",
+        "logo": {
+          "src": "/projects/tech-stacks/prisma.png",
+          "alt": "Prisma Logo"
+        }
+      },
+      {
+        "name": "PostgreSQL",
+        "logo": {
+          "src": "/projects/tech-stacks/postgresql.png",
+          "alt": "Postgresql Logo"
+        }
+      },
+      {
+        "name": "Next.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nextjs.png",
+          "alt": "Nextjs Logo"
+        }
+      },
+      {
+        "name": "Neon",
+        "logo": {
+          "src": "/projects/tech-stacks/neon.png",
+          "alt": "Neon Logo"
+        }
+      },
+      {
+        "name": "Node.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nodejs.png",
+          "alt": "Nodejs Logo"
+        }
+      }
+    ],
+    "finalScreens": []
+  },
+  "lgbtq-senior-housing": {
+    "hero": {
+      "projectName": "LGBTQ Senior Housing",
+      "schoolYear": "Current Project (2024-2025)",
+      "image": {
+        "alt": "LGBTQ Senior Housing Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2024-2025/lgbtq-senior-housing/logo.png",
+        "alt": "LGBTQ Senior Housing Logo"
+      },
+      "summary": "LGBTQ Senior Housing facilitates access to welcoming, safe and affordable housing for low-income LGBTQ seniors, including through a formal role in the development of such housing; to define onsite housing services and programming that addresses the needs of LGBTQ seniors; and to support community space to serve seniors in the Greater Boston community.",
+      "projectGoal": "To develop a scheduling web app with a public event calendar that allows residents and community members to create, sign up for events, request reservations, and receive updates, enabling LGBTQ Senior Housing to communicate efficiently.",
+      "teamMembers": {
+        "leadership": "Charles Mitchell (PM), Haijun Si (TL), Phuong Nguyen (Designer)",
+        "developers": "Andrea Cabo, Andres Ruvalcaba, Ash Sze, Benson Jiang, Cliodhna Reidy, Dylan Perkins, Hailey Baughman, Harrison Chang, Maggie Yan, May Neelon"
+      },
+      "teamPicture": {
+        "src": "/projects/2024-2025/lgbtq-senior-housing/team-photo.png",
+        "alt": "LGBTQ Senior Housing Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "Neon",
+        "logo": {
+          "src": "/projects/tech-stacks/neon.png",
+          "alt": "Neon Logo"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": {
+          "src": "/projects/tech-stacks/tailwind.png",
+          "alt": "Tailwind Logo"
+        }
+      },
+      {
+        "name": "Next.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nextjs.png",
+          "alt": "Nextjs Logo"
+        }
+      },
+      {
+        "name": "Clerk",
+        "logo": {
+          "src": "/projects/tech-stacks/clerk.png",
+          "alt": "Clerk Logo"
+        }
+      },
+      {
+        "name": "React",
+        "logo": {
+          "src": "/projects/tech-stacks/react.png",
+          "alt": "React Logo"
+        }
+      }
+    ],
+    "finalScreens": []
+  },
+  "west-medford-community-center": {
+    "hero": {
+      "projectName": "West Medford Community Center",
+      "schoolYear": "Current Project (2024-2025)",
+      "image": {
+        "alt": "West Medford Community Center Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2024-2025/west-medford-community-center/logo.png",
+        "alt": "West Medford Community Center Logo"
+      },
+      "summary": "The WMMC connects the diverse people of West Medford and the Mystic River Valley through social, educational, cultural, health and recreational activities",
+      "projectGoal": "Our goal is to streamline the newsletter creation and publication process by creating a centralized web interface, which will allow volunteers to independently create and edit newsletters using templates, while administrators will finalize and publish the content. We are also creating a newsletter viewer page to provide easy access to all past newsletters.",
+      "teamMembers": {
+        "leadership": "Daniel Graham (Co-PM), Neya Krishnan (Co-PM), Winston Hsiao (Co-TL), Alyssa Williams (Co-TL), Andy Xu (Designer)",
+        "developers": "Alyssa Williams, Tika Capon, Agatha Yang, Ashley Huang, Johann Zhang, Kalyan Patel, Katerine Deane, Lisa Dang, Allen Wang, Sophia Zhou, Ali Macun"
+      },
+      "teamPicture": {
+        "src": "/projects/2024-2025/west-medford-community-center/team-photo.png",
+        "alt": "West Medford Community Center Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "React",
+        "logo": {
+          "src": "/projects/tech-stacks/react.png",
+          "alt": "React Logo"
+        }
+      },
+      {
+        "name": "TypeScript",
+        "logo": {
+          "src": "/projects/tech-stacks/typescript.png",
+          "alt": "Typescript Logo"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": {
+          "src": "/projects/tech-stacks/tailwind.png",
+          "alt": "Tailwind Logo"
+        }
+      },
+      {
+        "name": "Next.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nextjs.png",
+          "alt": "Nextjs Logo"
+        }
+      },
+      {
+        "name": "MongoDB",
+        "logo": {
+          "src": "/projects/tech-stacks/mongodb.png",
+          "alt": "Mongodb Logo"
+        }
+      },
+      {
+        "name": "Prisma",
+        "logo": {
+          "src": "/projects/tech-stacks/prisma.png",
+          "alt": "Prisma Logo"
+        }
+      }
+    ],
+    "finalScreens": []
+  },
+  "dillar-academy": {
+    "hero": {
+      "projectName": "Dillar Academy",
+      "schoolYear": "Current Project (2024-2025)",
+      "image": {
+        "alt": "Dillar Academy Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2024-2025/dillar-academy/logo.png",
+        "alt": "Dillar Academy Logo"
+      },
+      "summary": "Dillar Academy helps Uyghur people around the world learn English without cost. With the help and commitment of their volunteer teachers, their goal is to bridge the educational disparity gap for Uyghurs worldwide.",
+      "projectGoal": "Our goal is to create a portal website that helps students discover and enroll in English classes, as well as allows admin to easily add and remove new classes. Currently, Dillar Academy operates from a free Wix site, so they are looking for a long-term alternative that can help them manage an increasing amount of students.",
+      "teamMembers": {
+        "leadership": "Lillian Tran (PM), Megan Yi (TL), Sydnie Chen (Designer)",
+        "developers": "Aryaa Modi, Claire Lee, Donatello Sassaroli, Fahim Rashid, Frank Li, John Puka, Madeline Lei, Spencer Anderson, Toki Zhumadil, Tony Nguyen, Yi Gu "
+      },
+      "teamPicture": {
+        "src": "/projects/2024-2025/dillar-academy/team-photo.png",
+        "alt": "Dillar Academy Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "MongoDB",
+        "logo": {
+          "src": "/projects/tech-stacks/mongodb.png",
+          "alt": "Mongodb Logo"
+        }
+      },
+      {
+        "name": "React",
+        "logo": {
+          "src": "/projects/tech-stacks/react.png",
+          "alt": "React Logo"
+        }
+      },
+      {
+        "name": "Vite",
+        "logo": {
+          "src": "/projects/tech-stacks/vite.png",
+          "alt": "Vite Logo"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": {
+          "src": "/projects/tech-stacks/tailwind.png",
+          "alt": "Tailwind Logo"
+        }
+      }
+    ],
+    "finalScreens": []
+  },
+  "the-wily-network": {
+    "hero": {
+      "projectName": "The Wily Network",
+      "schoolYear": "Current Project (2024-2025)",
+      "image": {
+        "alt": "The Wily Network Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2024-2025/the-wily-network/logo.png",
+        "alt": "The Wily Network Logo"
+      },
+      "summary": "The Wily Network supports Boston-area students who are navigating college without emotional or financial support from their families. They offer clinical coaching, financial resources, community building, and networking in addition to the gift giving program our product focuses on.",
+      "projectGoal": "It is difficult to organize giftgiving for scholars\u2019 birthdays and holidays as managed via Google form and email.",
+      "teamMembers": {
+        "leadership": "Avery Hanna (PM), Alana Sendlakowski (TL), Shannon Chen (Designer)",
+        "developers": "Kenny Zheng, Alekha Rao, Oliver Bello, Chiara Martello, Lawer Nyako, Kerem Ozturk, Allison Zhang, Jonathan Chung, Khrystyna Blyshchak "
+      },
+      "teamPicture": {
+        "src": "/projects/2024-2025/the-wily-network/team-photo.png",
+        "alt": "The Wily Network Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "JavaScript",
+        "logo": {
+          "src": "/projects/tech-stacks/javascript.png",
+          "alt": "Javascript Logo"
+        }
+      },
+      {
+        "name": "React",
+        "logo": {
+          "src": "/projects/tech-stacks/react.png",
+          "alt": "React Logo"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": {
+          "src": "/projects/tech-stacks/tailwind.png",
+          "alt": "Tailwind Logo"
+        }
+      },
+      {
+        "name": "MongoDB",
+        "logo": {
+          "src": "/projects/tech-stacks/mongodb.png",
+          "alt": "Mongodb Logo"
+        }
+      },
+      {
+        "name": "Next.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nextjs.png",
+          "alt": "Nextjs Logo"
+        }
+      }
+    ],
+    "finalScreens": []
+  },
+  "office-of-university-counsel": {
+    "hero": {
+      "projectName": "Office of University Counsel",
+      "schoolYear": "Current Project (2024-2025)",
+      "image": {
+        "alt": "Office of University Counsel Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2024-2025/office-of-university-counsel/logo.png",
+        "alt": "Office of University Counsel Logo"
+      },
+      "summary": "The Office of University Counsel (OUC) provides legal guidance across Tufts University, handling matters such as university operations, litigation, student affairs, intellectual property, employment, and regulatory compliance. Led by Senior Vice President and General Counsel Mary Jeka, OUC works to minimize legal risks, manage litigation, and ensure compliance while delivering reliable and professional legal services.",
+      "projectGoal": "We are developing a streamlined database to help Tufts' Office of University Counsel efficiently access and filter information from the Physician Payments Sunshine Act. This tool will consolidate financial data related to medical, dental, and veterinary school employees, making it easier to review and manage compliance with transparency regulations.",
+      "teamMembers": {
+        "leadership": "Rebecca Dinsmore (PM), Sachin Zachariah (TL), Livia Bednarz (Designer)",
+        "developers": "Andrew Bacigalupi, Jordan Pittignano, Josh Lamothe, Keegan Carnell, Liam Smith, Lindsay Ulrey, Zach Klein, Sandra Alnamous"
+      },
+      "teamPicture": {
+        "src": "/projects/2024-2025/office-of-university-counsel/team-photo.png",
+        "alt": "Office of University Counsel Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "JavaScript",
+        "logo": {
+          "src": "/projects/tech-stacks/javascript.png",
+          "alt": "Javascript Logo"
+        }
+      },
+      {
+        "name": "Python",
+        "logo": {
+          "src": "/projects/tech-stacks/python.png",
+          "alt": "Python Logo"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": {
+          "src": "/projects/tech-stacks/tailwind.png",
+          "alt": "Tailwind Logo"
+        }
+      },
+      {
+        "name": "PostgreSQL",
+        "logo": {
+          "src": "/projects/tech-stacks/postgresql.png",
+          "alt": "Postgresql Logo"
+        }
+      },
+      {
+        "name": "Neon",
+        "logo": {
+          "src": "/projects/tech-stacks/neon.png",
+          "alt": "Neon Logo"
+        }
+      },
+      {
+        "name": "Next.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nextjs.png",
+          "alt": "Nextjs Logo"
+        }
+      }
+    ],
+    "finalScreens": []
+  }
+}
