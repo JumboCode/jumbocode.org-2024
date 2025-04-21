@@ -36,7 +36,7 @@ for year, projects in data.items():
                 "alt": f"{display_name} Logo"
             },
             "description": description,
-            "href": f"/dev/projects/{key}"
+            "href": f"/projects/{key}"
         }
 
 with open(output_file, "w", encoding="utf-8") as f:

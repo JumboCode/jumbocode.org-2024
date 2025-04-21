@@ -44,7 +44,7 @@ export default function PastProjects(props: PastProjectsProps) {
                 name={project.name}
                 img={project.img}
                 description={project.description}
-                href={`/dev/projects/${projectId}`}
+                href={`/projects/${projectId}`}
               />
             </div>
 

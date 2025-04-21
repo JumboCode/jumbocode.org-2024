@@ -18,7 +18,7 @@ interface CurrentProjectsProps {
 export default function CurrentProjects(props: CurrentProjectsProps) {
   return (
     <>
-      <h2 className="text-white text-center md:text-left font-semibold text-4xl mb-12 mt-24">2024-25 Projects</h2>
+      <h2 className="text-white text-center md:text-left font-semibold text-4xl mb-12">2024-25 Projects</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
         {Object.keys(props.projects).map((key, idx) => {
           const project = props.projects[key];
