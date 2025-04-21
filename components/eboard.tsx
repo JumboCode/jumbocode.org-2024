@@ -25,7 +25,7 @@ const daBoard = [
 
 const eboard: React.FC = () => {
     return (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 mb-12 md:mb-40">
             <div className="flex flex-col md:mb-4 lg:mb-8">
                 <h2 className="text-2xl md:text-3xl lg:text-5xl text-white font-bold">Executive Board 2024-2025</h2>
             </div>

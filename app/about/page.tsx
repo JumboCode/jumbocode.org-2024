@@ -1,3 +1,4 @@
+import Alumni from "@/components/alumni";
 import Eboard from "@/components/eboard";
 import Hero from "@/components/hero";
 import OurPartnerships from "@/components/OurPartnerships";
@@ -17,6 +18,7 @@ export default function AboutPage() {
       />
       <OurPartnerships />
       <Eboard />
+      <Alumni />
     </div>
   );
 }
