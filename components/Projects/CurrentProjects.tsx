@@ -10,7 +10,9 @@ export interface ProjectProps {
 }
 
 interface CurrentProjectsProps {
-  projects: Array<ProjectProps>
+  projects: {
+    [key: string]: ProjectProps
+  }
 }
 
 export default function CurrentProjects(props: CurrentProjectsProps) {
@@ -18,11 +20,12 @@ export default function CurrentProjects(props: CurrentProjectsProps) {
     <>
       <h2 className="text-white text-center md:text-left font-semibold text-4xl mb-12 mt-24">2024-25 Projects</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
-        {
-          props.projects.map((project, idx) =>
+        {Object.keys(props.projects).map((key, idx) => {
+          const project = props.projects[key];
+          return (
             <CurrentProjectCard key={idx} {...project} />
           )
-        }
+        })}
       </div>
     </>
   )
@@ -47,6 +50,7 @@ function CurrentProjectCard(props: ProjectProps) {
             href={props.href}
             variant="secondary"
           />
+          {props.img.src}
         </div>
       </div>
     </>

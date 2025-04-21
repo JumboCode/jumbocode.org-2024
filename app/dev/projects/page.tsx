@@ -1,5 +1,7 @@
 import CurrentProjects from "@/components/Projects/CurrentProjects";
+import projects from "./projectCards.json";
 
+/*
 const projects = [...Array(4)].map((_, idx) => ({
     name: `HomeStart v${idx}`,
     img: {
@@ -21,11 +23,14 @@ projects.push(
     href: "/dev/projects/homestart",
   }
 );
-
+*/
 export default function MainProjectPage() {
+  const currentProjects = projects["2024-2025"];
   return (
     <>
-      <CurrentProjects projects={projects} />
+
+      {<CurrentProjects projects={currentProjects} />}
     </>
   )
 }
+
