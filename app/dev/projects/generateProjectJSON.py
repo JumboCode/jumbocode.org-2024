@@ -65,7 +65,8 @@ tech_stack_map = {
     "nodemailer": "Nodemailer",
     "nextauth": "NextAuth",
     "drizzle": "Drizzle",
-    "mongodb": "MongoDB"
+    "mongodb": "MongoDB",
+    "bun": "Bun"
 }
 
 def tech_stack_obj(item):
@@ -110,8 +111,8 @@ for year, projects in data_2.items():
                 "schoolYear": year if year != current_year else f"Current Project ({year})",
                 
                 "image": {
-                    #"src": f"/projects/{year}/{key}/hero.png",
-                    "alt": f"{name} Project Page Image"
+                    "src": f"/projects/{year}/{key}/hero.png" if year != current_year else None,
+                    "alt": f"{name} Project Page Image" if year != current_year else None
                 }
                 
             },

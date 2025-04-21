@@ -1,10 +1,472 @@
 {
+  "potencia": {
+    "hero": {
+      "projectName": "Potencia",
+      "schoolYear": "2022-2023",
+      "image": {
+        "src": "/projects/2022-2023/potencia/hero.png",
+        "alt": "Potencia Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2022-2023/potencia/logo.png",
+        "alt": "Potencia Logo"
+      },
+      "summary": "Potencia is a non-profit organization dedicated to bridging the gap between college students and adult immigrants in the Greater Boston area. By facilitating individual and group tutoring sessions, Potencia helps learners develop English language skills while fostering an understanding of American culture.",
+      "projectGoal": "The Potencia Mobile Application is complete with scheduling features and payment support, allowing tutees to purchase and schedule classes directly on the app. Tutors can also manage their classes, directly chat with tutees, and track their teaching hours on the app, streamlining scheduling and communication between tutors and tutees.",
+      "teamMembers": {
+        "leadership": "Silvia Wang (PM), Ellis Brown (TL), Fa Taepaisitphongse (Designer)",
+        "developers": "Alex Jeon, Andrew Nuzzulo, Anne Li, Cecelia Crumlish, Clark Bolin, Erin Sarlak, Karen Bei, Olivia Byun, Roger Burtonpatel, Sarah Svahn, Stephanie Xu, Won Kim"
+      },
+      "teamPicture": {
+        "src": "/projects/2022-2023/potencia/team-photo.png",
+        "alt": "Potencia Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "JavaScript",
+        "logo": {
+          "src": "/projects/tech-stacks/javascript.png",
+          "alt": "Javascript Logo"
+        }
+      },
+      {
+        "name": "React",
+        "logo": {
+          "src": "/projects/tech-stacks/react.png",
+          "alt": "React Logo"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": {
+          "src": "/projects/tech-stacks/tailwind.png",
+          "alt": "Tailwind Logo"
+        }
+      },
+      {
+        "name": "MongoDB",
+        "logo": {
+          "src": "/projects/tech-stacks/mongodb.png",
+          "alt": "Mongodb Logo"
+        }
+      },
+      {
+        "name": "Prisma",
+        "logo": {
+          "src": "/projects/tech-stacks/prisma.png",
+          "alt": "Prisma Logo"
+        }
+      },
+      {
+        "name": "Next.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nextjs.png",
+          "alt": "Nextjs Logo"
+        }
+      }
+    ],
+    "finalScreens": [
+      {
+        "src": "/projects/2022-2023/potencia/final-solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2022-2023/potencia/final-solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2022-2023/potencia/final-solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2022-2023/potencia/final-solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
+  },
+  "homestart": {
+    "hero": {
+      "projectName": "HomeStart",
+      "schoolYear": "2023-2024",
+      "image": {
+        "src": "/projects/2023-2024/homestart/hero.png",
+        "alt": "HomeStart Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2023-2024/homestart/logo.png",
+        "alt": "HomeStart Logo"
+      },
+      "summary": "HomeStart is a Boston non-profit that provides services for people who are currently experiencing homelessness, have recently moved from homelessness to housing, or are at risk of becoming homeless through eviction.",
+      "projectGoal": "Create a web-app for a phone or tablet platform that allows clients to answer surveys and admin to manage and analyze the data.",
+      "teamMembers": {
+        "leadership": "Rebecca Dinsmore (PM), Rusny Rahman (TL), Wilson Skinner (Designer)",
+        "developers": "Rindha Reddy, Andersen Prince, Eddy He, Ranvir Malik, Kerwin Teh, Jennifer Luo, Jack Flores, Ashley Jeon, Logan Yuan, Rohan Valia"
+      },
+      "teamPicture": {
+        "src": "/projects/2023-2024/homestart/team-photo.png",
+        "alt": "HomeStart Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "JavaScript",
+        "logo": {
+          "src": "/projects/tech-stacks/javascript.png",
+          "alt": "Javascript Logo"
+        }
+      },
+      {
+        "name": "React",
+        "logo": {
+          "src": "/projects/tech-stacks/react.png",
+          "alt": "React Logo"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": {
+          "src": "/projects/tech-stacks/tailwind.png",
+          "alt": "Tailwind Logo"
+        }
+      },
+      {
+        "name": "MongoDB",
+        "logo": {
+          "src": "/projects/tech-stacks/mongodb.png",
+          "alt": "Mongodb Logo"
+        }
+      },
+      {
+        "name": "Prisma",
+        "logo": {
+          "src": "/projects/tech-stacks/prisma.png",
+          "alt": "Prisma Logo"
+        }
+      },
+      {
+        "name": "Next.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nextjs.png",
+          "alt": "Nextjs Logo"
+        }
+      }
+    ],
+    "finalScreens": [
+      {
+        "src": "/projects/2023-2024/homestart/survey_img1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2023-2024/homestart/survey_img2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2023-2024/homestart/survey_img3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2023-2024/homestart/admin_data_overview.png",
+        "alt": "[TBD]"
+      }
+    ]
+  },
+  "theater-at-first": {
+    "hero": {
+      "projectName": "Theater@First",
+      "schoolYear": "2023-2024",
+      "image": {
+        "src": "/projects/2023-2024/theater-at-first/hero.png",
+        "alt": "Theater@First Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2023-2024/theater-at-first/logo.png",
+        "alt": "Theater@First Logo"
+      },
+      "summary": "Theatre@First is an all-volunteer community theatre based in Somerville, MA. Founded in 2003, we fill a vital niche in the vibrant Davis Square arts scene. We draw upon the talents and support of individuals and organizations throughout the community to provide opportunities for our participants and audiences to experience quality live theatre in a variety of local venues.",
+      "projectGoal": "Theatre@First inevitably collects large quantities of props, furniture, costumes, and other materials in their inventory. As this happens, it can be difficult for them to keep track of what they own, where it is, and what condition it is in. We have built an inventory system for Theatre@First in Somerville, MA that allows them to keep track of all the stuff they have collected. With this system, it should be easier for designers to check items that are in or out of stock at the Theatre. This includes uploading pictures, assigning locations within the theatre, and recording the condition (pristine, needs repair, etc.). With this comprehensive system, designers can quickly check availability, locate specific items, and ensure everything they need for a production is readily at hand.",
+      "teamMembers": {
+        "leadership": "Liam Strand (PM), Amitavv Nott (TL), An Tran (Designer)",
+        "developers": "Brandon Dionisio, Dan Glorioso, Ella Guo, Lindsay Ulrey, Nehir Ozden, Oliver Bello, Peter Morganelli, Shepard Rodgers, Sidrah Fawzi, Teddy Hwang"
+      },
+      "teamPicture": {
+        "src": "/projects/2023-2024/theater-at-first/team-photo.png",
+        "alt": "Theater@First Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "React",
+        "logo": {
+          "src": "/projects/tech-stacks/react.png",
+          "alt": "React Logo"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": {
+          "src": "/projects/tech-stacks/tailwind.png",
+          "alt": "Tailwind Logo"
+        }
+      },
+      {
+        "name": "TypeScript",
+        "logo": {
+          "src": "/projects/tech-stacks/typescript.png",
+          "alt": "Typescript Logo"
+        }
+      },
+      {
+        "name": "Node.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nodejs.png",
+          "alt": "Nodejs Logo"
+        }
+      }
+    ],
+    "finalScreens": [
+      {
+        "src": "/projects/2023-2024/theater-at-first/solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2023-2024/theater-at-first/solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2023-2024/theater-at-first/solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2023-2024/theater-at-first/solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
+  },
+  "the-legacy-project": {
+    "hero": {
+      "projectName": "The Legacy Project",
+      "schoolYear": "2023-2024",
+      "image": {
+        "src": "/projects/2023-2024/the-legacy-project/hero.png",
+        "alt": "The Legacy Project Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2023-2024/the-legacy-project/logo.png",
+        "alt": "The Legacy Project Logo"
+      },
+      "summary": "The Legacy Project is a non-profit organization that documents and preserves the stories of the elder generation. Tufts University students create meaningful intergenerational connections by visiting the Medford Rehabilitation center weekly, forming one-on-one relationships with residents, sharing lived experiences, and recording their stories.",
+      "projectGoal": "The project goal is to create a minimum viable product with the streamlined chapter enrollment process, tiered user roles and permissions, and an improved landing page experience. Visit the site at: https://www.thelegacyproj.org/public",
+      "teamMembers": {
+        "leadership": "Kim Nguyen (PM), Nick Doan (TL), Fa Taepaisitphongse (Designer)",
+        "developers": "Won Kim, Johnny Tan, Julia Zelevinsky, Tia Chen, Ada Wu, Selena Zhu, Nathan Edwards, Stephen Burchfield, Tyler Lin, Caleb Ledi, Shanmugam Ganesan "
+      },
+      "teamPicture": {
+        "src": "/projects/2023-2024/the-legacy-project/team-photo.png",
+        "alt": "The Legacy Project Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "React",
+        "logo": {
+          "src": "/projects/tech-stacks/react.png",
+          "alt": "React Logo"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": {
+          "src": "/projects/tech-stacks/tailwind.png",
+          "alt": "Tailwind Logo"
+        }
+      },
+      {
+        "name": "TypeScript",
+        "logo": {
+          "src": "/projects/tech-stacks/typescript.png",
+          "alt": "Typescript Logo"
+        }
+      },
+      {
+        "name": "MongoDB",
+        "logo": {
+          "src": "/projects/tech-stacks/mongodb.png",
+          "alt": "Mongodb Logo"
+        }
+      },
+      {
+        "name": "Prisma",
+        "logo": {
+          "src": "/projects/tech-stacks/prisma.png",
+          "alt": "Prisma Logo"
+        }
+      },
+      {
+        "name": "Next.js",
+        "logo": {
+          "src": "/projects/tech-stacks/nextjs.png",
+          "alt": "Nextjs Logo"
+        }
+      }
+    ],
+    "finalScreens": [
+      {
+        "src": "/projects/2023-2024/the-legacy-project/solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2023-2024/the-legacy-project/solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2023-2024/the-legacy-project/solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2023-2024/the-legacy-project/solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
+  },
+  "dress-for-success": {
+    "hero": {
+      "projectName": "Dress for Success",
+      "schoolYear": "2023-2024",
+      "image": {
+        "src": "/projects/2023-2024/dress-for-success/hero.png",
+        "alt": "Dress for Success Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2023-2024/dress-for-success/logo.png",
+        "alt": "Dress for Success Logo"
+      },
+      "summary": "Dress for Success is a global not-for-profit organization that empowers women to achieve economic independence by providing a network of support, professional attire and the development tools to help women thrive in work and in life.",
+      "projectGoal": "Create an admin-only web application that keeps track of Dress for Success\u2019 overall inventory of clothing items.",
+      "teamMembers": {
+        "leadership": "Jyoti Bhardwaj (PM), Gabriel Sessions (TL), Andy Xu (Designer)",
+        "developers": "Matthew Johnson, Charlotte Versavel, Ryan McClennen, Emma Paterson, John Cha, Alyssa Williams, Shannon Tang, Bingyu Wu "
+      },
+      "teamPicture": {
+        "src": "/projects/2023-2024/dress-for-success/team-photo.png",
+        "alt": "Dress for Success Team Photo"
+      }
+    },
+    "techStack": [
+      {
+        "name": "React",
+        "logo": {
+          "src": "/projects/tech-stacks/react.png",
+          "alt": "React Logo"
+        }
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": {
+          "src": "/projects/tech-stacks/tailwind.png",
+          "alt": "Tailwind Logo"
+        }
+      },
+      {
+        "name": "TypeScript",
+        "logo": {
+          "src": "/projects/tech-stacks/typescript.png",
+          "alt": "Typescript Logo"
+        }
+      },
+      {
+        "name": "PostgreSQL",
+        "logo": {
+          "src": "/projects/tech-stacks/postgresql.png",
+          "alt": "Postgresql Logo"
+        }
+      },
+      {
+        "name": "Neon",
+        "logo": {
+          "src": "/projects/tech-stacks/neon.png",
+          "alt": "Neon Logo"
+        }
+      },
+      {
+        "name": "Bun",
+        "logo": {
+          "src": "/projects/tech-stacks/bun.png",
+          "alt": "Bun Logo"
+        }
+      },
+      {
+        "name": "Clerk",
+        "logo": {
+          "src": "/projects/tech-stacks/clerk.png",
+          "alt": "Clerk Logo"
+        }
+      }
+    ],
+    "finalScreens": [
+      {
+        "src": "/projects/2023-2024/dress-for-success/solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2023-2024/dress-for-success/solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2023-2024/dress-for-success/solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2023-2024/dress-for-success/solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
+  },
+  "bi-women-quarterly": {
+    "hero": {
+      "projectName": "Bi Women Quarterly Submission Portal Website",
+      "schoolYear": "2023-2024",
+      "image": {
+        "src": "/projects/2023-2024/bi-women-quarterly/hero.png",
+        "alt": "Bi Women Quarterly Submission Portal Website Project Page Image"
+      }
+    },
+    "overview": {
+      "logo": {
+        "src": "/projects/2023-2024/bi-women-quarterly/logo.png",
+        "alt": "Bi Women Quarterly Submission Portal Website Logo"
+      },
+      "summary": "",
+      "projectGoal": "",
+      "teamMembers": {
+        "leadership": "",
+        "developers": ""
+      },
+      "teamPicture": {
+        "src": "/projects/2023-2024/bi-women-quarterly/team-photo.png",
+        "alt": "Bi Women Quarterly Submission Portal Website Team Photo"
+      }
+    },
+    "techStack": [],
+    "finalScreens": []
+  },
   "english-at-large": {
     "hero": {
       "projectName": "English at Large",
       "schoolYear": "Current Project (2024-2025)",
       "image": {
-        "alt": "English at Large Project Page Image"
+        "src": null,
+        "alt": null
       }
     },
     "overview": {
@@ -74,7 +536,8 @@
       "projectName": "Bread & Roses",
       "schoolYear": "Current Project (2024-2025)",
       "image": {
-        "alt": "Bread & Roses Project Page Image"
+        "src": null,
+        "alt": null
       }
     },
     "overview": {
@@ -144,7 +607,8 @@
       "projectName": "Leonard Carmichael Society",
       "schoolYear": "Current Project (2024-2025)",
       "image": {
-        "alt": "Leonard Carmichael Society Project Page Image"
+        "src": null,
+        "alt": null
       }
     },
     "overview": {
@@ -214,7 +678,8 @@
       "projectName": "A2Empowerment",
       "schoolYear": "Current Project (2024-2025)",
       "image": {
-        "alt": "A2Empowerment Project Page Image"
+        "src": null,
+        "alt": null
       }
     },
     "overview": {
@@ -284,7 +749,8 @@
       "projectName": "Village Food Hub",
       "schoolYear": "Current Project (2024-2025)",
       "image": {
-        "alt": "Village Food Hub Project Page Image"
+        "src": null,
+        "alt": null
       }
     },
     "overview": {
@@ -354,7 +820,8 @@
       "projectName": "Somerville Museum",
       "schoolYear": "Current Project (2024-2025)",
       "image": {
-        "alt": "Somerville Museum Project Page Image"
+        "src": null,
+        "alt": null
       }
     },
     "overview": {
@@ -417,7 +884,8 @@
       "projectName": "New England Innocence Project",
       "schoolYear": "Current Project (2024-2025)",
       "image": {
-        "alt": "New England Innocence Project Project Page Image"
+        "src": null,
+        "alt": null
       }
     },
     "overview": {
@@ -501,7 +969,8 @@
       "projectName": "LGBTQ Senior Housing",
       "schoolYear": "Current Project (2024-2025)",
       "image": {
-        "alt": "LGBTQ Senior Housing Project Page Image"
+        "src": null,
+        "alt": null
       }
     },
     "overview": {
@@ -564,7 +1033,8 @@
       "projectName": "West Medford Community Center",
       "schoolYear": "Current Project (2024-2025)",
       "image": {
-        "alt": "West Medford Community Center Project Page Image"
+        "src": null,
+        "alt": null
       }
     },
     "overview": {
@@ -634,7 +1104,8 @@
       "projectName": "Dillar Academy",
       "schoolYear": "Current Project (2024-2025)",
       "image": {
-        "alt": "Dillar Academy Project Page Image"
+        "src": null,
+        "alt": null
       }
     },
     "overview": {
@@ -690,7 +1161,8 @@
       "projectName": "The Wily Network",
       "schoolYear": "Current Project (2024-2025)",
       "image": {
-        "alt": "The Wily Network Project Page Image"
+        "src": null,
+        "alt": null
       }
     },
     "overview": {
@@ -753,7 +1225,8 @@
       "projectName": "Office of University Counsel",
       "schoolYear": "Current Project (2024-2025)",
       "image": {
-        "alt": "Office of University Counsel Project Page Image"
+        "src": null,
+        "alt": null
       }
     },
     "overview": {

@@ -6,7 +6,7 @@ import Hero from "../hero"
 import { ImageProps } from "../ImageCarousel"
 import ImageCollage from "../ImageCollage"
 
-// Layout of a Jumb...oCode project page in JSON format
+// Layout of a JumboCode project page in JSON format
 export interface ProjectPageProps {
   hero: {
     projectName: string,
@@ -44,7 +44,7 @@ export default function ProjectPage(props: ProjectPageProps) {
           <Image
             src={props.hero.image.src}
             alt={props.hero.image.alt}
-            width={400}
+            width={550}
             height={400}
           />
           : <></>

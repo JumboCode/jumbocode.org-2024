@@ -1,4 +1,82 @@
 {
+  "2022-2023": {
+    "potencia": {
+      "name": "Potencia",
+      "summary": "Potencia is a non-profit organization dedicated to bridging the gap between college students and adult immigrants in the Greater Boston area. By facilitating individual and group tutoring sessions, Potencia helps learners develop English language skills while fostering an understanding of American culture.",
+      "project-goal": "The Potencia Mobile Application is complete with scheduling features and payment support, allowing tutees to purchase and schedule classes directly on the app. Tutors can also manage their classes, directly chat with tutees, and track their teaching hours on the app, streamlining scheduling and communication between tutors and tutees.",
+      "leadership": "Silvia Wang (PM), Ellis Brown (TL), Fa Taepaisitphongse (Designer)",
+      "developers": "Alex Jeon, Andrew Nuzzulo, Anne Li, Cecelia Crumlish, Clark Bolin, Erin Sarlak, Karen Bei, Olivia Byun, Roger Burtonpatel, Sarah Svahn, Stephanie Xu, Won Kim",
+      "tech-stack": ["javascript", "react", "tailwind", "mongodb", "prisma", "nextjs"],
+      "final-screens": [
+        "final-solution-1.png",
+        "final-solution-2.png",
+        "final-solution-3.png",
+        "final-solution-4.png"
+      ]
+    }
+  },
+  "2023-2024": {
+    "homestart": {
+      "name": "HomeStart",
+      "summary": "HomeStart is a Boston non-profit that provides services for people who are currently experiencing homelessness, have recently moved from homelessness to housing, or are at risk of becoming homeless through eviction.",
+      "project-goal": "Create a web-app for a phone or tablet platform that allows clients to answer surveys and admin to manage and analyze the data.",
+      "leadership": "Rebecca Dinsmore (PM), Rusny Rahman (TL), Wilson Skinner (Designer)",
+      "developers": "Rindha Reddy, Andersen Prince, Eddy He, Ranvir Malik, Kerwin Teh, Jennifer Luo, Jack Flores, Ashley Jeon, Logan Yuan, Rohan Valia",
+      "tech-stack": ["javascript", "react", "tailwind", "mongodb", "prisma", "nextjs"],
+      "final-screens": [
+        "survey_img1.png",
+        "survey_img2.png",
+        "survey_img3.png",
+        "admin_data_overview.png"
+      ]
+    },
+    "theater-at-first": {
+      "name": "Theater@First",
+      "summary": "Theatre@First is an all-volunteer community theatre based in Somerville, MA. Founded in 2003, we fill a vital niche in the vibrant Davis Square arts scene. We draw upon the talents and support of individuals and organizations throughout the community to provide opportunities for our participants and audiences to experience quality live theatre in a variety of local venues.",
+      "project-goal": "Theatre@First inevitably collects large quantities of props, furniture, costumes, and other materials in their inventory. As this happens, it can be difficult for them to keep track of what they own, where it is, and what condition it is in. We have built an inventory system for Theatre@First in Somerville, MA that allows them to keep track of all the stuff they have collected. With this system, it should be easier for designers to check items that are in or out of stock at the Theatre. This includes uploading pictures, assigning locations within the theatre, and recording the condition (pristine, needs repair, etc.). With this comprehensive system, designers can quickly check availability, locate specific items, and ensure everything they need for a production is readily at hand.",
+      "leadership": "Liam Strand (PM), Amitavv Nott (TL), An Tran (Designer)",
+      "developers": "Brandon Dionisio, Dan Glorioso, Ella Guo, Lindsay Ulrey, Nehir Ozden, Oliver Bello, Peter Morganelli, Shepard Rodgers, Sidrah Fawzi, Teddy Hwang",
+      "tech-stack": ["react", "tailwind", "typescript", "nodejs"],
+      "final-screens": [
+        "solution-1.png",
+        "solution-2.png",
+        "solution-3.png",
+        "solution-4.png"
+      ]
+    },
+    "the-legacy-project": {
+      "name": "The Legacy Project",
+      "summary": "The Legacy Project is a non-profit organization that documents and preserves the stories of the elder generation. Tufts University students create meaningful intergenerational connections by visiting the Medford Rehabilitation center weekly, forming one-on-one relationships with residents, sharing lived experiences, and recording their stories.",
+      "project-goal": "The project goal is to create a minimum viable product with the streamlined chapter enrollment process, tiered user roles and permissions, and an improved landing page experience. Visit the site at: https://www.thelegacyproj.org/public",
+      "leadership": "Kim Nguyen (PM), Nick Doan (TL), Fa Taepaisitphongse (Designer)",
+      "developers": "Won Kim, Johnny Tan, Julia Zelevinsky, Tia Chen, Ada Wu, Selena Zhu, Nathan Edwards, Stephen Burchfield, Tyler Lin, Caleb Ledi, Shanmugam Ganesan ",
+      "tech-stack": ["react", "tailwind", "typescript", "mongodb", "prisma", "nextjs"],
+      "final-screens": [
+        "solution-1.png",
+        "solution-2.png",
+        "solution-3.png",
+        "solution-4.png"
+      ]
+    },
+    "dress-for-success": {
+      "name": "Dress for Success",
+      "summary": "Dress for Success is a global not-for-profit organization that empowers women to achieve economic independence by providing a network of support, professional attire and the development tools to help women thrive in work and in life.",
+      "project-goal": "Create an admin-only web application that keeps track of Dress for Success’ overall inventory of clothing items.",
+      "leadership": "Jyoti Bhardwaj (PM), Gabriel Sessions (TL), Andy Xu (Designer)",
+      "developers": "Matthew Johnson, Charlotte Versavel, Ryan McClennen, Emma Paterson, John Cha, Alyssa Williams, Shannon Tang, Bingyu Wu ",
+      "tech-stack": ["react", "tailwind", "typescript", "postgresql", "neon", "bun", "clerk"],
+      "final-screens": [
+        "solution-1.png",
+        "solution-2.png",
+        "solution-3.png",
+        "solution-4.png"
+      ]
+    },
+    "bi-women-quarterly": {
+      "name": "Bi Women Quarterly Submission Portal Website",
+      "description": "Creating a submission portal to streamline writer submissions and simplify management for BWQ staff."
+    }
+  },
   "2024-2025": {
     "english-at-large": {
       "name": "English at Large",
