@@ -1,0 +1,80 @@
+{
+  "2022-2023": {
+    "potencia": {
+      "name": "Potencia",
+      "description": "Connecting adult immigrants and college students for English lessons in the greater Boston area"
+    }
+  },
+  "2023-2024": {
+    "homestart": {
+      "name": "HomeStart Survey Website",
+      "description": "Centralizing feedback data to allow for easier distribution of  essential housing services and solutions"
+    },
+    "theater-at-first": {
+      "name": "Theatre@First Inventory Management Website",
+      "description": "An all-in-once inventory management system for designers to check items that are in or out of stock."
+    },
+    "the-legacy-project": {
+      "name": "Website and Management System for The Legacy Project",
+      "description": "Documenting and preserving the stories of the elder generation."
+    },
+    "dress-for-success": {
+      "name": "Dress for Success Inventory Management Website",
+      "description": "Tracking and managing professional attire inventory to empower women on their path to economic independence."
+    },
+    "bi-women-quarterly": {
+      "name": "Bi Women Quarterly Submission Portal Website",
+      "description": "Creating a submission portal to streamline writer submissions and simplify management for BWQ staff."
+    }
+  },
+  "2024-2025": {
+    "english-at-large": {
+      "name": "English at Large",
+      "description": "English At Large programs serve adult immigrants who live or work in Greater Boston to provide individual and small group instruction to immigrant neighbors and friends, helping them build their English language skills and understanding of American culture as they gain the skills and confidence they need to join in their communities and achieve their life goals."
+    },
+    "bread-and-roses": {
+      "name": "Bread & Roses",
+      "description": "Bread & Roses’ mission is to address the core necessities of the Merrimack Valley’s community members with a holistic and welcoming approach focusing on food insecurity and promoting self-empowerment."
+    },
+    "leonard-carmichael-society": {
+      "name": "Leonard Carmichael Society",
+      "description": "LCS Tutoring is a community service organization at Tufts devoted to pairing Jumbos with K-12 students in the Medford/Somerville areas for free tutoring."
+    },
+    "a2empowerment": {
+      "name": "A2Empowerment",
+      "description": "A2Empowerment is a nonprofit that empowers women through education by working with Cameroonian Partners to provide academic scholarships and mentorship to students."
+    },
+    "village-food-hub": {
+      "name": "Village Food Hub",
+      "description": "Village Food Hub is a nonprofit organization founded to strengthen our community food system and make it more equitable by increasing access to healthy and nutritious food, while also reducing waste and promoting environmental sustainability."
+    },
+    "somerville-museum": {
+      "name": "Somerville Museum",
+      "description": "The Somerville Museum is a local cultural institution that serves to educate and preserve the historical, artistical, and musical significance of the area."
+    },
+    "new-england-innocence-project": {
+      "name": "New England Innocence Project",
+      "description": "The New England Innocence Project (NEIP) works to correct and prevent wrongful convictions and ensure justice within the criminal legal system for innocent people throughout New England who are imprisoned for a crime they did not commit."
+    },
+    "lgbtq-senior-housing": {
+      "name": "LGBTQ Senior Housing",
+      "description": "LGBTQ Senior Housing facilitates access to welcoming, safe and affordable housing for low-income LGBTQ seniors; to define onsite housing services and programming that addresses the needs of LGBTQ seniors; and to support community space to serve seniors in the Greater Boston community."
+    },
+    "west-medford-community-center": {
+      "name": "West Medford Community Center",
+      "description": "The West Medford Community Center connects the diverse people of West Medford and the Mystic River Valley through social, educational, cultural, health and recreational activities."
+    },
+    "dillar-academy": {
+      "name": "Dillar Academy",
+      "description": "Dillar Academy helps Uyghur people around the world learn English without cost. With the help and commitment of their volunteer teachers, their goal is to bridge the educational disparity gap for Uyghurs worldwide."
+    },
+    "the-wily-network": {
+      "name": "The Wily Network",
+      "description": "The Wily Network supports Boston-area students who are navigating college without emotional or financial support from their families. They offer clinical coaching, financial resources, community building, and networking in addition to the gift giving program our product focuses on."
+    },
+    "office-of-university-counsel": {
+      "name": "Office of University Counsel",
+      "description": "The Office of University Counsel (OUC) provides legal guidance across Tufts University, handling matters such as university operations, litigation, student affairs, intellectual property, employment, and regulatory compliance. Led by Senior Vice President and General Counsel Mary Jeka, OUC works to minimize legal risks, manage litigation, and ensure compliance while delivering reliable and professional legal services."
+    }
+  }
+}

@@ -14,6 +14,8 @@ import Image from "next/image";
 import { ImageCarouselProps } from "./ImageCarousel";
 
 export default function ImageCollage(props: ImageCarouselProps) {
+  if (!props.images || props.images.length === 0) return <></>
+
   const baseClass = "col-span-1 object-cover border-transparent rounded-xl";
   const longerImageClass = "row-span-2 h-[300px] md:h-[300px] lg:h-[450px] lg:w-[597px]";
   const shorterImageClass = "h-[280px] md:h-[250px] lg:h-[349px] lg:w-[597px]";

@@ -4,14 +4,13 @@ import React from "react"
 import Button from "../button"
 import Hero from "../hero"
 import { ImageProps } from "../ImageCarousel"
-import ImageCollage from "../ImageCollage"
 
-// Layout of a Jumb...oCode project page in JSON format
+// Layout of a JumboCode project page in JSON format
 export interface ProjectPageProps {
   hero: {
     projectName: string,
     schoolYear: string,
-    image: ImageProps
+    image: ImageProps | null
   },
   overview: {
     logo: ImageProps,
@@ -39,13 +38,15 @@ export default function ProjectPage(props: ProjectPageProps) {
       <Hero
         title={<>{props.hero.projectName}</>}
         subtitle={<>{props.hero.schoolYear}</>}
-        image={
+
+        image={props.hero.image && props.hero.image.src ?
           <Image
             src={props.hero.image.src}
             alt={props.hero.image.alt}
-            width={800}
+            width={650}
             height={400}
           />
+          : <></>
         }
       />
 
@@ -105,12 +106,39 @@ export default function ProjectPage(props: ProjectPageProps) {
           })
         }
       </div>
+      {
+        props.finalScreens.length > 0 &&
+        <>
+          <h3 className={clsx(h3Class, "my-12 md:mt-4")}>Final Screens</h3>
+          <div className="grid justify-center md:grid-cols-2 gap-x-7 gap-y-6">
+            <Image
+              src={props.finalScreens[0].src}
+              alt={props.finalScreens[0].alt}
+              width={597}
+              height={450}
+            />
+            <Image
+              src={props.finalScreens[1].src}
+              alt={props.finalScreens[1].alt}
+              width={597}
+              height={450}
+            />
+            <Image
+              src={props.finalScreens[2].src}
+              alt={props.finalScreens[2].alt}
+              width={597}
+              height={450}
+            />
+            <Image
+              src={props.finalScreens[3].src}
+              alt={props.finalScreens[3].alt}
+              width={597}
+              height={450}
+            />
+          </div>
+        </>
+      }
 
-      <h3 className={clsx(h3Class, "my-12 md:mt-4")}>Final Screens</h3>
-      <ImageCollage
-        images={props.finalScreens}
-        className="object-top-left"
-      />
 
 
       <div className="flex justify-center mt-28 mb-8">

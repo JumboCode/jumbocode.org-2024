@@ -1,0 +1,170 @@
+{
+  "2022-2023": {
+    "potencia": {
+      "name": "Potencia",
+      "img": {
+        "src": "/projects/2022-2023/potencia/potencia.png",
+        "alt": "Potencia Logo"
+      },
+      "description": "Connecting adult immigrants and college students for English lessons in the greater Boston area",
+      "href": "/projects/potencia"
+    }
+  },
+  "2023-2024": {
+    "homestart": {
+      "name": "HomeStart Survey Website",
+      "img": {
+        "src": "/projects/2023-2024/homestart/homestart.png",
+        "alt": "HomeStart Survey Website Logo"
+      },
+      "description": "Centralizing feedback data to allow for easier distribution of  essential housing services and solutions",
+      "href": "/projects/homestart"
+    },
+    "theater-at-first": {
+      "name": "Theatre@First Inventory Management Website",
+      "img": {
+        "src": "/projects/2023-2024/theater-at-first/theater-at-first.png",
+        "alt": "Theatre@First Inventory Management Website Logo"
+      },
+      "description": "An all-in-once inventory management system for designers to check items that are in or out of stock.",
+      "href": "/projects/theater-at-first"
+    },
+    "the-legacy-project": {
+      "name": "Website and Management System for The Legacy Project",
+      "img": {
+        "src": "/projects/2023-2024/the-legacy-project/the-legacy-project.png",
+        "alt": "Website and Management System for The Legacy Project Logo"
+      },
+      "description": "Documenting and preserving the stories of the elder generation.",
+      "href": "/projects/the-legacy-project"
+    },
+    "dress-for-success": {
+      "name": "Dress for Success Inventory Management Website",
+      "img": {
+        "src": "/projects/2023-2024/dress-for-success/dress-for-success.png",
+        "alt": "Dress for Success Inventory Management Website Logo"
+      },
+      "description": "Tracking and managing professional attire inventory to empower women on their path to economic independence.",
+      "href": "/projects/dress-for-success"
+    },
+    "bi-women-quarterly": {
+      "name": "Bi Women Quarterly Submission Portal Website",
+      "img": {
+        "src": "/projects/2023-2024/bi-women-quarterly/bi-women-quarterly.png",
+        "alt": "Bi Women Quarterly Submission Portal Website Logo"
+      },
+      "description": "Creating a submission portal to streamline writer submissions and simplify management for BWQ staff.",
+      "href": "/projects/bi-women-quarterly"
+    }
+  },
+  "2024-2025": {
+    "english-at-large": {
+      "name": "English at Large",
+      "img": {
+        "src": "/projects/2024-2025/english-at-large/english-at-large.png",
+        "alt": "English at Large Logo"
+      },
+      "description": "English At Large programs serve adult immigrants who live or work in Greater Boston to provide individual and small group instruction to immigrant neighbors and friends, helping them build their English language skills and understanding of American culture as they gain the skills and confidence they need to join in their communities and achieve their life goals.",
+      "href": "/projects/english-at-large"
+    },
+    "bread-and-roses": {
+      "name": "Bread & Roses",
+      "img": {
+        "src": "/projects/2024-2025/bread-and-roses/bread-and-roses.png",
+        "alt": "Bread & Roses Logo"
+      },
+      "description": "Bread & Roses\u2019 mission is to address the core necessities of the Merrimack Valley\u2019s community members with a holistic and welcoming approach focusing on food insecurity and promoting self-empowerment.",
+      "href": "/projects/bread-and-roses"
+    },
+    "leonard-carmichael-society": {
+      "name": "Leonard Carmichael Society",
+      "img": {
+        "src": "/projects/2024-2025/leonard-carmichael-society/leonard-carmichael-society.png",
+        "alt": "Leonard Carmichael Society Logo"
+      },
+      "description": "LCS Tutoring is a community service organization at Tufts devoted to pairing Jumbos with K-12 students in the Medford/Somerville areas for free tutoring.",
+      "href": "/projects/leonard-carmichael-society"
+    },
+    "a2empowerment": {
+      "name": "A2Empowerment",
+      "img": {
+        "src": "/projects/2024-2025/a2empowerment/a2empowerment.png",
+        "alt": "A2Empowerment Logo"
+      },
+      "description": "A2Empowerment is a nonprofit that empowers women through education by working with Cameroonian Partners to provide academic scholarships and mentorship to students.",
+      "href": "/projects/a2empowerment"
+    },
+    "village-food-hub": {
+      "name": "Village Food Hub",
+      "img": {
+        "src": "/projects/2024-2025/village-food-hub/village-food-hub.png",
+        "alt": "Village Food Hub Logo"
+      },
+      "description": "Village Food Hub is a nonprofit organization founded to strengthen our community food system and make it more equitable by increasing access to healthy and nutritious food, while also reducing waste and promoting environmental sustainability.",
+      "href": "/projects/village-food-hub"
+    },
+    "somerville-museum": {
+      "name": "Somerville Museum",
+      "img": {
+        "src": "/projects/2024-2025/somerville-museum/somerville-museum.png",
+        "alt": "Somerville Museum Logo"
+      },
+      "description": "The Somerville Museum is a local cultural institution that serves to educate and preserve the historical, artistical, and musical significance of the area.",
+      "href": "/projects/somerville-museum"
+    },
+    "new-england-innocence-project": {
+      "name": "New England Innocence Project",
+      "img": {
+        "src": "/projects/2024-2025/new-england-innocence-project/new-england-innocence-project.png",
+        "alt": "New England Innocence Project Logo"
+      },
+      "description": "The New England Innocence Project (NEIP) works to correct and prevent wrongful convictions and ensure justice within the criminal legal system for innocent people throughout New England who are imprisoned for a crime they did not commit.",
+      "href": "/projects/new-england-innocence-project"
+    },
+    "lgbtq-senior-housing": {
+      "name": "LGBTQ Senior Housing",
+      "img": {
+        "src": "/projects/2024-2025/lgbtq-senior-housing/lgbtq-senior-housing.png",
+        "alt": "LGBTQ Senior Housing Logo"
+      },
+      "description": "LGBTQ Senior Housing facilitates access to welcoming, safe and affordable housing for low-income LGBTQ seniors; to define onsite housing services and programming that addresses the needs of LGBTQ seniors; and to support community space to serve seniors in the Greater Boston community.",
+      "href": "/projects/lgbtq-senior-housing"
+    },
+    "west-medford-community-center": {
+      "name": "West Medford Community Center",
+      "img": {
+        "src": "/projects/2024-2025/west-medford-community-center/west-medford-community-center.png",
+        "alt": "West Medford Community Center Logo"
+      },
+      "description": "The West Medford Community Center connects the diverse people of West Medford and the Mystic River Valley through social, educational, cultural, health and recreational activities.",
+      "href": "/projects/west-medford-community-center"
+    },
+    "dillar-academy": {
+      "name": "Dillar Academy",
+      "img": {
+        "src": "/projects/2024-2025/dillar-academy/dillar-academy.png",
+        "alt": "Dillar Academy Logo"
+      },
+      "description": "Dillar Academy helps Uyghur people around the world learn English without cost. With the help and commitment of their volunteer teachers, their goal is to bridge the educational disparity gap for Uyghurs worldwide.",
+      "href": "/projects/dillar-academy"
+    },
+    "the-wily-network": {
+      "name": "The Wily Network",
+      "img": {
+        "src": "/projects/2024-2025/the-wily-network/the-wily-network.png",
+        "alt": "The Wily Network Logo"
+      },
+      "description": "The Wily Network supports Boston-area students who are navigating college without emotional or financial support from their families. They offer clinical coaching, financial resources, community building, and networking in addition to the gift giving program our product focuses on.",
+      "href": "/projects/the-wily-network"
+    },
+    "office-of-university-counsel": {
+      "name": "Office of University Counsel",
+      "img": {
+        "src": "/projects/2024-2025/office-of-university-counsel/office-of-university-counsel.png",
+        "alt": "Office of University Counsel Logo"
+      },
+      "description": "The Office of University Counsel (OUC) provides legal guidance across Tufts University, handling matters such as university operations, litigation, student affairs, intellectual property, employment, and regulatory compliance. Led by Senior Vice President and General Counsel Mary Jeka, OUC works to minimize legal risks, manage litigation, and ensure compliance while delivering reliable and professional legal services.",
+      "href": "/projects/office-of-university-counsel"
+    }
+  }
+}
