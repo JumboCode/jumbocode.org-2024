@@ -11,7 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter', 'sans-serif']
+        inter: ["Inter", "sans-serif"],
       },
       colors: {
         gray: colors.zinc,
