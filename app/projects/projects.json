@@ -517,7 +517,10 @@
     "hero": {
       "projectName": "English at Large",
       "schoolYear": "Current Project (2024-2025)",
-      "image": null
+      "image": {
+        "src": "/projects/2024-2025/english-at-large/hero.png",
+        "alt": "English at Large Project Page Image"
+      }
     },
     "overview": {
       "logo": {
@@ -579,13 +582,33 @@
         }
       }
     ],
-    "finalScreens": []
+    "finalScreens": [
+      {
+        "src": "/projects/2024-2025/english-at-large/solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/english-at-large/solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/english-at-large/solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/english-at-large/solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
   },
   "bread-and-roses": {
     "hero": {
       "projectName": "Bread & Roses",
       "schoolYear": "Current Project (2024-2025)",
-      "image": null
+      "image": {
+        "src": "/projects/2024-2025/bread-and-roses/hero.png",
+        "alt": "Bread & Roses Project Page Image"
+      }
     },
     "overview": {
       "logo": {
@@ -647,13 +670,33 @@
         }
       }
     ],
-    "finalScreens": []
+    "finalScreens": [
+      {
+        "src": "/projects/2024-2025/bread-and-roses/solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/bread-and-roses/solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/bread-and-roses/solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/bread-and-roses/solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
   },
   "leonard-carmichael-society": {
     "hero": {
       "projectName": "Leonard Carmichael Society",
       "schoolYear": "Current Project (2024-2025)",
-      "image": null
+      "image": {
+        "src": "/projects/2024-2025/leonard-carmichael-society/hero.png",
+        "alt": "Leonard Carmichael Society Project Page Image"
+      }
     },
     "overview": {
       "logo": {
@@ -715,13 +758,33 @@
         }
       }
     ],
-    "finalScreens": []
+    "finalScreens": [
+      {
+        "src": "/projects/2024-2025/leonard-carmichael-society/solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/leonard-carmichael-society/solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/leonard-carmichael-society/solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/leonard-carmichael-society/solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
   },
   "a2empowerment": {
     "hero": {
       "projectName": "A2Empowerment",
       "schoolYear": "Current Project (2024-2025)",
-      "image": null
+      "image": {
+        "src": "/projects/2024-2025/a2empowerment/hero.png",
+        "alt": "A2Empowerment Project Page Image"
+      }
     },
     "overview": {
       "logo": {
@@ -783,13 +846,33 @@
         }
       }
     ],
-    "finalScreens": []
+    "finalScreens": [
+      {
+        "src": "/projects/2024-2025/a2empowerment/solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/a2empowerment/solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/a2empowerment/solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/a2empowerment/solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
   },
   "village-food-hub": {
     "hero": {
       "projectName": "Village Food Hub",
       "schoolYear": "Current Project (2024-2025)",
-      "image": null
+      "image": {
+        "src": "/projects/2024-2025/village-food-hub/hero.png",
+        "alt": "Village Food Hub Project Page Image"
+      }
     },
     "overview": {
       "logo": {
@@ -851,13 +934,33 @@
         }
       }
     ],
-    "finalScreens": []
+    "finalScreens": [
+      {
+        "src": "/projects/2024-2025/village-food-hub/solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/village-food-hub/solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/village-food-hub/solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/village-food-hub/solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
   },
   "somerville-museum": {
     "hero": {
       "projectName": "Somerville Museum",
       "schoolYear": "Current Project (2024-2025)",
-      "image": null
+      "image": {
+        "src": "/projects/2024-2025/somerville-museum/hero.png",
+        "alt": "Somerville Museum Project Page Image"
+      }
     },
     "overview": {
       "logo": {
@@ -912,13 +1015,33 @@
         }
       }
     ],
-    "finalScreens": []
+    "finalScreens": [
+      {
+        "src": "/projects/2024-2025/somerville-museum/solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/somerville-museum/solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/somerville-museum/solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/somerville-museum/solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
   },
   "new-england-innocence-project": {
     "hero": {
       "projectName": "New England Innocence Project",
       "schoolYear": "Current Project (2024-2025)",
-      "image": null
+      "image": {
+        "src": "/projects/2024-2025/new-england-innocence-project/hero.png",
+        "alt": "New England Innocence Project Page Image"
+      }
     },
     "overview": {
       "logo": {
@@ -994,13 +1117,33 @@
         }
       }
     ],
-    "finalScreens": []
+    "finalScreens": [
+      {
+        "src": "/projects/2024-2025/new-england-innocence-project/solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/new-england-innocence-project/solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/new-england-innocence-project/solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/new-england-innocence-project/solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
   },
   "lgbtq-senior-housing": {
     "hero": {
       "projectName": "LGBTQ Senior Housing",
       "schoolYear": "Current Project (2024-2025)",
-      "image": null
+      "image": {
+        "src": "/projects/2024-2025/lgbtq-senior-housing/hero.png",
+        "alt": "LGBTQ Senior Housing Project Page Image"
+      }
     },
     "overview": {
       "logo": {
@@ -1055,13 +1198,33 @@
         }
       }
     ],
-    "finalScreens": []
+    "finalScreens": [
+      {
+        "src": "/projects/2024-2025/lgbtq-senior-housing/solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/lgbtq-senior-housing/solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/lgbtq-senior-housing/solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/lgbtq-senior-housing/solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
   },
   "west-medford-community-center": {
     "hero": {
       "projectName": "West Medford Community Center",
       "schoolYear": "Current Project (2024-2025)",
-      "image": null
+      "image": {
+        "src": "/projects/2024-2025/west-medford-community-center/hero.png",
+        "alt": "West Medford Community Center Project Page Image"
+      }
     },
     "overview": {
       "logo": {
@@ -1123,13 +1286,33 @@
         }
       }
     ],
-    "finalScreens": []
+    "finalScreens": [
+      {
+        "src": "/projects/2024-2025/west-medford-community-center/solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/west-medford-community-center/solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/west-medford-community-center/solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/west-medford-community-center/solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
   },
   "dillar-academy": {
     "hero": {
       "projectName": "Dillar Academy",
       "schoolYear": "Current Project (2024-2025)",
-      "image": null
+      "image": {
+        "src": "/projects/2024-2025/dillar-academy/hero.png",
+        "alt": "Dillar Academy Project Page Image"
+      }
     },
     "overview": {
       "logo": {
@@ -1177,13 +1360,33 @@
         }
       }
     ],
-    "finalScreens": []
+    "finalScreens": [
+      {
+        "src": "/projects/2024-2025/dillar-academy/solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/dillar-academy/solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/dillar-academy/solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/dillar-academy/solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
   },
   "the-wily-network": {
     "hero": {
       "projectName": "The Wily Network",
       "schoolYear": "Current Project (2024-2025)",
-      "image": null
+      "image": {
+        "src": "/projects/2024-2025/the-wily-network/hero.png",
+        "alt": "The Wily Network Project Page Image"
+      }
     },
     "overview": {
       "logo": {
@@ -1238,13 +1441,33 @@
         }
       }
     ],
-    "finalScreens": []
+    "finalScreens": [
+      {
+        "src": "/projects/2024-2025/the-wily-network/solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/the-wily-network/solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/the-wily-network/solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/the-wily-network/solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
   },
   "office-of-university-counsel": {
     "hero": {
       "projectName": "Office of University Counsel",
       "schoolYear": "Current Project (2024-2025)",
-      "image": null
+      "image": {
+        "src": "/projects/2024-2025/office-of-university-counsel/hero.png",
+        "alt": "Office of University Counsel Project Page Image"
+      }
     },
     "overview": {
       "logo": {
@@ -1306,6 +1529,23 @@
         }
       }
     ],
-    "finalScreens": []
+    "finalScreens": [
+      {
+        "src": "/projects/2024-2025/office-of-university-counsel/solution-1.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/office-of-university-counsel/solution-2.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/office-of-university-counsel/solution-3.png",
+        "alt": "[TBD]"
+      },
+      {
+        "src": "/projects/2024-2025/office-of-university-counsel/solution-4.png",
+        "alt": "[TBD]"
+      }
+    ]
   }
 }
