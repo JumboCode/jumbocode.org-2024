@@ -39,10 +39,10 @@ const LINKS = [
 
 /* All the links associated with the media icons */
 const SOCIAL_LINKS = [
-    { href: "https://www.facebook.com/JumboCode/", src: "social icons/fb.png", alt: "Facebook" },
-    { href: "https://www.linkedin.com/company/tuftsjumbocode/posts/?feedView=all", src: "social icons/LinkedIn.png", alt: "LinkedIn" },
-    { href: "https://www.instagram.com/jumbocode/?hl=en", src: "social icons/Insta.png", alt: "Instagram" },
-    { href: "https://github.com/JumboCode", src: "social icons/Git.png", alt: "GitHub" },
+    { href: "https://www.facebook.com/JumboCode/", src: "/social-icons/fb.png", alt: "Facebook" },
+    { href: "https://www.linkedin.com/company/tuftsjumbocode/posts/?feedView=all", src: "/social-icons/LinkedIn.png", alt: "LinkedIn" },
+    { href: "https://www.instagram.com/jumbocode/?hl=en", src: "/social-icons/Insta.png", alt: "Instagram" },
+    { href: "https://github.com/JumboCode", src: "/social-icons/Git.png", alt: "GitHub" },
 ];
 
 /* Used to update the copyright date (lol do we even have that?) */
