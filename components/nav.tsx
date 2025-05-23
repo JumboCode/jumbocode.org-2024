@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 export default function Nav() {
   return (
-    <nav className="flex gap-x-6">
+    <nav className="flex gap-x-4 sm:gap-x-6">
       <NavLink href="/" label="Home" />
       <NavLink href="/about" label="About" />
       <NavLink href="/projects" label="Projects" />
