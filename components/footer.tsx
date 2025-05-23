@@ -40,6 +40,11 @@ const LINKS = [
 /* All the links associated with the media icons */
 const SOCIAL_LINKS = [
   {
+    href: "https://www.instagram.com/jumbocode",
+    src: "/social-icons/Insta.png",
+    alt: "Instagram",
+  },
+  {
     href: "https://www.facebook.com/JumboCode/",
     src: "/social-icons/fb.png",
     alt: "Facebook",
@@ -50,19 +55,11 @@ const SOCIAL_LINKS = [
     alt: "LinkedIn",
   },
   {
-    href: "https://www.instagram.com/jumbocode/?hl=en",
-    src: "/social-icons/Insta.png",
-    alt: "Instagram",
-  },
-  {
     href: "https://github.com/JumboCode",
     src: "/social-icons/Git.png",
     alt: "GitHub",
   },
 ];
-
-/* Used to update the copyright date (lol do we even have that?) */
-const currentYear = new Date().getFullYear();
 
 /*  Footer
  *   returns the footer component
@@ -113,7 +110,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-10 py-10">
-          <div className="text-subtext">&copy; {currentYear} JumboCode</div>
+          <div className="text-subtext">
+            &copy; 2015&ndash;{new Date().getFullYear()} JumboCode
+          </div>
         </div>
       </div>
     </footer>
