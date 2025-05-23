@@ -1,7 +1,9 @@
 import Button from "@/components/button";
+import GetInvolved from "@/components/get-involved";
 import Hero from "@/components/hero";
 import MemberCareerPaths from "@/components/MemberCareerPaths";
 import OurMission from "@/components/OurMission";
+import WhatWeDo from "@/components/what-we-do";
 import WhoWeAre from "@/components/WhoWeAre";
 
 export default function HomePage() {
@@ -13,7 +15,7 @@ export default function HomePage() {
             Jumbo<span className="text-brand">Code</span>
           </>
         }
-        subtitle={<>Empowering students, Elevating non-profits.</>}
+        subtitle={<>Empowering students, elevating non-profits.</>}
         buttons={
           <>
             <Button text="What we do" href="/about" variant="secondary" />
@@ -23,8 +25,20 @@ export default function HomePage() {
       />
 
       <WhoWeAre />
+
       <OurMission />
-      <MemberCareerPaths />
+
+      <div className="mt-24">
+        <WhatWeDo variant="compact" />
+      </div>
+
+      <div className="mt-36">
+        <GetInvolved />
+      </div>
+
+      <div className="mt-48">
+        <MemberCareerPaths />
+      </div>
     </div>
   );
 }
