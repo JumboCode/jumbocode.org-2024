@@ -153,7 +153,7 @@ export default function ApplyPage() {
         </div>
       </section>
 
-      <section className="mt-16 lg:mt-24">
+      <section className="mt-16 lg:mt-24" id="student-testimonials">
         <h2 className="text-white font-semibold text-2xl">
           Member Testimonials
         </h2>
@@ -162,7 +162,7 @@ export default function ApplyPage() {
         </div>
       </section>
 
-      <section className="mt-16 lg:mt-24">
+      <section className="mt-16 lg:mt-24" id="student-faqs">
         <h2 className="text-white font-semibold text-2xl">FAQs</h2>
         <div className="mt-8">
           <FAQ />
@@ -199,7 +199,7 @@ export default function ApplyPage() {
         </div>
       </section>
 
-      <section className="mt-16 lg:mt-24">
+      <section className="mt-16 lg:mt-24" id="nonprofit-testimonials">
         <h2 className="text-white font-semibold text-2xl">
           Non-Profit Testimonials
         </h2>
@@ -208,7 +208,9 @@ export default function ApplyPage() {
         </div>
       </section>
 
-      <NonProfitFAQ />
+      <div id="nonprofit-faqs">
+        <NonProfitFAQ />
+      </div>
     </div>
   );
 }
