@@ -1,3 +1,4 @@
+import { NEWSLETTER_SIGNUP_URL } from "@/lib/constants";
 import Button from "./button";
 
 export default function GetInvolved() {
@@ -28,7 +29,7 @@ export default function GetInvolved() {
               </a>{" "}
               and subscribe to our{" "}
               <a
-                href="https://us11.list-manage.com/subscribe?u=d3c507093f7b2f71584f684c0&id=25ebfbc332"
+                href={NEWSLETTER_SIGNUP_URL}
                 target="_blank"
                 className="font-medium text-brand hover:underline"
               >

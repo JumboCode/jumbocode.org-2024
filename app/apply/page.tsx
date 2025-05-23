@@ -1,5 +1,6 @@
 import Button from "@/components/button";
 import Hero from "@/components/hero";
+import { NEWSLETTER_SIGNUP_URL } from "@/lib/constants";
 import clsx from "clsx";
 import FAQ from "./faq";
 import MemberTestimonialCarousel from "./member-testimonial-carousel";
@@ -59,7 +60,7 @@ export default function ApplyPage() {
                 </a>{" "}
                 and subscribe to our{" "}
                 <a
-                  href=""
+                  href={NEWSLETTER_SIGNUP_URL}
                   className="text-brand font-medium underline decoration-brand/30"
                 >
                   newsletter
@@ -79,7 +80,8 @@ export default function ApplyPage() {
                 {/* TODO: newsletter signup URL */}
                 Follow our{" "}
                 <a href="https://instagram.com/jumbocode">Instagram</a> and
-                subscribe to our <a href="">newsletter</a> to stay updated!
+                subscribe to our <a href={NEWSLETTER_SIGNUP_URL}>newsletter</a>{" "}
+                to stay updated!
               </p>
             </div>
           </div>
