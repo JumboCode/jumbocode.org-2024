@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import Nav from "@/components/nav";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
@@ -16,6 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <Analytics/>
       <body className="antialiased bg-gray-950">
         <div className="max-w-screen-lg mx-auto px-4 pt-4 sm:pt-8 pb-24">
           {/* Gradient background */}
