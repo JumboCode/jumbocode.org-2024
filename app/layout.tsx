@@ -7,7 +7,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "JumboCode",
-  description: "Tufts University's Biggest Computer Science Club",
+  description: "Tufts University's student-run CS club empowering students and elevating non-profits.",
 };
 
 export default function RootLayout({
