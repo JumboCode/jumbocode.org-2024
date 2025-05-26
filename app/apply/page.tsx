@@ -50,7 +50,6 @@ export default function ApplyPage() {
                 positions open in the spring semester.
               </p>
               <p>
-                {/* TODO: newsletter signup URL */}
                 Follow our{" "}
                 <a
                   href="https://instagram.com/jumbocode"
@@ -77,10 +76,12 @@ export default function ApplyPage() {
                 closer to when projects start.
               </p>
               <p>
-                {/* TODO: newsletter signup URL */}
                 Follow our{" "}
-                <a href="https://instagram.com/jumbocode">Instagram</a> and
-                subscribe to our <a href={NEWSLETTER_SIGNUP_URL}>newsletter</a>{" "}
+                <a href="https://instagram.com/jumbocode"
+                   className="text-brand font-medium underline decoration-brand/30">Instagram</a>{" "}
+                and subscribe to our {" "}
+                <a href={NEWSLETTER_SIGNUP_URL}
+                   className="text-brand font-medium underline decoration-brand/30">newsletter</a>{" "}
                 to stay updated!
               </p>
             </div>

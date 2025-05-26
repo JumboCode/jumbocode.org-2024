@@ -8,7 +8,7 @@
  *
  */
 
-/* TODO: Add actual links to the pages once completed */
+
 /* array of all the pages/links that are used, each title is a new column */
 const LINKS = [
   {
