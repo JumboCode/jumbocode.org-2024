@@ -29,7 +29,7 @@ export default function SignupPage() {
                 <div id="mc_embed_signup">
                     <form action="https://jumbocode.us11.list-manage.com/subscribe/post?u=d3c507093f7b2f71584f684c0&amp;id=25ebfbc332&amp;f_id=004ac1e3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_self" noValidate>
                         <div id="mc_embed_signup_scroll">
-                            <h2>Subscribe</h2>
+                            <h2>Subscribe to JumboCode E-list</h2>
                             <div className="indicates-required">
                                 <span className="asterisk">*</span> indicates required
                             </div>

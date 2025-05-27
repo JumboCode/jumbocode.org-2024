@@ -12,7 +12,7 @@ import Mailchimp from "@/components/mailchimp";
 
 export default function SignupPage() {
     return (
-        <div>
+        <div className="flex flex-col items-center justify-center mt-8">
             <Mailchimp />
         </div>   
     );
