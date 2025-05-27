@@ -1,4 +1,3 @@
-import { NEWSLETTER_SIGNUP_URL } from "@/lib/constants";
 import Button from "./button";
 
 export default function GetInvolved() {
@@ -29,7 +28,7 @@ export default function GetInvolved() {
               </a>{" "}
               and subscribe to our{" "}
               <a
-                href={NEWSLETTER_SIGNUP_URL}
+                href={"/signup"}
                 target="_blank"
                 className="font-medium text-brand hover:underline"
               >
