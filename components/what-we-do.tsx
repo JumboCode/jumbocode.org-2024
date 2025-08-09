@@ -97,13 +97,22 @@ export default function WhatWeDo({
         />
 
         <Card
-          title="🏆 JumboHack"
+          title={
+            <>
+              🏆{" "}
+              <a href="https://jumbohack.org" target="_blank" className="hover:underline">
+                JumboHack
+              </a>
+            </>
+          }
           body={
             variant === "compact" ? (
               <p>
                 Each year we host JumboHack, a 48-hour hackathon that brings
                 together Boston area students to develop software for social
-                good.
+                good. To learn more, visit the{" "}
+                  <a href="https://jumbohack.org" target="_blank">JumboHack website</a>
+                .
               </p>
             ) : (
               <>
@@ -115,7 +124,7 @@ export default function WhatWeDo({
                 <p>
                   It’s a fast-paced, collaborative event designed to inspire
                   creativity and drive impact. To learn more, visit the{" "}
-                  <a href="https://jumbohack.org">JumboHack website</a>.
+                  <a href="https://jumbohack.org" target="_blank">JumboHack website</a>.
                 </p>
               </>
             )
@@ -132,7 +141,7 @@ function Card({
   body,
   imageSrc,
 }: {
-  title: string;
+  title: string | React.ReactNode;
   body: React.ReactNode;
   imageSrc: string;
 }) {
