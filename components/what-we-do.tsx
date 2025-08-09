@@ -100,7 +100,7 @@ export default function WhatWeDo({
           title={
             <>
               🏆{" "}
-              <a href="https://jumbohack.org" className="hover:underline">
+              <a href="https://jumbohack.org" target="_blank" className="hover:underline">
                 JumboHack
               </a>
             </>
@@ -110,7 +110,9 @@ export default function WhatWeDo({
               <p>
                 Each year we host JumboHack, a 48-hour hackathon that brings
                 together Boston area students to develop software for social
-                good.
+                good. To learn more, visit the{" "}
+                  <a href="https://jumbohack.org" target="_blank">JumboHack</a>
+                {" "}website.
               </p>
             ) : (
               <>
