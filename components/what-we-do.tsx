@@ -97,7 +97,14 @@ export default function WhatWeDo({
         />
 
         <Card
-          title="🏆 JumboHack"
+          title={
+            <>
+              🏆{" "}
+              <a href="https://jumbohack.org" className="hover:underline">
+                JumboHack
+              </a>
+            </>
+          }
           body={
             variant === "compact" ? (
               <p>
@@ -132,7 +139,7 @@ function Card({
   body,
   imageSrc,
 }: {
-  title: string;
+  title: string | React.ReactNode;
   body: React.ReactNode;
   imageSrc: string;
 }) {
