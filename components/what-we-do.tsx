@@ -124,7 +124,7 @@ export default function WhatWeDo({
                 <p>
                   It’s a fast-paced, collaborative event designed to inspire
                   creativity and drive impact. To learn more, visit the{" "}
-                  <a href="https://jumbohack.org">JumboHack website</a>.
+                  <a href="https://jumbohack.org" target="_blank">JumboHack website</a>.
                 </p>
               </>
             )
