@@ -1,33 +1,54 @@
 import Button from "@/components/button";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
-import ImageCollage from "@/components/ImageCollage";
 import Mailchimp from "@/components/mailchimp";
 import Nav from "@/components/nav";
 import type { Metadata } from "next";
 import Link from "next/link";
+import ImageCarousel from "../../../components/ImageCarousel";
 
 export const metadata: Metadata = {
   title: "JumboCode",
   description: "Tufts University's student-run CS club empowering students and elevating non-profits.",
 };
 
+const whoWeAreImages = [
+  {
+    src: "/homepage/who-we-are-4.png",
+    alt: "Project presentation"
+  },
+  {
+    src: "/homepage/who-we-are-1.png",
+    alt: "A live demo at JumboCode final presentations"
+  },
+  {
+    src: "/homepage/who-we-are-2.png",
+    alt: "JumboCode Team Photo"
+  },
+  {
+    src: "/homepage/who-we-are-3.png",
+    alt: "A team having fun at a JumboCode hack night"
+  },
+  {
+    src: "/homepage/who-we-are-5.png",
+    alt: "JumboHack programmers working on their projects"
+  }
+];
+
 export default function JoinPage() {
   return (
-      <body className="antialiased bg-gray-950">
-        <div className="max-w-screen-lg mx-auto px-4 pt-4 sm:pt-8 pb-24">
-          {/* Gradient background */}
-          <div className="absolute inset-0 h-[85vh] bg-gradient-to-b from-brand/25 to-gray-950 -z-10" />
-          
-          <header className="flex justify-between items-center">
-            <Link href="/">
-              <img src="/logo.svg" alt="JumboCode" className="h-8" />
-            </Link>
-            <Nav />
-          </header>
+    <>
+      {/* Gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-brand/25 via-transparent to-transparent -z-10" style={{ height: '85vh' }} />
+      
+      <header className="flex justify-between items-center mb-8">
+        <Link href="/">
+          <img src="/logo.svg" alt="JumboCode" className="h-8" />
+        </Link>
+        <Nav />
+      </header>
 
-          <div>
-            <Hero
+      <Hero
               title={<>Welcome to Jumbo<span className="text-brand">Code</span>!</>}
               subtitle={
                 <>
@@ -44,7 +65,7 @@ export default function JoinPage() {
               }
             />
 
-            <section className="mt-12 lg:mt-20">
+            <section className="">
               <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-20 items-center">
                 <div>
                   <h2 className="text-white font-semibold text-3xl lg:text-4xl">
@@ -68,14 +89,19 @@ export default function JoinPage() {
                 </div>
 
                 <div className="relative">
-                  <ImageCollage 
+                  <img
+                    src="/homepage/who-we-are-1.png"
+                    alt=""
+                    className="rounded-2xl max-sm:-order-1"
+                />
+                  {/* <ImageCollage 
                     images={[
                       { src: "/homepage/who-we-are-1.png", alt: "JumboCode team members working together" },
                       { src: "/apply/homestart-team.png", alt: "Homestart project team" },
                       { src: "/homepage/who-we-are-2.png", alt: "Students collaborating on code" },
                       { src: "/apply/jumbohack-ben.jpg", alt: "JumboHack event presentation" }
                     ]}
-                  />
+                  /> */}
                 </div>
               </div>
             </section>
@@ -117,7 +143,12 @@ export default function JoinPage() {
               <Mailchimp />
             </section>
 
-            <section className="mt-16 lg:mt-24 text-center">
+            <ImageCarousel
+              images={whoWeAreImages}
+              className="py-8 md:pb-8 lg:py-20"
+            />
+
+            <section className="text-center">
               <div className="bg-white/5 rounded-xl p-8 lg:p-12">
                 <h2 className="text-white font-semibold text-2xl lg:text-3xl mb-4">
                   Ready to Learn More?
@@ -131,9 +162,8 @@ export default function JoinPage() {
                 </div>
               </div>
             </section>
-          </div>
-        </div>
+
       <Footer />
-      </body>
+    </>
   );
 }

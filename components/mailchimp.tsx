@@ -11,8 +11,8 @@
    copy pasted, and some extra styling was done. */
 export default function SignupPage() {
     return (
-        <div className="flex flex-col items-center justify-center mt-8">
-            <div id="mc_embed_shell">
+        <div className="flex flex-col items-center justify-center mt-8 px-4">
+            <div id="mc_embed_shell" className="w-full max-w-lg">
                 <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css" />
                 <style type="text/css">
                     {`
@@ -20,9 +20,33 @@ export default function SignupPage() {
                             background:#fff; false;
                             clear:left;
                             font:14px Helvetica,Arial,sans-serif;
-                            width: 600px;
+                            width: 100%;
+                            max-width: 600px;
                             padding: 20px;
                             border-radius: 25px;
+                            box-sizing: border-box;
+                        }
+                        
+                        @media (max-width: 640px) {
+                            #mc_embed_signup {
+                                padding: 16px;
+                                margin: 0;
+                                font-size: 12px;
+                            }
+                            
+                            #mc_embed_signup h2 {
+                                font-size: 18px !important;
+                                margin-bottom: 16px !important;
+                            }
+                            
+                            #mc_embed_signup .mc-field-group input[type="email"] {
+                                width: 100% !important;
+                                box-sizing: border-box !important;
+                            }
+                            
+                            #mc_embed_signup .mc-field-group {
+                                margin-bottom: 12px !important;
+                            }
                         }
                     `}
                 </style>
