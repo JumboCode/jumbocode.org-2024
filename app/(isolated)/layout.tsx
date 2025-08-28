@@ -1,14 +1,8 @@
 import Footer from "@/components/footer";
 import Nav from "@/components/nav";
 import { Analytics } from "@vercel/analytics/next";
-import type { Metadata } from "next";
 import Link from "next/link";
 import "../globals.css";
-
-export const metadata: Metadata = {
-  title: "JumboCode",
-  description: "Tufts University's student-run CS club empowering students and elevating non-profits.",
-};
 
 export default function RootLayout({
   children,

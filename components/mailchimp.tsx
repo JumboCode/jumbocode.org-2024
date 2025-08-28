@@ -39,7 +39,7 @@ export default function SignupPage() {
                                 margin-bottom: 16px !important;
                             }
                             
-                            #mc_embed_signup .mc-field-group input[type="email"] {
+                            #mc_embed_signup .mc-field-group input[type=email] {
                                 width: 100% !important;
                                 box-sizing: border-box !important;
                             }
