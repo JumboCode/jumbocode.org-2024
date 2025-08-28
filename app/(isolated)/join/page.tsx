@@ -1,10 +1,7 @@
 import Button from "@/components/button";
-import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Mailchimp from "@/components/mailchimp";
-import Nav from "@/components/nav";
 import type { Metadata } from "next";
-import Link from "next/link";
 import ImageCarousel from "../../../components/ImageCarousel";
 
 export const metadata: Metadata = {
@@ -38,16 +35,6 @@ const whoWeAreImages = [
 export default function JoinPage() {
   return (
     <>
-      {/* Gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-brand/25 via-transparent to-transparent -z-10" style={{ height: '85vh' }} />
-      
-      <header className="flex justify-between items-center mb-8">
-        <Link href="/">
-          <img src="/logo.svg" alt="JumboCode" className="h-8" />
-        </Link>
-        <Nav />
-      </header>
-
       <Hero
               title={<>Welcome to Jumbo<span className="text-brand">Code</span>!</>}
               subtitle={
@@ -162,8 +149,6 @@ export default function JoinPage() {
                 </div>
               </div>
             </section>
-
-      <Footer />
     </>
   );
 }

@@ -1,4 +1,14 @@
+import Footer from "@/components/footer";
+import Nav from "@/components/nav";
+import { Analytics } from "@vercel/analytics/next";
+import type { Metadata } from "next";
+import Link from "next/link";
 import "../globals.css";
+
+export const metadata: Metadata = {
+  title: "JumboCode",
+  description: "Tufts University's student-run CS club empowering students and elevating non-profits.",
+};
 
 export default function RootLayout({
   children,
@@ -7,15 +17,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-        <head>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        </head>
-        <body className="antialiased bg-gray-950 min-h-screen">
-            <div className="max-w-screen-lg mx-auto px-4 pt-4 sm:pt-8">
-              <main>{children}</main>
-            </div>
-        </body>
+      <Analytics/>
+      <body className="antialiased bg-gray-950">
+        <div className="max-w-screen-lg mx-auto px-4 pt-4 sm:pt-8 pb-24">
+          {/* Gradient background */}
+          <div className="absolute inset-0 h-[85vh] bg-gradient-to-b from-brand/25 to-gray-950 -z-10" />
+
+          <header className="flex justify-between items-center">
+            <Link href="/">
+              <img src="/logo.svg" alt="JumboCode" className="h-8" />
+            </Link>
+            <Nav />
+          </header>
+          <main>{children}</main>
+        </div>
+        <Footer />
+      </body>
     </html>
   );
 }
