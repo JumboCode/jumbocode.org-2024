@@ -77,7 +77,7 @@ export default function JoinPage() {
 
                 <div className="relative">
                   <img
-                    src="/homepage/who-we-are-1.png"
+                    src="/about-us/image-collage-3.png"
                     alt=""
                     className="rounded-2xl max-sm:-order-1"
                 />
