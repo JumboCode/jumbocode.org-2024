@@ -61,7 +61,7 @@ export default function SignupPage() {
                                 <label htmlFor="mce-EMAIL">
                                     Email Address <span className="asterisk">*</span>
                                 </label>
-                                <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" required value="" />
+                                <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" required />
                             </div>
                             <div className="mc-field-group input-group">
                                 <strong>Class of... </strong>
