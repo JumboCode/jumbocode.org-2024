@@ -77,7 +77,7 @@ export default function Leaderboard() {
               <div className="text-lg font-bold mt-1">{podiumTeams[1]?.score}</div>
             </div>
             <div className="bg-gray-400 w-full h-20 rounded-t-lg flex items-center justify-center">
-              <span className="text-2xl font-bold text-gray-800">2</span>
+              <span className="text-2xl font-bold text-gray-800">{podiumTeams[1]?.rank}</span>
             </div>
           </div>
 
@@ -88,7 +88,7 @@ export default function Leaderboard() {
               <div className="text-lg font-bold mt-1">{podiumTeams[0]?.score}</div>
             </div>
             <div className="bg-yellow-400 w-full h-28 rounded-t-lg flex items-center justify-center">
-              <span className="text-3xl font-bold text-gray-800">1</span>
+              <span className="text-3xl font-bold text-gray-800">{podiumTeams[0]?.rank}</span>
             </div>
           </div>
 
@@ -99,7 +99,7 @@ export default function Leaderboard() {
               <div className="text-lg font-bold mt-1">{podiumTeams[2]?.score}</div>
             </div>
             <div className="bg-orange-400 w-full h-16 rounded-t-lg flex items-center justify-center">
-              <span className="text-2xl font-bold text-gray-800">3</span>
+              <span className="text-2xl font-bold text-gray-800">{podiumTeams[2]?.rank}</span>
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@ export default function Leaderboard() {
 
       {/* Footer note */}
       <p className="text-subtext text-sm mt-6 text-center">
-        Updated in real-time • Last update: {new Date().toLocaleDateString()}
+        Last update: {new Date().toLocaleDateString()}
       </p>
     </div>
   );
