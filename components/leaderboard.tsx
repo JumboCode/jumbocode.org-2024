@@ -36,12 +36,29 @@ const teams: Team[] = [
 ];
 
 export default function Leaderboard() {
-  // Sort teams by score in descending order
-  const sortedTeams = [...teams].sort((a, b) => b.score - a.score);
+  // Sort teams by score in descending order, then alphabetically by name for ties
+  const sortedTeams = [...teams].sort((a, b) => {
+    if (b.score !== a.score) {
+      return b.score - a.score;
+    }
+    return a.name.localeCompare(b.name);
+  });
+
+  // Calculate ranks handling ties
+  const teamsWithRanks = sortedTeams.map((team, index) => {
+    let rank = 1;
+    for (let i = 0; i < index; i++) {
+      if (sortedTeams[i].score !== team.score) {
+        rank = i + 2;
+        break;
+      }
+    }
+    return { ...team, rank };
+  });
   
   // Get top 3 for podium and remaining for rows
-  const podiumTeams = sortedTeams.slice(0, 3);
-  const remainingTeams = sortedTeams.slice(3);
+  const podiumTeams = teamsWithRanks.slice(0, 3);
+  const remainingTeams = teamsWithRanks.slice(3);
 
   return (
     <div className="flex flex-col items-center justify-center mt-8 max-w-4xl mx-auto px-4">
@@ -90,8 +107,7 @@ export default function Leaderboard() {
 
       {/* Remaining Teams */}
       <div className="w-full space-y-2">
-        {remainingTeams.map((team, index) => {
-          const position = index + 4; // Starting from 4th position
+        {remainingTeams.map((team) => {
           return (
             <div
               key={team.id}
@@ -99,7 +115,7 @@ export default function Leaderboard() {
             >
               <div className="flex items-center gap-4">
                 <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center">
-                  <span className="font-bold text-white text-sm">{position}</span>
+                  <span className="font-bold text-white text-sm">{team.rank}</span>
                 </div>
                 <span className="font-semibold text-white text-lg">{team.name}</span>
               </div>
