@@ -30,7 +30,7 @@ const teams: Team[] = [
   { id: 7, name: "Food for Free", score: 0 },
   { id: 8, name: "Food Link", score: 0 },
   { id: 9, name: "Lexington Zero Waste", score: 0 },
-  { id: 10, name: "MHD", score: 0 },
+  { id: 10, name: "Massachusetts History Day", score: 0 },
   { id: 11, name: "School on Wheels", score: 0 },
   { id: 12, name: "The Loop Lab", score: 0 },
 ];
