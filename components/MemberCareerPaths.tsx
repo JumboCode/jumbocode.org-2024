@@ -22,7 +22,7 @@ export default function MemberCareerPaths() {
         {src: "/member-career-paths/nasuni_logo.png", alt: "Nasuni"},
         {src: "/member-career-paths/datadog_logo.png", alt: "Datadog"},
         {src: "/member-career-paths/google_logo.png", alt: "Google"},
-        {src: "/member-career-paths/palantir_logo.png", alt: "Palantir"},
+        // {src: "/member-career-paths/palantir_logo.png", alt: "Palantir"},
         {src: "/member-career-paths/apple_logo.png", alt: "Apple"},
         {src: "/member-career-paths/spotify_logo.png", alt: "Aaron's Presents"},
         {src: "/member-career-paths/notion_logo.png", alt: "Notion"},
