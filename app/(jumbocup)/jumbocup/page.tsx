@@ -6,12 +6,12 @@
 *
 */
 
-
+import Leaderboard from "@/components/leaderboard";
 
 export default function JumboCupPage() {
     return (
         <div className="flex flex-col items-center justify-center mt-8">
-            <h1 className="text-2xl font-bold">Current Jumbocup Leaderboard</h1>
-        </div>   
+            <Leaderboard />
+        </div>
     );
 }
