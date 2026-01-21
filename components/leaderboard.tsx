@@ -47,7 +47,7 @@ export default function Leaderboard() {
   useEffect(() => {
     async function fetchLeaderboard() {
       try {
-        const response = await fetch('/api/leaderboard-unified');
+        const response = await fetch('/api/leaderboard');
         if (!response.ok) {
           throw new Error('Failed to fetch leaderboard data');
         }
