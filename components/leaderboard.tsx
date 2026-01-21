@@ -1,25 +1,86 @@
+'use client';
+import { useEffect, useState } from 'react';
+
 interface Team {
   id: number;
   name: string;
   score: number;
 }
 
-const teams: Team[] = [
-  { id: 1, name: "Artists for Humanity", score: 0 },
-  { id: 2, name: "Beantown Baby Diaper Bank", score: 0 },
-  { id: 3, name: "Boston Community Pediatrics", score: 0 },
-  { id: 4, name: "Boston's Higher Ground", score: 0 },
-  { id: 5, name: "Breaktime", score: 0 },
-  { id: 6, name: "Commonwealth Kitchen", score: 0 },
-  { id: 7, name: "Food for Free", score: 0 },
-  { id: 8, name: "Food Link", score: 0 },
-  { id: 9, name: "Lexington Zero Waste", score: 0 },
-  { id: 10, name: "Massachusetts History Day", score: 0 },
-  { id: 11, name: "School on Wheels", score: 0 },
-  { id: 12, name: "The Loop Lab", score: 0 },
+interface TeamScore {
+  team_name: string;
+  total_points: number;
+}
+
+// All expected teams - ensures we always show all 12 teams even with 0 points
+const ALL_TEAMS = [
+  "Artists for Humanity",
+  "Beantown Baby Diaper Bank",
+  "Boston Community Pediatrics",
+  "Boston's Higher Ground",
+  "Breaktime",
+  "Commonwealth Kitchen",
+  "Food for Free",
+  "Food Link",
+  "Lexington Zero Waste",
+  "Massachusetts History Day",
+  "School on Wheels",
+  "The Loop Lab",
 ];
 
 export default function Leaderboard() {
+  const [teams, setTeams] = useState<Team[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function fetchLeaderboard() {
+      try {
+        const response = await fetch('/api/leaderboard');
+        if (!response.ok) {
+          throw new Error('Failed to fetch leaderboard data');
+        }
+        const teamScores: TeamScore[] = await response.json();
+        
+        // Create a map of team scores from the API
+        const scoreMap = new Map<string, number>();
+        teamScores.forEach(teamScore => {
+          scoreMap.set(teamScore.team_name, teamScore.total_points);
+        });
+        
+        // Ensure all teams are included, even those with no events (0 points)
+        const allTeamsWithScores: Team[] = ALL_TEAMS.map((teamName, index) => ({
+          id: index + 1,
+          name: teamName,
+          score: scoreMap.get(teamName) || 0
+        }));
+        
+        setTeams(allTeamsWithScores);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'An error occurred');
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchLeaderboard();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex flex-col items-center justify-center mt-8 max-w-4xl mx-auto px-4">
+        <div className="text-white text-xl">Loading leaderboard...</div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex flex-col items-center justify-center mt-8 max-w-4xl mx-auto px-4">
+        <div className="text-red-400 text-xl">Error: {error}</div>
+      </div>
+    );
+  }
   // Sort teams by score in descending order, then alphabetically by name for ties
   const sortedTeams = [...teams].sort((a, b) => {
     if (b.score !== a.score) {
