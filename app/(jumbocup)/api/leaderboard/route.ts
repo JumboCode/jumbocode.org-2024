@@ -1,5 +1,5 @@
 import { query } from '@/lib/db';
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
 interface TeamScore {
   team_name: string;
@@ -20,7 +20,7 @@ interface LeaderboardData {
 }
 
 // Get complete leaderboard data - all teams and all their events
-export async function GET(req: NextRequest) {
+export async function GET(req: Request) {
   try {
     const { searchParams } = new URL(req.url);
     const teamName = searchParams.get('team');
@@ -100,3 +100,6 @@ export async function GET(req: NextRequest) {
     }, { status: 500 });
   }
 }
+
+// Force dynamic rendering for this route
+export const dynamic = 'force-dynamic';
