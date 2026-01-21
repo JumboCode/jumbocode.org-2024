@@ -20,7 +20,7 @@ interface TeamEvent {
   created_at: string;
 }
 
-// All expected teams - ensures we always show all 12 teams even with 0 points
+// All expected teams
 const ALL_TEAMS = [
   "Artists for Humanity",
   "Beantown Baby Diaper Bank",
@@ -41,21 +41,21 @@ export default function Leaderboard() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
-  const [teamEvents, setTeamEvents] = useState<TeamEvent[]>([]);
+  const [allTeamEvents, setAllTeamEvents] = useState<{ [teamName: string]: TeamEvent[] }>({});
   const [eventsLoading, setEventsLoading] = useState(false);
 
   useEffect(() => {
     async function fetchLeaderboard() {
       try {
-        const response = await fetch('/api/leaderboard');
+        const response = await fetch('/api/leaderboard-unified');
         if (!response.ok) {
           throw new Error('Failed to fetch leaderboard data');
         }
-        const teamScores: TeamScore[] = await response.json();
+        const data = await response.json();
         
         // Create a map of team scores from the API
         const scoreMap = new Map<string, number>();
-        teamScores.forEach(teamScore => {
+        data.teams.forEach((teamScore: TeamScore) => {
           scoreMap.set(teamScore.team_name, teamScore.total_points);
         });
         
@@ -67,6 +67,7 @@ export default function Leaderboard() {
         }));
         
         setTeams(allTeamsWithScores);
+        setAllTeamEvents(data.events);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'An error occurred');
       } finally {
@@ -81,26 +82,10 @@ export default function Leaderboard() {
     if (selectedTeam === teamName) {
       // Close if same team clicked
       setSelectedTeam(null);
-      setTeamEvents([]);
       return;
     }
 
-    setEventsLoading(true);
     setSelectedTeam(teamName);
-    
-    try {
-      const response = await fetch(`/api/team/${encodeURIComponent(teamName)}`);
-      if (!response.ok) {
-        throw new Error('Failed to fetch team events');
-      }
-      const events: TeamEvent[] = await response.json();
-      setTeamEvents(events);
-    } catch (err) {
-      console.error('Error fetching team events:', err);
-      setTeamEvents([]);
-    } finally {
-      setEventsLoading(false);
-    }
   };
 
   if (loading) {
@@ -130,9 +115,8 @@ export default function Leaderboard() {
   const teamsWithRanks = sortedTeams.map((team, index) => {
     let rank = 1;
     for (let i = 0; i < index; i++) {
-      if (sortedTeams[i].score !== team.score) {
-        rank = i + 2;
-        break;
+      if (sortedTeams[i].score > team.score) {
+        rank++;
       }
     }
     return { ...team, rank };
@@ -209,10 +193,10 @@ export default function Leaderboard() {
           <div className="mt-6 bg-gray-900 rounded-lg p-4 border-l-4 border-brand max-w-3xl mx-auto">
             {eventsLoading ? (
               <div className="text-gray-400 text-center py-4">Loading events...</div>
-            ) : teamEvents.length > 0 ? (
+            ) : allTeamEvents[selectedTeam]?.length > 0 ? (
               <div className="space-y-2">
                 <h4 className="text-brand font-semibold mb-3">Events for {selectedTeam}</h4>
-                {teamEvents.map((event) => (
+                {allTeamEvents[selectedTeam].map((event: TeamEvent) => (
                   <div key={event.id} className="flex items-center justify-between bg-gray-800 px-4 py-2 rounded">
                     <div>
                       <div className="text-white font-medium">{event.name}</div>
@@ -261,10 +245,10 @@ export default function Leaderboard() {
                 <div className="ml-4 mt-2 bg-gray-900 rounded-lg p-4 border-l-4 border-brand">
                   {eventsLoading ? (
                     <div className="text-gray-400 text-center py-4">Loading events...</div>
-                  ) : teamEvents.length > 0 ? (
+                  ) : allTeamEvents[team.name]?.length > 0 ? (
                     <div className="space-y-2">
                       <h4 className="text-brand font-semibold mb-3">Events for {team.name}</h4>
-                      {teamEvents.map((event) => (
+                      {allTeamEvents[team.name].map((event: TeamEvent) => (
                         <div key={event.id} className="flex items-center justify-between bg-gray-800 px-4 py-2 rounded">
                           <div>
                             <div className="text-white font-medium">{event.name}</div>
