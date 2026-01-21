@@ -1,5 +1,6 @@
 .vercel
 .next
+.env
 
 # build output
 dist/

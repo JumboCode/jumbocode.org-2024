@@ -4,22 +4,6 @@ interface Team {
   score: number;
 }
 
-// Sample data - replace with your actual data source
-// const teams: Team[] = [
-//   { id: 1, name: "Beantown Baby Diaper Bank", score: 323 },
-//   { id: 2, name: "Boston Community Pediatrics", score: 287 },
-//   { id: 3, name: "Commonwealth Kitchen", score: 283 },
-//   { id: 4, name: "Lexington Zero Waste", score: 243 },
-//   { id: 5, name: "MHD", score: 219 },
-//   { id: 6, name: "The Loop Lab", score: 178 },
-//   { id: 7, name: "Food Link", score: 137 },
-//   { id: 8, name: "School on Wheels", score: 100 },
-//   { id: 9, name: "Boston's Higher Ground", score: 92 },
-//   { id: 10, name: "Food for Free", score: 82 },
-//   { id: 11, name: "Artists for Humanity", score: 70 },
-//   { id: 12, name: "Breaktime", score: 46 },
-// ];
-
 const teams: Team[] = [
   { id: 1, name: "Artists for Humanity", score: 0 },
   { id: 2, name: "Beantown Baby Diaper Bank", score: 0 },
