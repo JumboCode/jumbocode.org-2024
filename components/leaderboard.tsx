@@ -42,7 +42,7 @@ export default function Leaderboard() {
   const [error, setError] = useState<string | null>(null);
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
   const [allTeamEvents, setAllTeamEvents] = useState<{ [teamName: string]: TeamEvent[] }>({});
-  const [eventsLoading, setEventsLoading] = useState(false);
+  const [eventsLoading] = useState(false);
 
   useEffect(() => {
     async function fetchLeaderboard() {

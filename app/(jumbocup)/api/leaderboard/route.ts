@@ -6,13 +6,13 @@ interface TeamScore {
   total_points: number;
 }
 
-async function addEvent(name: string, teamName: string, points: number, eventDate?: string): Promise<Event> {
-  const result = await query(
-    'INSERT INTO jumbocup (event_name, team_name, points, event_date) VALUES ($1, $2, $3, $4) RETURNING *',
-    [name, teamName, points, eventDate || new Date().toISOString().split('T')[0]]
-  );
-  return (result as Event[])[0];
-}
+// async function addEvent(name: string, teamName: string, points: number, eventDate?: string): Promise<Event> {
+//   const result = await query(
+//     'INSERT INTO jumbocup (event_name, team_name, points, event_date) VALUES ($1, $2, $3, $4) RETURNING *',
+//     [name, teamName, points, eventDate || new Date().toISOString().split('T')[0]]
+//   );
+//   return (result as Event[])[0];
+// }
 
 // Get JumboCup leaderboard scores
 export async function GET() {
