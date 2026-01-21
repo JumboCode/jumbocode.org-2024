@@ -140,12 +140,11 @@ export default function Leaderboard() {
           <div className="flex flex-col items-center w-1/3">
             <div 
               onClick={() => fetchTeamEvents(podiumTeams[1]?.name || '')}
-              className="bg-gray-600 text-white px-2 py-2 rounded-t-lg mb-2 w-full text-center cursor-pointer hover:bg-gray-500 transition-colors duration-200"
+              className="bg-gray-500 text-white px-2 py-2 rounded-t-lg mb-2 w-full text-center cursor-pointer hover:bg-gray-600 transition-colors duration-200"
             >
               <div className="font-semibold text-xs leading-tight break-words">{podiumTeams[1]?.name}</div>
               <div className="text-lg font-bold mt-1">{podiumTeams[1]?.score}</div>
               <div className="text-xs text-gray-300 mt-1">
-                {selectedTeam === podiumTeams[1]?.name ? '▼' : '▶'}
               </div>
             </div>
             <div className="bg-gray-400 w-full h-20 rounded-t-lg flex items-center justify-center">
@@ -157,12 +156,11 @@ export default function Leaderboard() {
           <div className="flex flex-col items-center w-1/3">
             <div 
               onClick={() => fetchTeamEvents(podiumTeams[0]?.name || '')}
-              className="bg-yellow-500 text-gray-900 px-2 py-2 rounded-t-lg mb-2 w-full text-center cursor-pointer hover:bg-yellow-400 transition-colors duration-200"
+              className="bg-yellow-500 text-gray-900 px-2 py-2 rounded-t-lg mb-2 w-full text-center cursor-pointer hover:bg-yellow-600 transition-colors duration-200"
             >
               <div className="font-semibold text-xs leading-tight break-words">{podiumTeams[0]?.name}</div>
               <div className="text-lg font-bold mt-1">{podiumTeams[0]?.score}</div>
               <div className="text-xs text-gray-700 mt-1">
-                {selectedTeam === podiumTeams[0]?.name ? '▼' : '▶'}
               </div>
             </div>
             <div className="bg-yellow-400 w-full h-28 rounded-t-lg flex items-center justify-center">
@@ -174,12 +172,11 @@ export default function Leaderboard() {
           <div className="flex flex-col items-center w-1/3">
             <div 
               onClick={() => fetchTeamEvents(podiumTeams[2]?.name || '')}
-              className="bg-orange-600 text-white px-2 py-2 rounded-t-lg mb-2 w-full text-center cursor-pointer hover:bg-orange-500 transition-colors duration-200"
+              className="bg-orange-600 text-white px-2 py-2 rounded-t-lg mb-2 w-full text-center cursor-pointer hover:bg-orange-700 transition-colors duration-200"
             >
               <div className="font-semibold text-xs leading-tight break-words">{podiumTeams[2]?.name}</div>
               <div className="text-lg font-bold mt-1">{podiumTeams[2]?.score}</div>
               <div className="text-xs text-orange-200 mt-1">
-                {selectedTeam === podiumTeams[2]?.name ? '▼' : '▶'}
               </div>
             </div>
             <div className="bg-orange-400 w-full h-16 rounded-t-lg flex items-center justify-center">
@@ -235,7 +232,7 @@ export default function Leaderboard() {
                     {team.score.toLocaleString()}
                   </div>
                   <div className="text-gray-400 text-sm">
-                    {selectedTeam === team.name ? '▼' : '▶'}
+                    {selectedTeam === team.name ? '▾' : '▸'}
                   </div>
                 </div>
               </div>
