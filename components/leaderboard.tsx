@@ -126,6 +126,24 @@ export default function Leaderboard() {
   const podiumTeams = teamsWithRanks.slice(0, 3);
   const remainingTeams = teamsWithRanks.slice(3);
 
+  // Find the most recent event timestamp
+  const getMostRecentEventDate = (): Date | null => {
+    let mostRecentDate: Date | null = null;
+    
+    Object.values(allTeamEvents).forEach(events => {
+      events.forEach(event => {
+        const eventDate = new Date(event.created_at);
+        if (!mostRecentDate || eventDate > mostRecentDate) {
+          mostRecentDate = eventDate;
+        }
+      });
+    });
+    
+    return mostRecentDate;
+  };
+
+  const mostRecentDate = getMostRecentEventDate();
+
   return (
     <div className="flex flex-col items-center justify-center mt-8 max-w-4xl mx-auto px-4">
       {/* Title */}
@@ -269,7 +287,7 @@ export default function Leaderboard() {
 
       {/* Footer note */}
       <p className="text-subtext text-sm mt-6 text-center">
-        Last update: {new Date().toLocaleDateString()}
+        Last update: {mostRecentDate ? mostRecentDate.toLocaleDateString() : 'No events yet'}
       </p>
     </div>
   );
