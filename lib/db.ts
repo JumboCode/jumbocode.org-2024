@@ -9,7 +9,7 @@ const pool = new Pool({
   ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
 });
 
-export async function query(text: string, params?: any[]): Promise<any> {
+export async function query(text: string, params?: unknown[]): Promise<unknown[]> {
   const client = await pool.connect();
   try {
     const result = await client.query(text, params);
