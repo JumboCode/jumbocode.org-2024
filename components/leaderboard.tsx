@@ -12,6 +12,14 @@ interface TeamScore {
   total_points: number;
 }
 
+interface TeamEvent {
+  id: number;
+  name: string;
+  points: number;
+  event_date: string;
+  created_at: string;
+}
+
 // All expected teams - ensures we always show all 12 teams even with 0 points
 const ALL_TEAMS = [
   "Artists for Humanity",
@@ -32,6 +40,9 @@ export default function Leaderboard() {
   const [teams, setTeams] = useState<Team[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
+  const [teamEvents, setTeamEvents] = useState<TeamEvent[]>([]);
+  const [eventsLoading, setEventsLoading] = useState(false);
 
   useEffect(() => {
     async function fetchLeaderboard() {
@@ -65,6 +76,32 @@ export default function Leaderboard() {
 
     fetchLeaderboard();
   }, []);
+
+  const fetchTeamEvents = async (teamName: string) => {
+    if (selectedTeam === teamName) {
+      // Close if same team clicked
+      setSelectedTeam(null);
+      setTeamEvents([]);
+      return;
+    }
+
+    setEventsLoading(true);
+    setSelectedTeam(teamName);
+    
+    try {
+      const response = await fetch(`/api/team/${encodeURIComponent(teamName)}`);
+      if (!response.ok) {
+        throw new Error('Failed to fetch team events');
+      }
+      const events: TeamEvent[] = await response.json();
+      setTeamEvents(events);
+    } catch (err) {
+      console.error('Error fetching team events:', err);
+      setTeamEvents([]);
+    } finally {
+      setEventsLoading(false);
+    }
+  };
 
   if (loading) {
     return (
@@ -117,9 +154,15 @@ export default function Leaderboard() {
         <div className="flex items-end justify-center gap-2 mb-6 max-w-3xl mx-auto">
           {/* 2nd Place */}
           <div className="flex flex-col items-center w-1/3">
-            <div className="bg-gray-600 text-white px-2 py-2 rounded-t-lg mb-2 w-full text-center">
+            <div 
+              onClick={() => fetchTeamEvents(podiumTeams[1]?.name || '')}
+              className="bg-gray-600 text-white px-2 py-2 rounded-t-lg mb-2 w-full text-center cursor-pointer hover:bg-gray-500 transition-colors duration-200"
+            >
               <div className="font-semibold text-xs leading-tight break-words">{podiumTeams[1]?.name}</div>
               <div className="text-lg font-bold mt-1">{podiumTeams[1]?.score}</div>
+              <div className="text-xs text-gray-300 mt-1">
+                {selectedTeam === podiumTeams[1]?.name ? '▼' : '▶'}
+              </div>
             </div>
             <div className="bg-gray-400 w-full h-20 rounded-t-lg flex items-center justify-center">
               <span className="text-2xl font-bold text-gray-800">{podiumTeams[1]?.rank}</span>
@@ -128,9 +171,15 @@ export default function Leaderboard() {
 
           {/* 1st Place */}
           <div className="flex flex-col items-center w-1/3">
-            <div className="bg-yellow-500 text-gray-900 px-2 py-2 rounded-t-lg mb-2 w-full text-center">
+            <div 
+              onClick={() => fetchTeamEvents(podiumTeams[0]?.name || '')}
+              className="bg-yellow-500 text-gray-900 px-2 py-2 rounded-t-lg mb-2 w-full text-center cursor-pointer hover:bg-yellow-400 transition-colors duration-200"
+            >
               <div className="font-semibold text-xs leading-tight break-words">{podiumTeams[0]?.name}</div>
               <div className="text-lg font-bold mt-1">{podiumTeams[0]?.score}</div>
+              <div className="text-xs text-gray-700 mt-1">
+                {selectedTeam === podiumTeams[0]?.name ? '▼' : '▶'}
+              </div>
             </div>
             <div className="bg-yellow-400 w-full h-28 rounded-t-lg flex items-center justify-center">
               <span className="text-3xl font-bold text-gray-800">{podiumTeams[0]?.rank}</span>
@@ -139,34 +188,99 @@ export default function Leaderboard() {
 
           {/* 3rd Place */}
           <div className="flex flex-col items-center w-1/3">
-            <div className="bg-orange-600 text-white px-2 py-2 rounded-t-lg mb-2 w-full text-center">
+            <div 
+              onClick={() => fetchTeamEvents(podiumTeams[2]?.name || '')}
+              className="bg-orange-600 text-white px-2 py-2 rounded-t-lg mb-2 w-full text-center cursor-pointer hover:bg-orange-500 transition-colors duration-200"
+            >
               <div className="font-semibold text-xs leading-tight break-words">{podiumTeams[2]?.name}</div>
               <div className="text-lg font-bold mt-1">{podiumTeams[2]?.score}</div>
+              <div className="text-xs text-orange-200 mt-1">
+                {selectedTeam === podiumTeams[2]?.name ? '▼' : '▶'}
+              </div>
             </div>
             <div className="bg-orange-400 w-full h-16 rounded-t-lg flex items-center justify-center">
               <span className="text-2xl font-bold text-gray-800">{podiumTeams[2]?.rank}</span>
             </div>
           </div>
         </div>
+
+        {/* Podium Team Events */}
+        {selectedTeam && podiumTeams.some(team => team?.name === selectedTeam) && (
+          <div className="mt-6 bg-gray-900 rounded-lg p-4 border-l-4 border-brand max-w-3xl mx-auto">
+            {eventsLoading ? (
+              <div className="text-gray-400 text-center py-4">Loading events...</div>
+            ) : teamEvents.length > 0 ? (
+              <div className="space-y-2">
+                <h4 className="text-brand font-semibold mb-3">Events for {selectedTeam}</h4>
+                {teamEvents.map((event) => (
+                  <div key={event.id} className="flex items-center justify-between bg-gray-800 px-4 py-2 rounded">
+                    <div>
+                      <div className="text-white font-medium">{event.name}</div>
+                      <div className="text-gray-400 text-sm">
+                        {new Date(event.event_date).toLocaleDateString()}
+                      </div>
+                    </div>
+                    <div className="text-brand font-bold">+{event.points}</div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="text-gray-400 text-center py-4">No events found for this team</div>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Remaining Teams */}
       <div className="w-full space-y-2">
         {remainingTeams.map((team) => {
           return (
-            <div
-              key={team.id}
-              className="flex items-center justify-between bg-gray-800 hover:bg-gray-700 transition-colors duration-200 px-6 py-4 rounded-lg border border-gray-700"
-            >
-              <div className="flex items-center gap-4">
-                <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center">
-                  <span className="font-bold text-white text-sm">{team.rank}</span>
+            <div key={team.id}>
+              <div
+                onClick={() => fetchTeamEvents(team.name)}
+                className="flex items-center justify-between bg-gray-800 hover:bg-gray-700 transition-colors duration-200 px-6 py-4 rounded-lg border border-gray-700 cursor-pointer"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center">
+                    <span className="font-bold text-white text-sm">{team.rank}</span>
+                  </div>
+                  <span className="font-semibold text-white text-lg">{team.name}</span>
                 </div>
-                <span className="font-semibold text-white text-lg">{team.name}</span>
+                <div className="flex items-center gap-4">
+                  <div className="text-brand text-xl font-bold">
+                    {team.score.toLocaleString()}
+                  </div>
+                  <div className="text-gray-400 text-sm">
+                    {selectedTeam === team.name ? '▼' : '▶'}
+                  </div>
+                </div>
               </div>
-              <div className="text-brand text-xl font-bold">
-                {team.score.toLocaleString()}
-              </div>
+              
+              {/* Team Events */}
+              {selectedTeam === team.name && (
+                <div className="ml-4 mt-2 bg-gray-900 rounded-lg p-4 border-l-4 border-brand">
+                  {eventsLoading ? (
+                    <div className="text-gray-400 text-center py-4">Loading events...</div>
+                  ) : teamEvents.length > 0 ? (
+                    <div className="space-y-2">
+                      <h4 className="text-brand font-semibold mb-3">Events for {team.name}</h4>
+                      {teamEvents.map((event) => (
+                        <div key={event.id} className="flex items-center justify-between bg-gray-800 px-4 py-2 rounded">
+                          <div>
+                            <div className="text-white font-medium">{event.name}</div>
+                            <div className="text-gray-400 text-sm">
+                              {new Date(event.event_date).toLocaleDateString()}
+                            </div>
+                          </div>
+                          <div className="text-brand font-bold">+{event.points}</div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="text-gray-400 text-center py-4">No events found for this team</div>
+                  )}
+                </div>
+              )}
             </div>
           );
         })}
