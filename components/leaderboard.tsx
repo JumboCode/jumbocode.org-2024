@@ -47,7 +47,7 @@ export default function Leaderboard() {
   useEffect(() => {
     async function fetchLeaderboard() {
       try {
-        const response = await fetch('/api/leaderboard-unified');
+        const response = await fetch('/api/leaderboard');
         if (!response.ok) {
           throw new Error('Failed to fetch leaderboard data');
         }
@@ -216,7 +216,12 @@ export default function Leaderboard() {
                     <div>
                       <div className="text-white font-medium">{event.name}</div>
                       <div className="text-gray-400 text-sm">
-                        {new Date(event.event_date).toLocaleDateString()}
+                        {new Date(event.event_date).toLocaleDateString('en-US', {
+                          timeZone: 'America/New_York',
+                          year: 'numeric',
+                          month: 'numeric',
+                          day: 'numeric'
+                        })}
                       </div>
                     </div>
                     <div className="text-brand font-bold">+{event.points}</div>
@@ -287,7 +292,12 @@ export default function Leaderboard() {
 
       {/* Footer note */}
       <p className="text-subtext text-sm mt-6 text-center">
-        Last update: {mostRecentDate ? mostRecentDate.toLocaleDateString() : 'No events yet'}
+        Last update: {mostRecentDate ? mostRecentDate.toLocaleDateString('en-US', {
+          timeZone: 'America/New_York',
+          year: 'numeric',
+          month: 'numeric',
+          day: 'numeric'
+        }) : 'No events yet'}
       </p>
     </div>
   );

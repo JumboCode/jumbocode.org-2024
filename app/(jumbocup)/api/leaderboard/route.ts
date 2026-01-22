@@ -6,18 +6,45 @@ interface TeamScore {
   total_points: number;
 }
 
-// async function addEvent(name: string, teamName: string, points: number, eventDate?: string): Promise<Event> {
-//   const result = await query(
-//     'INSERT INTO jumbocup (event_name, team_name, points, event_date) VALUES ($1, $2, $3, $4) RETURNING *',
-//     [name, teamName, points, eventDate || new Date().toISOString().split('T')[0]]
-//   );
-//   return (result as Event[])[0];
-// }
+interface TeamEvent {
+  id: number;
+  name: string;
+  points: number;
+  event_date: string;
+  created_at: string;
+}
 
-// Get JumboCup leaderboard scores
-export async function GET() {
+interface LeaderboardData {
+  teams: TeamScore[];
+  events: { [teamName: string]: TeamEvent[] };
+}
+
+// Get complete leaderboard data - all teams and all their events
+export async function GET(req: Request) {
   try {
-    const result = await query(`
+    const { searchParams } = new URL(req.url);
+    const teamName = searchParams.get('team');
+
+    // If requesting specific team events
+    if (teamName) {
+      const result = await query(`
+        SELECT 
+          id,
+          event_name as name,
+          points,
+          event_date,
+          created_at
+        FROM jumbocup
+        WHERE team_name = $1
+        ORDER BY event_date DESC, created_at DESC
+      `, [teamName]);
+
+      const events = result as TeamEvent[];
+      return NextResponse.json(events);
+    }
+
+    // Get all team scores
+    const teamScoresResult = await query(`
       SELECT 
         team_name,
         SUM(points) as total_points
@@ -26,17 +53,53 @@ export async function GET() {
       ORDER BY total_points DESC, team_name ASC
     `);
 
-    const teamScores = result as TeamScore[];
+    const teamScores = teamScoresResult as TeamScore[];
 
-    return NextResponse.json(teamScores);
+    // Get all events grouped by team
+    const allEventsResult = await query(`
+      SELECT 
+        team_name,
+        id,
+        event_name as name,
+        points,
+        event_date,
+        created_at
+      FROM jumbocup
+      ORDER BY team_name, event_date DESC, created_at DESC
+    `);
+
+    const allEvents = allEventsResult as (TeamEvent & { team_name: string })[];
+
+    // Group events by team name
+    const eventsByTeam: { [teamName: string]: TeamEvent[] } = {};
+    allEvents.forEach(event => {
+      if (!eventsByTeam[event.team_name]) {
+        eventsByTeam[event.team_name] = [];
+      }
+      eventsByTeam[event.team_name].push({
+        id: event.id,
+        name: event.name,
+        points: event.points,
+        event_date: event.event_date,
+        created_at: event.created_at
+      });
+    });
+
+    const leaderboardData: LeaderboardData = {
+      teams: teamScores,
+      events: eventsByTeam
+    };
+
+    return NextResponse.json(leaderboardData);
   } catch (error) {
-    // Log detailed error information server-side only
     console.error('Database error details:', error);
     console.error('Error stack:', error instanceof Error ? error.stack : 'No stack trace');
     
-    // Return generic error message to client
     return NextResponse.json({ 
       message: 'Unable to fetch leaderboard data'
     }, { status: 500 });
   }
 }
+
+// Force dynamic rendering for this route
+export const dynamic = 'force-dynamic';
