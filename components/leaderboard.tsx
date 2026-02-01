@@ -161,7 +161,7 @@ export default function Leaderboard() {
       <div className="w-full mb-12">
         <div className="flex items-end justify-center gap-2 mb-6 max-w-3xl mx-auto">
           {/* 2nd Place */}
-          <div className="flex flex-col items-center w-1/3">
+          <div className="flex flex-col items-center flex-1 min-w-0">
             <div 
               onClick={() => fetchTeamEvents(podiumTeams[1]?.name || '')}
               className="bg-gray-500 text-white px-2 py-2 rounded-t-lg mb-2 w-full text-center cursor-pointer hover:bg-gray-600 transition-colors duration-200"
@@ -177,7 +177,7 @@ export default function Leaderboard() {
           </div>
 
           {/* 1st Place */}
-          <div className="flex flex-col items-center w-1/3">
+          <div className="flex flex-col items-center flex-1 min-w-0">
             <div 
               onClick={() => fetchTeamEvents(podiumTeams[0]?.name || '')}
               className="bg-yellow-500 text-gray-900 px-2 py-2 rounded-t-lg mb-2 w-full text-center cursor-pointer hover:bg-yellow-600 transition-colors duration-200"
@@ -193,7 +193,7 @@ export default function Leaderboard() {
           </div>
 
           {/* 3rd Place */}
-          <div className="flex flex-col items-center w-1/3">
+          <div className="flex flex-col items-center flex-1 min-w-0">
             <div 
               onClick={() => fetchTeamEvents(podiumTeams[2]?.name || '')}
               className="bg-orange-600 text-white px-2 py-2 rounded-t-lg mb-2 w-full text-center cursor-pointer hover:bg-orange-700 transition-colors duration-200"

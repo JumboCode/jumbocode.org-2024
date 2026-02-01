@@ -1,4 +1,7 @@
+import Footer from "@/components/footer";
+import Nav from "@/components/nav";
 import type { Metadata } from "next";
+import Link from "next/link";
 import "../globals.css";
 
 export const metadata: Metadata = {
@@ -17,8 +20,15 @@ export default function RootLayout({
         <div className="max-w-screen-lg mx-auto px-8 sm:px-12 pt-4 sm:pt-8 pb-24">
           {/* Gradient background */}
           <div className="absolute inset-0 h-[85vh] bg-gradient-to-b from-brand/25 to-gray-950 -z-10" />
+            <header className="flex justify-between items-center">
+              <Link href="/">
+                <img src="/logo.svg" alt="JumboCode" className="h-8" />
+              </Link>
+              <Nav />
+            </header>
           <main>{children}</main>
         </div>
+        <Footer />
       </body>
     </html>
   )
