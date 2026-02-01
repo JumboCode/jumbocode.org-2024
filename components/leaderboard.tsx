@@ -144,6 +144,12 @@ export default function Leaderboard() {
 
   const mostRecentDate = getMostRecentEventDate();
 
+  function formatDateOnly(dateStr: string) {
+    const d = dateStr.split('T')[0]; 
+    const [y, m, day] = d.split('-').map(Number);
+    return new Date(y, m - 1, day).toLocaleDateString();
+  }
+
   return (
     <div className="flex flex-col items-center justify-center mt-8 max-w-4xl mx-auto px-4">
       {/* Title */}
@@ -216,12 +222,7 @@ export default function Leaderboard() {
                     <div>
                       <div className="text-white font-medium">{event.name}</div>
                       <div className="text-gray-400 text-sm">
-                        {new Date(event.event_date).toLocaleDateString('en-US', {
-                          timeZone: 'America/New_York',
-                          year: 'numeric',
-                          month: 'numeric',
-                          day: 'numeric'
-                        })}
+                        {formatDateOnly(event.event_date)}
                       </div>
                     </div>
                     <div className="text-brand font-bold">+{event.points}</div>
@@ -273,7 +274,7 @@ export default function Leaderboard() {
                           <div>
                             <div className="text-white font-medium">{event.name}</div>
                             <div className="text-gray-400 text-sm">
-                              {new Date(event.event_date).toLocaleDateString()}
+                              {formatDateOnly(event.event_date)}
                             </div>
                           </div>
                           <div className="text-brand font-bold">+{event.points}</div>
@@ -292,12 +293,7 @@ export default function Leaderboard() {
 
       {/* Footer note */}
       <p className="text-subtext text-sm mt-6 text-center">
-        Last update: {mostRecentDate ? mostRecentDate.toLocaleDateString('en-US', {
-          timeZone: 'America/New_York',
-          year: 'numeric',
-          month: 'numeric',
-          day: 'numeric'
-        }) : 'No events yet'}
+        Last update: {mostRecentDate ? mostRecentDate.toLocaleDateString() : 'No events yet'}
       </p>
     </div>
   );
