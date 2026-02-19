@@ -112,15 +112,19 @@ export default function Leaderboard() {
   });
 
   // Calculate ranks handling ties
-  const teamsWithRanks = sortedTeams.map((team, index) => {
-    let rank = 1;
-    for (let i = 0; i < index; i++) {
-      if (sortedTeams[i].score > team.score) {
-        rank++;
-      }
+  const teamsWithRanks = [];
+  let currentRank = 1;
+  
+  for (let i = 0; i < sortedTeams.length; i++) {
+    const team = sortedTeams[i];
+    
+    // If this team has a different score than the previous team, update the rank
+    if (i > 0 && team.score !== sortedTeams[i - 1].score) {
+      currentRank = i + 1;
     }
-    return { ...team, rank };
-  });
+    
+    teamsWithRanks.push({ ...team, rank: currentRank });
+  }
   
   // Get top 3 for podium and remaining for rows
   const podiumTeams = teamsWithRanks.slice(0, 3);
