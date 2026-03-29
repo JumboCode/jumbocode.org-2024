@@ -64,24 +64,33 @@ export default function SignupPage() {
                                 <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" required />
                             </div>
                             <div className="mc-field-group input-group">
-                                <strong>Class of... </strong>
+                                <strong>Graduating class:</strong>
                                 <ul>
                                     <li>
-                                        <input type="radio" name="group[35583]" id="mce-group[35583]-35583-0" value="1" />
-                                        <label htmlFor="mce-group[35583]-35583-0" style={{ marginLeft: '8px' }}>Class of 2026</label>
-                                    </li>
-                                    <li>
                                         <input type="radio" name="group[35583]" id="mce-group[35583]-35583-1" value="2" />
-                                        <label htmlFor="mce-group[35583]-35583-1" style={{ marginLeft: '8px' }}>Class of 2027</label>
+                                        <label htmlFor="mce-group[35583]-35583-1" style={{ marginLeft: '8px' }}>Class of 2026</label>
                                     </li>
                                     <li>
                                         <input type="radio" name="group[35583]" id="mce-group[35583]-35583-2" value="4" />
-                                        <label htmlFor="mce-group[35583]-35583-2" style={{ marginLeft: '8px' }}>Class of 2028</label>
+                                        <label htmlFor="mce-group[35583]-35583-2" style={{ marginLeft: '8px' }}>Class of 2027</label>
                                     </li>
                                     <li>
                                         <input type="radio" name="group[35583]" id="mce-group[35583]-35583-3" value="8" />
-                                        <label htmlFor="mce-group[35583]-35583-3" style={{ marginLeft: '8px' }}>Class of 2029</label>
-                                    </li>   </ul>
+                                        <label htmlFor="mce-group[35583]-35583-3" style={{ marginLeft: '8px' }}>Class of 2028</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="group[35583]" id="mce-group[35583]-35583-4" value="16" />
+                                        <label htmlFor="mce-group[35583]-35583-4" style={{ marginLeft: '8px' }}>Class of 2029</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="group[35583]" id="mce-group[35583]-35583-5" value="64" />
+                                        <label htmlFor="mce-group[35583]-35583-5" style={{ marginLeft: '8px' }}>Class of 2030</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="group[35583]" id="mce-group[35583]-35583-6" value="32" />
+                                        <label htmlFor="mce-group[35583]-35583-6" style={{ marginLeft: '8px' }}>Alumni</label>
+                                    </li>
+                                </ul>
                             </div>
                             <div id="mce-responses" className="clear foot">
                                 <div className="response" id="mce-error-response" style={{ display: 'none' }}></div>
