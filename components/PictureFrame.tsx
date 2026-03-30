@@ -7,6 +7,8 @@
 *
 */
 
+import Image from "next/image";
+
 type Frame = {
     src: string;
     name: string;
@@ -16,7 +18,7 @@ type Frame = {
 const PictureFrame: React.FC<Frame> = ({ src, name, description }) => {
     return (
         <div className="flex flex-col border border-off_white p-3 rounded-lg lg:p-4 sm:text-sm">
-            <img src={src} alt={name} className="object-cover w-30 lg:w-full rounded-lg mb-3 lg:mb-5" style={{ aspectRatio: '1 / 1' }} />
+            <Image src={src} alt={name} width={300} height={300} className="object-cover w-full rounded-lg mb-3 lg:mb-5" />
             <h2 className="text-sm md:text-lg lg:text-xl font-bold text-white mb-2 sm:mb-1">
             {name}
             </h2>
