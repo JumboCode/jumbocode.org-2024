@@ -1,5 +1,3 @@
-import Alumni from "@/components/alumni";
-import Eboard from "@/components/eboard";
 import Hero from "@/components/hero";
 import ImageCollage from "@/components/ImageCollage";
 import OurMission from "@/components/OurMission";
@@ -59,12 +57,6 @@ export default function AboutPage() {
       <div className="mt-32">
         <OurPartnerships />
       </div>
-
-      <div className="mt-32">
-        <Eboard />
-      </div>
-
-      <Alumni />
     </div>
   );
 }

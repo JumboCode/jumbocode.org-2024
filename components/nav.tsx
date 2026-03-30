@@ -9,6 +9,7 @@ export default function Nav() {
     <nav className="flex gap-x-4 sm:gap-x-6">
       <NavLink href="/" label="Home" />
       <NavLink href="/about" label="About" />
+      <NavLink href="/members" label="Members" />
       <NavLink href="/projects" label="Projects" />
       <NavLink href="/apply" label="Apply" />
     </nav>
