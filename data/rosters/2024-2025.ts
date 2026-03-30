@@ -17,6 +17,7 @@ export const eboard: EboardMember[] = [
 const rawTeams: Team[] = [
     {
         name: "A2 Empowerment",
+        link: "/projects/a2empowerment",
         members: [
             { name: "Fahdili Mboya", description: "Developer" },
             { name: "Gabriel Klaris", description: "Developer" },
@@ -36,6 +37,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "Bread & Roses",
+        link: "/projects/bread-and-roses",
         members: [
             { name: "Amelia Bermack", description: "Developer" },
             { name: "An Tran", description: "Designer" },
@@ -54,6 +56,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "Dillar Academy",
+        link: "/projects/dillar-academy",
         members: [
             { name: "Aryaa Modi", description: "Developer" },
             { name: "Claire Lee", description: "Developer" },
@@ -72,6 +75,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "English at Large",
+        link: "/projects/english-at-large",
         members: [
             { name: "Ava Sim", description: "Developer" },
             { name: "Clarence Yeh", description: "Technical Lead" },
@@ -91,6 +95,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "LCS Tutoring",
+        link: "/projects/leonard-carmichael-society",
         members: [
             { name: "Anne Wu", description: "Developer" },
             { name: "Aray Arigngazina", description: "Developer" },
@@ -109,6 +114,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "LGBTQ Senior Housing",
+        link: "/projects/lgbtq-senior-housing",
         members: [
             { name: "Andrea Cabochan", description: "Developer" },
             { name: "Andrés Ruvalcaba", description: "Developer" },
@@ -126,6 +132,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "New England Innocence Project",
+        link: "/projects/new-england-innocence-project",
         members: [
             { name: "Brandon Huang", description: "Developer" },
             { name: "Dhruvii Mehta", description: "Developer" },
@@ -140,6 +147,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "Somerville Museum",
+        link: "/projects/somerville-museum",
         members: [
             { name: "Angie Zhang", description: "Developer" },
             { name: "Arietta M. Goshtasby", description: "Developer" },
@@ -158,6 +166,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "The Wily Network",
+        link: "/projects/the-wily-network",
         members: [
             { name: "Alana Sendlakowski", description: "Technical Lead" },
             { name: "Alekha Rao", description: "Developer" },
@@ -176,6 +185,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "Tufts University Counsel",
+        link: "/projects/office-of-university-counsel",
         members: [
             { name: "Jordan Pittignano", description: "Developer" },
             { name: "Josh Lamothe", description: "Developer" },
@@ -191,6 +201,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "Village Food Hub",
+        link: "/projects/village-food-hub",
         members: [
             { name: "Alex Violet", description: "Developer" },
             { name: "Amanda Wu", description: "Developer" },
@@ -209,6 +220,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "West Medford Community Center",
+        link: "/projects/west-medford-community-center",
         members: [
             { name: "Agatha Yang", description: "Developer" },
             { name: "Ali Macun", description: "Developer" },
