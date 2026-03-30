@@ -1,3 +1,12 @@
+/*  MembersYearSelector.tsx
+*
+*   This file creates a year selector component for the members page. It allows
+* users to select a year and displays the corresponding eboard and alumni.
+* 
+*   Created by Dan Glorioso on 3/30/2026
+*
+*/
+
 "use client";
 
 import { ROSTERS, YEARS } from "@/data/rosters";
