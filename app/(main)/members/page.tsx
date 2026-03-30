@@ -1,9 +1,12 @@
 import MembersYearSelector from "@/components/MembersYearSelector";
+import { Suspense } from "react";
 
 export default function MembersPage() {
     return (
         <div className="mt-32">
-            <MembersYearSelector />
+            <Suspense>
+                <MembersYearSelector />
+            </Suspense>
         </div>
     );
 }
