@@ -1,17 +1,22 @@
+import { CLOUDINARY_BASE } from "../cloudinary";
 import type { EboardMember, Team } from "./index";
 
+const YEAR = "2024-2025";
+const toFilename = (name: string) =>
+    `${YEAR}_${name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '_')}`;
+
 export const eboard: EboardMember[] = [
-    { src: "/eboard/ben_borgers.png", name: "Ben Borgers", description: "President" },
-    { src: "/eboard/gabe_sessions.png", name: "Gabriel Sessions", description: "Head of Engineering" },
-    { src: "/eboard/sristi_panchu.png", name: "Sristi Panchu", description: "Co-Head of PM" },
-    { src: "/eboard/rebecca_dinsmore.png", name: "Rebecca Dinsmore", description: "Co-Head of PM" },
-    { src: "/eboard/wilson_skinner.png", name: "Wilson Skinner", description: "Head of Design" },
-    { src: "/eboard/ella_lesperance.png", name: "Ella Lesperance", description: "Head of Operations" },
-    { src: "/eboard/lillian_tran.png", name: "Lillian Tran", description: "Head of Communications" },
-    { src: "/eboard/megan_yi.png", name: "Megan Yi", description: "Social Chair" },
-    { src: "/eboard/stephanie_kim.png", name: "Stephanie Kim", description: "Co-Head of Client Management" },
-    { src: "/eboard/anika_kapoor.png", name: "Anika Kapoor", description: "Co-Head of Client Management" },
-    { src: "/eboard/holden_kittelberger.png", name: "Holden Kittelberger", description: "JumboHack Liaison" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Ben Borgers")}.png`, name: "Ben Borgers", description: "President" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Gabriel Sessions")}.png`, name: "Gabriel Sessions", description: "Head of Engineering" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Sristi Panchu")}.png`, name: "Sristi Panchu", description: "Co-Head of PM" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Rebecca Dinsmore")}.png`, name: "Rebecca Dinsmore", description: "Co-Head of PM" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Wilson Skinner")}.png`, name: "Wilson Skinner", description: "Head of Design" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Ella Lesperance")}.png`, name: "Ella Lesperance", description: "Head of Operations" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Lillian Tran")}.png`, name: "Lillian Tran", description: "Head of Communications" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Megan Yi")}.png`, name: "Megan Yi", description: "Social Chair" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Stephanie Kim")}.png`, name: "Stephanie Kim", description: "Co-Head of Client Management" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Anika Kapoor")}.png`, name: "Anika Kapoor", description: "Co-Head of Client Management" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Holden Kittelberger")}.png`, name: "Holden Kittelberger", description: "JumboHack Liaison" },
 ];
 
 const rawTeams: Team[] = [
@@ -245,6 +250,6 @@ export const teams: Team[] = rawTeams.map(team => ({
     ...team,
     members: team.members.map(member => ({
         ...member,
-        src: `/alumni/${team.name}/${member.name}.png`,
+        src: `${CLOUDINARY_BASE}/${toFilename(member.name)}.png`,
     })),
 }));
