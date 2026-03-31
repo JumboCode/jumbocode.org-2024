@@ -26,8 +26,8 @@ const Alumni: React.FC<AlumniProps> = ({ teams, year }) => {
                 <h2 className="text-2xl md:text-3xl lg:text-5xl text-white font-bold">Members {year}</h2>
             </div>
             {teams.map((team, index) => (
-                <div key={index} className="flex flex-col gap-4 mb-8">
-                    <div className="flex flex-col md:mb-4 lg:mb-6">
+                <div key={index} className="flex flex-col gap-4 mt-12 first:mt-0">
+                    <div className="flex flex-col mb-2">
                         {team.link ? (
                             <Link href={team.link} className="group flex items-center gap-2 w-fit">
                                 <h3 className="text-lg md:text-xl lg:text-2xl text-white font-bold group-hover:text-brand transition-colors">{team.name}</h3>
