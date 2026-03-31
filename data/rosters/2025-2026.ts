@@ -6,7 +6,7 @@ const toFilename = (name: string) =>
     `${YEAR}_${name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '_')}`;
 
 export const eboard: EboardMember[] = [
-    { src: `${CLOUDINARY_BASE}/${toFilename("Holden Kittelberger")}.png`, name: "Holden Kittelberger", description: "Co-President" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Holden Kittelberger")}.png`, name: "Holden Kittelberger", description: "President" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Lillian Tran")}.png`, name: "Lillian Tran", description: "Co-President" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Will Soylemez")}.png`, name: "Will Soylemez", description: "Head of Engineering" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Dilanur Bayraktar")}.png`, name: "Dilanur Bayraktar", description: "Head of Project Management" },
@@ -23,8 +23,8 @@ const rawTeams: Team[] = [
     {
         name: "Artists for Humanity",
         members: [
-            { name: "John Puka", description: "Developer" },
-            { name: "Subhanga Upadhyay", description: "Developer" },
+            { name: "John Puka", description: "Project Manager" },
+            { name: "Lauren Wu", description: "Technical Lead" },
             { name: "Shannon Chen", description: "Developer" },
             { name: "Charles Rowe", description: "Developer" },
             { name: "Cheng Xi Tsou", description: "Developer" },
@@ -43,8 +43,8 @@ const rawTeams: Team[] = [
         name: "Beantown Baby Diaper Bank",
         members: [
             { name: "Dilanur Bayraktar", description: "Project Manager" },
-            { name: "Cooper Golemme", description: "Developer" },
-            { name: "An Tran", description: "Developer" },
+            { name: "Cooper Golemme", description: "Technical Lead" },
+            { name: "An Tran", description: "Designer" },
             { name: "Rakshi Rangaprasad", description: "Developer" },
             { name: "Aray Argingazina", description: "Developer" },
             { name: "Colin Ho", description: "Developer" },
@@ -61,9 +61,10 @@ const rawTeams: Team[] = [
     {
         name: "Boston Community Pediatrics",
         members: [
-            { name: "Ava Sim", description: "Developer" },
-            { name: "Manuel Pena", description: "Developer" },
-            { name: "Chau Ba Ngo", description: "Developer" },
+            { name: "Ava Sim", description: "Project Manager" },
+            { name: "Manuel Pena", description: "Technical Lead" },
+            { name: "Chau Ba Ngo", description: "Designer" },
+            { name: "Julia Shen", description: "Designer" },
             { name: "Peter Llamas", description: "Developer" },
             { name: "Jeremiah Longino", description: "Developer" },
             { name: "Bezawit Gessesse", description: "Developer" },
@@ -80,8 +81,8 @@ const rawTeams: Team[] = [
         name: "Boston's Higher Ground",
         members: [
             { name: "Jennifer Luo", description: "Project Manager" },
-            { name: "Amitav Nott", description: "Developer" },
-            { name: "Fatima Tahir", description: "Developer" },
+            { name: "Amitav Nott", description: "Technical Lead" },
+            { name: "Fatima Tahir", description: "Designer" },
             { name: "Weston Starbird", description: "Developer" },
             { name: "Kai Kaplinsky", description: "Developer" },
             { name: "Kristy Yau", description: "Developer" },
@@ -93,36 +94,42 @@ const rawTeams: Team[] = [
     {
         name: "Breaktime",
         members: [
-            { name: "Person Name", description: "Developer" },
-            // ...
+            { name: "Luis Suarez", description: "Project Manager" },
+            { name: "Yoda Ermias", description: "Technical Lead" },
+            { name: "Allen Wang", description: "Designer" },
         ],
     },
     {
         name: "Commonwealth Kitchen",
         members: [
-            { name: "Person Name", description: "Developer" },
-            // ...
+            { name: "Jordan Pittignano", description: "Project Manager" },
+            { name: "Zack White", description: "Technical Lead" },
+            { name: "Angie Zhang", description: "Designer" },
+            { name: "Sophia Yung", description: "Designer" },
         ],
     },
     {
         name: "Food for Free",
         members: [
-            { name: "Person Name", description: "Developer" },
-            // ...
+            { name: "Riddhi Sahni", description: "Project Manager" },
+            { name: "Benjamin Li", description: "Technical Lead" },
+            { name: "Chelsea Camp", description: "Designer" },
         ],
     },
     {
         name: "Food Link",
         members: [
-            { name: "Person Name", description: "Developer" },
-            // ...
+            { name: "Ada Wu", description: "Project Manager" },
+            { name: "Gabe Klaris", description: "Technical Lead" },
+            { name: "Madison Johnson", description: "Designer" },
         ],
     },
     {
         name: "Lexington Zero Waste",
         members: [
-            { name: "Person Name", description: "Developer" },
-            // ...
+            { name: "Rindha Reddy", description: "Project Manager" },
+            { name: "Ha Nguyen", description: "Technical Lead" },
+            { name: "Summer Peterson", description: "Designer" },            // ...
         ],
     },
     {
@@ -145,15 +152,17 @@ const rawTeams: Team[] = [
     {
         name: "School on Wheels",
         members: [
-            { name: "Person Name", description: "Developer" },
-            // ...
+            { name: "Lakshita Jain", description: "Project Manager" },
+            { name: "Vanessa Rose", description: "Technical Lead" },
+            { name: "Chloe Wong", description: "Designer" },  
         ],
     },
     {
         name: "The Loop Lab",
         members: [
-            { name: "Person Name", description: "Developer" },
-            // ...
+            { name: "Stella Matsukawa", description: "Project Manager" },
+            { name: "Keiji Numata", description: "Technical Lead" },
+            { name: "Ke Chen", description: "Designer" },  
         ],
     },
 ];
