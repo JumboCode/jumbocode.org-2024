@@ -9,13 +9,13 @@ export const eboard: EboardMember[] = [
     { src: `${CLOUDINARY_BASE}/${toFilename("Holden Kittelberger")}.png`, name: "Holden Kittelberger", description: "President" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Lillian Tran")}.png`, name: "Lillian Tran", description: "Co-President" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Will Soylemez")}.png`, name: "Will Soylemez", description: "Head of Engineering" },
-    { src: `${CLOUDINARY_BASE}/${toFilename("Dilanur Bayraktar")}.png`, name: "Dilanur Bayraktar", description: "Head of Project Management" },
-    { src: `${CLOUDINARY_BASE}/${toFilename("Jennifer Luo")}.png`, name: "Jennifer Luo", description: "Head of Project Management" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Dilanur Bayraktar")}.png`, name: "Dilanur Bayraktar", description: "Co-Head of Project Management" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Jennifer Luo")}.png`, name: "Jennifer Luo", description: "Co-Head of Project Management" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Hannah Jiang")}.png`, name: "Hannah Jiang", description: "Head of Design" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Aryaa Modi")}.png`, name: "Aryaa Modi", description: "Head of Operations" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Claire Lee")}.png`, name: "Claire Lee", description: "Head of Communications" },
-    { src: `${CLOUDINARY_BASE}/${toFilename("Daniel Graham")}.png`, name: "Daniel Graham", description: "Head of Client Management" },
-    { src: `${CLOUDINARY_BASE}/${toFilename("Elisa Yu")}.png`, name: "Elisa Yu", description: "Head of Client Management" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Daniel Graham")}.png`, name: "Daniel Graham", description: "Co-Head of Client Management" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Elisa Yu")}.png`, name: "Elisa Yu", description: "Co-Head of Client Management" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Dan Glorioso")}.png`, name: "Dan Glorioso", description: "JumboHack Liaison" },
 ];
 

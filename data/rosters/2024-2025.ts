@@ -8,8 +8,8 @@ const toFilename = (name: string) =>
 export const eboard: EboardMember[] = [
     { src: `${CLOUDINARY_BASE}/${toFilename("Ben Borgers")}.png`, name: "Ben Borgers", description: "President" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Gabriel Sessions")}.png`, name: "Gabriel Sessions", description: "Head of Engineering" },
-    { src: `${CLOUDINARY_BASE}/${toFilename("Sristi Panchu")}.png`, name: "Sristi Panchu", description: "Co-Head of PM" },
-    { src: `${CLOUDINARY_BASE}/${toFilename("Rebecca Dinsmore")}.png`, name: "Rebecca Dinsmore", description: "Co-Head of PM" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Sristi Panchu")}.png`, name: "Sristi Panchu", description: "Co-Head of Project Management" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Rebecca Dinsmore")}.png`, name: "Rebecca Dinsmore", description: "Co-Head of Project Management" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Wilson Skinner")}.png`, name: "Wilson Skinner", description: "Head of Design" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Ella Lesperance")}.png`, name: "Ella Lesperance", description: "Head of Operations" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Lillian Tran")}.png`, name: "Lillian Tran", description: "Head of Communications" },
