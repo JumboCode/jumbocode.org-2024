@@ -4,6 +4,8 @@ import React from "react"
 import Button from "../button"
 import Hero from "../hero"
 import { ImageProps } from "../ImageCarousel"
+import PictureFrame from "../PictureFrame"
+import type { TeamMember } from "@/data/rosters"
 
 // Layout of a JumboCode project page in JSON format
 export interface ProjectPageProps {
@@ -26,7 +28,8 @@ export interface ProjectPageProps {
     name: string,
     logo: ImageProps
   }>,
-  finalScreens: Array<ImageProps>
+  finalScreens: Array<ImageProps>,
+  rosterMembers?: TeamMember[]
 }
 
 
@@ -73,18 +76,32 @@ export default function ProjectPage(props: ProjectPageProps) {
         </div>
 
       </div>
-      <TextSection
-        title="Team Members"
-        text={
-          <>
-            <p className="mb-4"><span className="font-bold">Leadership: </span>
-              {props.overview.teamMembers.leadership}</p>
-
-            <p><span className="font-bold">Developers: </span>
-              {props.overview.teamMembers.developers}</p>
-          </>
-        }
-      />
+      {props.rosterMembers && props.rosterMembers.length > 0 && (
+        <>
+          <h3 className={clsx(h3Class, "mb-8")}>Team Members</h3>
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-4 gap-y-8 mb-12">
+            {props.rosterMembers
+              .slice()
+              .sort((a, b) => {
+                const roleOrder: Record<string, number> = {
+                  "Project Manager": 1,
+                  "Technical Lead": 2,
+                  "Designer": 3,
+                  "Developer": 4,
+                };
+                const orderA = roleOrder[a.description] ?? 5;
+                const orderB = roleOrder[b.description] ?? 5;
+                if (orderA !== orderB) return orderA - orderB;
+                const lastA = a.name.trim().split(/\s+/).at(-1)!;
+                const lastB = b.name.trim().split(/\s+/).at(-1)!;
+                return lastA.localeCompare(lastB);
+              })
+              .map((member, idx) => (
+                <PictureFrame key={idx} src={member.src!} name={member.name} description={member.description} />
+              ))}
+          </div>
+        </>
+      )}
 
       <h3 className={clsx(h3Class, "mb-12")}>Tech Stack</h3>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex md:text-center md:space-y-0">

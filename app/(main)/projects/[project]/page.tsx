@@ -1,6 +1,7 @@
 import ProjectPage, { ProjectPageProps } from "@/components/Projects/ProjectPage";
 import { notFound } from "next/navigation";
 import projects from "../projects.json";
+import { ROSTERS, YEARS } from "@/data/rosters";
 
 interface Projects {
   [key: string]: ProjectPageProps;
@@ -19,9 +20,14 @@ export default function ProjectShowcasePage(props: ProjectShowcasePageProps) {
 
   if (!project || !(project in typedProjects)) return notFound();
 
+  const projectPath = `/projects/${project}`;
+  const rosterTeam = YEARS
+    .flatMap(year => ROSTERS[year].teams)
+    .find(team => team.link === projectPath);
+
   return (
     <>
-      <ProjectPage {...typedProjects[project]} />
+      <ProjectPage {...typedProjects[project]} rosterMembers={rosterTeam?.members} />
     </>
   );
 }
