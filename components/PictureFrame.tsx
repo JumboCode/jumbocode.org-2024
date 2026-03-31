@@ -10,7 +10,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 type Frame = {
     src: string;
@@ -21,16 +21,20 @@ type Frame = {
 const PictureFrame: React.FC<Frame> = ({ src, name, description }) => {
     const [imgError, setImgError] = useState(false);
 
+    useEffect(() => {
+        setImgError(false);
+    }, [src]);
+
     return (
-        <div className="flex flex-col border border-off_white p-3 rounded-lg lg:p-4 sm:text-sm">
+        <div className="flex flex-col border border-off_white p-3 rounded-lg">
             {!imgError && (
-                <Image src={src} alt={name} width={300} height={300} className="object-cover w-full rounded-lg mb-3 lg:mb-5" onError={() => setImgError(true)} />
+                <Image src={src} alt={name} width={300} height={300} className="object-cover w-full rounded-lg mb-3" onError={() => setImgError(true)} />
             )}
-            <h2 className="text-sm md:text-lg lg:text-xl font-bold text-white mb-2 sm:mb-1">
-            {name}
+            <h2 className="text-base font-bold text-white leading-snug mb-0.5">
+                {name}
             </h2>
-            <p className="text-sm md:text-lg lg:text-xl text-white mb-2">
-            {description}
+            <p className="text-sm text-white/60">
+                {description}
             </p>
         </div>
     );

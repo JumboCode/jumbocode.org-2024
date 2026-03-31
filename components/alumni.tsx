@@ -39,7 +39,7 @@ const Alumni: React.FC<AlumniProps> = ({ teams, year }) => {
                             <h3 className="text-lg md:text-xl lg:text-2xl text-white font-bold">{team.name}</h3>
                         )}
                     </div>
-                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-4 gap-y-8">
+                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-3 gap-y-5">
                         {team.members
                             .slice()
                             .sort((a, b) => {
