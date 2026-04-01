@@ -3,7 +3,7 @@ import type { EboardMember, Team } from "./index";
 
 const YEAR = "2025-2026";
 const toFilename = (name: string) =>
-    `${YEAR}_${name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '_')}`;
+    `${YEAR}_${name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/'/g, '').replace(/\s+/g, '_')}`;
 
 export const eboard: EboardMember[] = [
     { src: `${CLOUDINARY_BASE}/${toFilename("Holden Kittelberger")}.png`, name: "Holden Kittelberger", description: "President" },
@@ -67,13 +67,13 @@ const rawTeams: Team[] = [
             { name: "Julia Shen", description: "Designer" },
             { name: "Peter Llamas", description: "Developer" },
             { name: "Jeremiah Longino", description: "Developer" },
-            { name: "Bezawit Gessesse", description: "Developer" },
+            { name: "Bezawit (Bez) Gessesse", description: "Developer" },
             { name: "Mina Shimada", description: "Developer" },
             { name: "Natalie Arai", description: "Developer" },
             { name: "Priyanka Onta", description: "Developer" },
             { name: "Logan Yuan", description: "Developer" },
             { name: "Tomas Maranga", description: "Developer" },
-            { name: "Eduardo Hernandez", description: "Developer" },
+            { name: "Eduardo (Eddy) Hernandez", description: "Developer" },
             { name: "Haley McWilliams", description: "Developer" },
         ],
     },
@@ -119,7 +119,7 @@ const rawTeams: Team[] = [
         name: "Commonwealth Kitchen",
         members: [
             { name: "Jordan Pittignano", description: "Project Manager" },
-            { name: "Zack White", description: "Technical Lead" },
+            { name: "Zachary (Zack) White", description: "Technical Lead" },
             { name: "Angie Zhang", description: "Designer" },
             { name: "Sophia Yung", description: "Designer" },
             { name: "Angie Yan", description: "Developer" },
@@ -139,7 +139,7 @@ const rawTeams: Team[] = [
         name: "Food for Free",
         members: [
             { name: "Riddhi Sahni", description: "Project Manager" },
-            { name: "Benji Li", description: "Technical Lead" },
+            { name: "Benjamin (Benji) Li", description: "Technical Lead" },
             { name: "Chelsea Camp", description: "Designer" },
             { name: "Justin Paik", description: "Developer" },
             { name: "Sophie Zhou", description: "Developer" },

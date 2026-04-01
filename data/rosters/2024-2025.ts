@@ -3,7 +3,7 @@ import type { EboardMember, Team } from "./index";
 
 const YEAR = "2024-2025";
 const toFilename = (name: string) =>
-    `${YEAR}_${name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '_')}`;
+    `${YEAR}_${name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/'/g, '').replace(/\s+/g, '_')}`;
 
 export const eboard: EboardMember[] = [
     { src: `${CLOUDINARY_BASE}/${toFilename("Ben Borgers")}.png`, name: "Ben Borgers", description: "President" },
