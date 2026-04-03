@@ -8,14 +8,14 @@ const toFilename = (name: string) =>
 export const eboard: EboardMember[] = [
     { src: `${CLOUDINARY_BASE}/${toFilename("Ben Borgers")}.png`, name: "Ben Borgers", description: "President" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Gabriel Sessions")}.png`, name: "Gabriel Sessions", description: "Head of Engineering" },
-    { src: `${CLOUDINARY_BASE}/${toFilename("Sristi Panchu")}.png`, name: "Sristi Panchu", description: "Co-Head of Project Management" },
-    { src: `${CLOUDINARY_BASE}/${toFilename("Rebecca Dinsmore")}.png`, name: "Rebecca Dinsmore", description: "Co-Head of Project Management" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Sristi Panchu")}.png`, name: "Sristi Panchu", description: "Head of Project Management" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Rebecca Dinsmore")}.png`, name: "Rebecca Dinsmore", description: "Head of Project Management" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Wilson Skinner")}.png`, name: "Wilson Skinner", description: "Head of Design" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Ella Lesperance")}.png`, name: "Ella Lesperance", description: "Head of Operations" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Lillian Tran")}.png`, name: "Lillian Tran", description: "Head of Communications" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Megan Yi")}.png`, name: "Megan Yi", description: "Social Chair" },
-    { src: `${CLOUDINARY_BASE}/${toFilename("Stephanie Kim")}.png`, name: "Stephanie Kim", description: "Co-Head of Client Management" },
-    { src: `${CLOUDINARY_BASE}/${toFilename("Anika Kapoor")}.png`, name: "Anika Kapoor", description: "Co-Head of Client Management" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Stephanie Kim")}.png`, name: "Stephanie Kim", description: "Head of Client Management" },
+    { src: `${CLOUDINARY_BASE}/${toFilename("Anika Kapoor")}.png`, name: "Anika Kapoor", description: "Head of Client Management" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Holden Kittelberger")}.png`, name: "Holden Kittelberger", description: "JumboHack Liaison" },
 ];
 
