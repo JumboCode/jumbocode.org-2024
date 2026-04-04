@@ -16,6 +16,7 @@ const LINKS = [
     items: [
       { name: "Home", url: "/" },
       { name: "About", url: "/about" },
+      { name: "Members", url: "/members" },
       { name: "Our Work", url: "/projects" },
     ],
   },
