@@ -22,6 +22,7 @@ export const eboard: EboardMember[] = [
 const rawTeams: Team[] = [
     {
         name: "Artists for Humanity",
+        link: "/projects/artists-for-humanity",
         members: [
             { name: "John Puka", description: "Project Manager" },
             { name: "Lauren Wu", description: "Technical Lead" },
@@ -41,6 +42,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "Beantown Baby Diaper Bank",
+        link: "/projects/beantown-baby-diaper-bank",
         members: [
             { name: "Dilanur Bayraktar", description: "Project Manager" },
             { name: "Cooper Golemme", description: "Technical Lead" },
@@ -60,6 +62,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "Boston Community Pediatrics",
+        link: "/projects/boston-community-pediatrics",
         members: [
             { name: "Ava Sim", description: "Project Manager" },
             { name: "Manuel Pena", description: "Technical Lead" },
@@ -79,6 +82,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "Boston's Higher Ground",
+        link: "/projects/bostons-higher-ground",
         members: [
             { name: "Jennifer Luo", description: "Project Manager" },
             { name: "Amitav Nott", description: "Technical Lead" },
@@ -98,6 +102,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "Breaktime",
+        link: "/projects/breaktime",
         members: [
             { name: "Luis Suarez", description: "Project Manager" },
             { name: "Yoda Ermias", description: "Technical Lead" },
@@ -117,6 +122,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "Commonwealth Kitchen",
+        link: "/projects/commonwealth-kitchen",
         members: [
             { name: "Jordan Pittignano", description: "Project Manager" },
             { name: "Zack White", description: "Technical Lead" },
@@ -137,6 +143,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "Food for Free",
+        link: "/projects/food-for-free",
         members: [
             { name: "Riddhi Sahni", description: "Project Manager" },
             { name: "Benji Li", description: "Technical Lead" },
@@ -156,6 +163,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "Food Link",
+        link: "/projects/food-link",
         members: [
             { name: "Ada Wu", description: "Project Manager" },
             { name: "Gabe Klaris", description: "Technical Lead" },
@@ -174,6 +182,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "Lexington Zero Waste",
+        link: "/projects/lexington-zero-waste",
         members: [
             { name: "Rindha Reddy", description: "Project Manager" },
             { name: "Ha Nguyen", description: "Technical Lead" },
@@ -192,6 +201,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "Massachusetts History Day",
+        link: "/projects/massachusetts-history-day",
         members: [
             { name: "Dan Glorioso", description: "Project Manager" },
             { name: "Shayne Sidman", description: "Technical Lead" },
@@ -209,6 +219,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "School on Wheels",
+        link: "/projects/school-on-wheels",
         members: [
             { name: "Lakshita Jain", description: "Project Manager" },
             { name: "Vanessa Rose", description: "Technical Lead" },
@@ -227,6 +238,7 @@ const rawTeams: Team[] = [
     },
     {
         name: "The Loop Lab",
+        link: "/projects/the-loop-lab",
         members: [
             { name: "Stella Matsukawa", description: "Project Manager" },
             { name: "Keiji Numata", description: "Technical Lead" },
