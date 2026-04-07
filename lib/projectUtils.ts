@@ -49,7 +49,7 @@ export function getProjectPageData(slug: string): ProjectPageProps | null {
     return {
       hero: {
         projectName: project.name,
-        schoolYear: isCurrent ? `Current Project (${year})` : year,
+        schoolYear: isCurrent ? `Current Project (${year})` : `Past Project (${year})`,
         image: {
           src: `/projects/${year}/${slug}/hero.png`,
           alt: `${project.name} Hero Image`,
