@@ -5,6 +5,7 @@ import { ImageProps } from "../ImageCarousel";
 export interface ProjectProps {
   name: string;
   img: ImageProps;
+  logo?: ImageProps; // org logo shown on past project cards (separate from screenshot)
   description: string;
   href: string;
 }

@@ -13,6 +13,7 @@ interface PastProjectsProps {
       [key: string]: {
         name: string;
         img: ImageProps;
+        logo?: ImageProps;
         description: string;
         href: string;
       };
@@ -53,6 +54,7 @@ export default function PastProjects(props: PastProjectsProps) {
             <PastProjectCard
               name={project.name}
               img={project.img}
+              logo={project.logo}
               description={project.description}
               href={`/projects/${projectId}`}
             />
@@ -66,18 +68,25 @@ export default function PastProjects(props: PastProjectsProps) {
 interface PastProjectCardProps {
   name: string;
   img: ImageProps;
+  logo?: ImageProps;
   description: string;
   href: string;
 }
 
 function PastProjectCard(props: PastProjectCardProps) {
   return (
-    <a
-      href={props.href}
-      className="min-w-full"
-    >
+    <a href={props.href} className="min-w-full">
       <div className="grid grid-cols-3 space-x-3 border border-off-white p-6 rounded-xl hover:border-gray-500 hover:filter hover:brightness-75 transition-all">
         <div>
+          {props.logo && (
+            <Image
+              src={props.logo.src}
+              alt={props.logo.alt}
+              width={80}
+              height={80}
+              className="h-12 w-auto object-contain mb-3"
+            />
+          )}
           <h3 className="text-white text-xl font-semibold mb-2">{props.name}</h3>
           <p className="text-white/90 text-sm">{props.description}</p>
         </div>
