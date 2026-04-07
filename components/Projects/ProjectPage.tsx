@@ -1,10 +1,10 @@
+import type { TeamMember } from "@/data/rosters"
 import clsx from "clsx"
 import Image from "next/image"
 import React from "react"
 import Button from "../button"
 import { ImageProps } from "../ImageCarousel"
 import PictureFrame from "../PictureFrame"
-import type { TeamMember } from "@/data/rosters"
 
 // Layout of a JumboCode project page in JSON format
 export interface ProjectPageProps {

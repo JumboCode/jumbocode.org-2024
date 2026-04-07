@@ -160,26 +160,26 @@
     },
     "beantown-baby-diaper-bank": {
       "name": "Beantown Baby Diaper Bank",
-      "description": "The Beantown Baby Diaper Bank is a nonprofit organization dedicated to providing free diapers to families in need across the Greater Boston area. By partnering with local agencies and community organizations, the diaper bank helps alleviate the financial burden of diaper costs for low-income families, ensuring that babies have access to clean and dry diapers.",
-      "summary": "The Beantown Baby Diaper Bank is a nonprofit organization dedicated to providing free diapers to families in need across the Greater Boston area. By partnering with local agencies and community organizations, the diaper bank helps alleviate the financial burden of diaper costs for low-income families, ensuring that babies have access to clean and dry diapers.",
-      "project-goal": "Our goal is to create a web application that allows the Beantown Baby Diaper Bank to manage their inventory, track donations and distributions, and facilitate communication with partner organizations more efficiently.",
-      "tech-stack": ["react", "tailwind", "typescript", "nodejs", "postgresql", "nextjs"],
+      "description": "The Beantown Baby Diaper Bank is a nonprofit organization located in Lexington that collects, buys and distributes free diapers to the families in need through partner agencies, founded by Rachel Segaloff.",
+      "summary": "The Beantown Baby Diaper Bank is a nonprofit organization located in Lexington that collects, buys and distributes free diapers to the families in need through partner agencies, founded by Rachel Segaloff.",
+      "project-goal": "Build a data visualization module that's more engaging than static charts and incentivize users to donate money by showing them the individual impact they could make.",
+      "tech-stack": ["react", "mantine", "typescript", "leaflet", "nextjs", "prisma", "postgresql", "Clerk", "PostGIS"],
       "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "boston-community-pediatrics": {
       "name": "Boston Community Pediatrics",
-      "description": "Boston Community Pediatrics is a nonprofit organization that provides comprehensive healthcare services to children and families in the Greater Boston area. They focus on delivering high-quality, culturally sensitive care to underserved communities, addressing both medical and social determinants of health to improve outcomes for their patients.",
-      "summary": "Boston Community Pediatrics is a nonprofit organization that provides comprehensive healthcare services to children and families in the Greater Boston area. They focus on delivering high-quality, culturally sensitive care to underserved communities, addressing both medical and social determinants of health to improve outcomes for their patients.",
-      "project-goal": "Our goal is to create a web application that allows Boston Community Pediatrics to manage patient information, schedule appointments, and facilitate communication between healthcare providers and families more efficiently.",
-      "tech-stack": ["react", "tailwind", "typescript", "nodejs", "postgresql", "nextjs"],
+      "description": "Boston Community Pediatrics is a nonprofit organization that brings equity to pediatric healthcare by giving all patients (particularly those on MassHealth) direct access to their primary care provider, as well as to comprehensive prevention-oriented medical care, case management services, and integrated behavioral health services.",
+      "summary": "Boston Community Pediatrics is a nonprofit organization that brings equity to pediatric healthcare by giving all patients (particularly those on MassHealth) direct access to their primary care provider, as well as to comprehensive prevention-oriented medical care, case management services, and integrated behavioral health services.",
+      "project-goal": "Create a website that allows for the admins to manage the volunteers and for the volunteers to receive more guidance throughout the process. The site supports three user types — admins, volunteers, and public viewers — where admins can manage events, approve sign-ups, and message volunteers, while volunteers can register for roles, add guests, and access resources. Public visitors can browse events but must log in to sign up.",
+      "tech-stack": ["react", "tailwind", "nextjs", "Clerk", "Prisma", "Neon", "Clerk"],
       "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "bostons-higher-ground": {
       "name": "Boston's Higher Ground",
-      "description": "Boston's Higher Ground is a nonprofit organization that provides support and resources to individuals experiencing homelessness in the Greater Boston area. They offer a range of services, including emergency shelter, case management, and access to healthcare and employment resources, with the goal of helping individuals transition out of homelessness and into stable housing.",
-      "summary": "Boston's Higher Ground is a nonprofit organization that provides support and resources to individuals experiencing homelessness in the Greater Boston area. They offer a range of services, including emergency shelter, case management, and access to healthcare and employment resources, with the goal of helping individuals transition out of homelessness and into stable housing.",
-      "project-goal": "Our goal is to create a web application that allows Boston's Higher Ground to manage their shelter operations more efficiently. This includes features for tracking bed availability, managing client information, and facilitating communication between staff members.",
-      "tech-stack": ["react", "tailwind", "typescript", "nodejs", "postgresql", "nextjs"],
+      "description": "Boston's Higher Ground is a nonprofit organization that works with residents and partners to improve outcomes in education, housing, and health for children and families in Roxbury, Dorchester, and Mattapan.",
+      "summary": "Boston's Higher Ground is a nonprofit organization that works with residents and partners to improve outcomes in education, housing, and health for children and families in Roxbury, Dorchester, and Mattapan.",
+      "project-goal": "create a central, web-based dashboard that visualizes and generates reports from Student and Housing data collected by Higher Ground's education and housing initiatives.",
+      "tech-stack": ["react", "typescript", "nextjs", "tailwind", "drizzle"],
       "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "breaktime": {
@@ -200,34 +200,34 @@
     },
     "food-for-free": {
       "name": "Food for Free",
-      "description": "Food for Free is a nonprofit organization that provides free food to individuals and families in need in the Greater Boston area. They rescue surplus food from local businesses and distribute it through a network of community partners, with the goal of reducing food waste and alleviating hunger in the community.",
-      "summary": "Food for Free is a nonprofit organization that provides free food to individuals and families in need in the Greater Boston area. They rescue surplus food from local businesses and distribute it through a network of community partners, with the goal of reducing food waste and alleviating hunger in the community.",
-      "project-goal": "Our goal is to create a web application that allows Food for Free to manage their food rescue operations more efficiently. This includes features for tracking food donations, managing volunteer schedules, and facilitating communication between staff members and volunteers.",
-      "tech-stack": ["react", "tailwind", "typescript", "nodejs", "postgresql", "nextjs"],
+      "description": "Food for Free is a nonprofit organization that aims to end hunger in Eastern Massachusettes. Their mission is to improve access to healthy food to overcome barriers and strengthen the community food system.",
+      "summary": "Food for Free is a nonprofit organization that aims to end hunger in Eastern Massachusettes. Their mission is to improve access to healthy food to overcome barriers and strengthen the community food system.",
+      "project-goal": "Create a web-based dashboard application to allow recipient partners and admins to access food distribution data, key stats, delivery history and file exports.",
+      "tech-stack": ["react", "typescript", "tailwind", "nextjs", "postgresql", "prisma", "salesforce"],
       "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "food-link": {
       "name": "Food Link",
-      "description": "Food Link is a nonprofit organization that provides support and resources to individuals experiencing food insecurity in the Greater Boston area. They offer a range of services, including food distribution, nutrition education, and advocacy, with the goal of helping individuals access healthy food and improve their overall well-being.",
-      "summary": "Food Link is a nonprofit organization that provides support and resources to individuals experiencing food insecurity in the Greater Boston area. They offer a range of services, including food distribution, nutrition education, and advocacy, with the goal of helping individuals access healthy food and improve their overall well-being.",
-      "project-goal": "Our goal is to create a web application that allows Food Link to manage their food distribution operations more efficiently. This includes features for tracking food inventory, managing volunteer schedules, and facilitating communication between staff members and volunteers.",
-      "tech-stack": ["react", "tailwind", "typescript", "nodejs", "postgresql", "nextjs"],
+      "description": "Food Link is creating an equitable food system throughout Greater Boston by rescuing and distributing high-quality, customized food to under-resourced communities.",
+      "summary": "Food Link is creating an equitable food system throughout Greater Boston by rescuing and distributing high-quality, customized food to under-resourced communities.",
+      "project-goal": "Our goal is to create a centralized volunteer training hub with categorized videos and PDFs to streamline Food Link's volunteer training process.",
+      "tech-stack": ["react", "tailwind", "typescript", "nodejs", "vite", "neon", "prisma"],
       "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "lexington-zero-waste": {
       "name": "Lexington Zero Waste",
-      "description": "Lexington Zero Waste is a nonprofit organization that promotes waste reduction and sustainability in the town of Lexington, Massachusetts. They offer educational programs, community events, and resources to help residents and businesses reduce their waste and adopt more sustainable practices.",
-      "summary": "Lexington Zero Waste is a nonprofit organization that promotes waste reduction and sustainability in the town of Lexington, Massachusetts. They offer educational programs, community events, and resources to help residents and businesses reduce their waste and adopt more sustainable practices.",
-      "project-goal": "Our goal is to create a web application that allows Lexington Zero Waste to manage their educational programs and community events more efficiently. This includes features for tracking event registrations, managing volunteer schedules, and facilitating communication between staff members and volunteers.",
-      "tech-stack": ["react", "tailwind", "typescript", "nodejs", "postgresql", "nextjs"],
+      "description": "Lexington Zero Waste educates and empowers individuals and communities to make more sustainable consumption choices that protect the planet. In collaboration with Lexington Climate Action Network and LPS Green Teams, they run LexShareWare, a free service allowing users to borrow reusable dishware and other supplies for large events.",
+      "summary": "Lexington Zero Waste educates and empowers individuals and communities to make more sustainable consumption choices that protect the planet. In collaboration with Lexington Climate Action Network and LPS Green Teams, they run LexShareWare, a free service allowing users to borrow reusable dishware and other supplies for large events.",
+      "project-goal": "Our goal is to create a web application that lets users borrow and return items from LexShareWare, search the catalog, and view their borrowing history. Admins can manage items and monitor user activity.",
+      "tech-stack": ["react", "typescript", "tailwind", "nextjs", "postgresql", "prisma", "neon", "clerk", "supabase"],
       "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "massachusetts-history-day": {
       "name": "Massachusetts History Day",
-      "description": "Massachusetts History Day is a nonprofit organization that promotes the study and appreciation of history among students in Massachusetts. They organize an annual history competition for students in grades 6-12, providing opportunities for students to research and present historical topics in a variety of formats.",
-      "summary": "Massachusetts History Day is a nonprofit organization that promotes the study and appreciation of history among students in Massachusetts. They organize an annual history competition for students in grades 6-12, providing opportunities for students to research and present historical topics in a variety of formats.",
-      "project-goal": "Our goal is to create a web application that allows Massachusetts History Day to manage their competition more efficiently. This includes features for tracking student registrations, managing event schedules, and facilitating communication between staff members, volunteers, and participants.",
-      "tech-stack": ["react", "tailwind", "typescript", "nodejs", "postgresql", "nextjs"],
+      "description": "Massachusetts History Day is an annual event held by the Massachusetts Historical Society to promote the study and appreciation of history among students in Massachusetts. They organize an annual history competition for students in grades 6-12 that encourage students to research and present historical topics in a variety of formats.",
+      "summary": "Massachusetts History Day is a nonprofit organization that promotes the study and appreciation of history among students in Massachusetts. They organize an annual history competition for students in grades 6-12, encouraging student to research and present historical topics in a variety of formats, as well as promote crticial thinking, creativity, and communication skills.",
+      "project-goal": "Create a data visualization dashboard for program administrators to track trends and observe projects of teacher and student participation in program. This includes visualizations of student and teacher participation by school, contest, and region, as well as the ability to filter by year and project category.",
+      "tech-stack": ["react", "typescript", "tailwind", "nodejs", "nextjs", "postgresql", "neon", "drizzle", "MapLibre", "D3.js"],
       "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "school-on-wheels": {
@@ -240,10 +240,10 @@
     },
     "the-loop-lab": {
       "name": "The Loop Lab",
-      "description": "The Loop Lab is a nonprofit organization that provides support and resources to individuals experiencing homelessness in the Greater Boston area. They offer a range of services, including emergency shelter, case management, and access to healthcare and employment resources, with the goal of helping individuals transition out of homelessness and into stable housing.",
-      "summary": "The Loop Lab is a nonprofit organization that provides support and resources to individuals experiencing homelessness in the Greater Boston area. They offer a range of services, including emergency shelter, case management, and access to healthcare and employment resources, with the goal of helping individuals transition out of homelessness and into stable housing.",
-      "project-goal": "Our goal is to create a web application that allows The Loop Lab to manage their shelter operations more efficiently. This includes features for tracking bed availability, managing client information, and facilitating communication between staff members.",
-      "tech-stack": ["react", "tailwind", "typescript", "nodejs", "postgresql", "nextjs"],
+      "description": "The Loop Lab is a nonprofit organization specializing in digital storytelling and workforce development. Their mission is to give young adult experience in business development, entrepreneurial strategies, and media arts through job training and paid fellowships.",
+      "summary": "The Loop Lab is a nonprofit organization specializing in digital storytelling and workforce development. Their mission is to give young adult experience in business development, entrepreneurial strategies, and media arts through job training and paid fellowships.",
+      "project-goal": "Create a web application that allows Loop Lab to easily track apprentice hours. The platform will allow apprentices to log their hours and communicate with employers in one centralized place.",
+      "tech-stack": ["react", "tailwind", "nodejs", "postgresql", "neon", "prisma", "clerk" ],
       "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     }
   }

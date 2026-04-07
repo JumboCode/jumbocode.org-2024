@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import { useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 
 interface ImageProps {
   src: string;
@@ -23,7 +23,17 @@ interface PastProjectsProps {
 
 export default function PastProjects(props: PastProjectsProps) {
   const years = Object.keys(props.projects).reverse();
-  const [selectedYear, setYear] = useState(years[0] ?? "");
+  const searchParams = useSearchParams();
+  const router = useRouter();
+
+  const yearParam = searchParams.get("past-year");
+  const selectedYear = years.includes(yearParam ?? "") ? yearParam! : years[0] ?? "";
+
+  function setYear(year: string) {
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("past-year", year);
+    router.replace(`?${params.toString()}`, { scroll: false });
+  }
 
   return (
     <>
