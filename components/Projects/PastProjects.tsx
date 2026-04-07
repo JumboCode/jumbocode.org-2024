@@ -84,7 +84,7 @@ function PastProjectCard(props: PastProjectCardProps) {
               alt={props.logo.alt}
               width={80}
               height={80}
-              className="h-12 w-auto object-contain mb-3"
+              className="h-12 w-12 object-contain mb-3 bg-white rounded-lg p-1"
             />
           )}
           <h3 className="text-white text-xl font-semibold mb-2">{props.name}</h3>

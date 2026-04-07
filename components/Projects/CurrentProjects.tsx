@@ -47,7 +47,7 @@ function CurrentProjectCard(props: ProjectProps) {
           alt={props.img.alt}
           width={296}
           height={312}
-          className="border border-transparent rounded-xl mx-auto h-48 object-cover md:h-fit"
+          className="border border-transparent rounded-xl mx-auto h-48 w-48 object-contain bg-white p-2"
         />
         <h3 className="text-white text-2xl font-semibold my-4 lg:my-6">
           {props.name}

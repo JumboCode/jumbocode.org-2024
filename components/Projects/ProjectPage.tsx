@@ -41,7 +41,7 @@ export default function ProjectPage(props: ProjectPageProps) {
               alt={props.overview.logo.alt}
               width={200}
               height={84}
-              className="h-20 w-auto object-contain"
+              className="h-20 w-auto object-contain bg-white rounded-lg p-1"
             />
             <h1 className="text-white font-semibold text-4xl">{props.hero.projectName}</h1>
           </div>
