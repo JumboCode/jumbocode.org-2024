@@ -79,7 +79,7 @@ export function getProjectPageData(slug: string): ProjectPageProps | null {
       },
       overview: {
         logo: {
-          src: `/projects/${year}/${slug}/${findProjectFile(year, slug, "logo", slug)}`,
+          src: `/projects/${year}/${slug}/${findProjectFile(year, slug, "logo")}`,
           alt: `${project.name} Logo`,
         },
         summary: project.summary,
@@ -119,13 +119,13 @@ export function getProjectCards(): Record<string, Record<string, ProjectProps>> 
       // Current projects: show the logo (or slug.png fallback) as the card image
       // Past projects: show the slug-named screenshot as the card image, logo separately
       const imgFile = isCurrent
-        ? (logoFile ?? findProjectFile(year, slug, slug))
+        ? logoFile
         : findProjectFile(year, slug, "hero");
       result[year][slug] = {
         name: project.name,
-        img: { src: `/projects/${year}/${slug}/${imgFile}`, alt: `${project.name}` },
-        logo: !isCurrent
-          ? { src: `/projects/${year}/${slug}/${logoFile ?? findProjectFile(year, slug, "hero")}`, alt: `${project.name} Logo` }
+        img: imgFile ? { src: `/projects/${year}/${slug}/${imgFile}`, alt: `${project.name}` } : { src: "", alt: "" },
+        logo: (!isCurrent && logoFile)
+          ? { src: `/projects/${year}/${slug}/${logoFile}`, alt: `${project.name} Logo` }
           : undefined,
         description: project.description,
         href: `/projects/${slug}`,
