@@ -26,7 +26,8 @@ export default function PastProjects(props: PastProjectsProps) {
 
   return (
     <>
-      <div className="mt-12 mb-8">
+      <h2 className="text-white font-semibold text-4xl mt-12 mb-6 text-center md:text-left">Past Projects</h2>
+      <div className="mb-8">
         <div className="relative inline-block">
           <select
             value={selectedYear}
