@@ -166,7 +166,7 @@
       "tech-stack": ["react", "tailwind", "typescript", "nodejs", "postgresql", "nextjs"],
       "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
-    "boston-community-pediastrics": {
+    "boston-community-pediatrics": {
       "name": "Boston Community Pediatrics",
       "description": "Boston Community Pediatrics is a nonprofit organization that provides comprehensive healthcare services to children and families in the Greater Boston area. They focus on delivering high-quality, culturally sensitive care to underserved communities, addressing both medical and social determinants of health to improve outcomes for their patients.",
       "summary": "Boston Community Pediatrics is a nonprofit organization that provides comprehensive healthcare services to children and families in the Greater Boston area. They focus on delivering high-quality, culturally sensitive care to underserved communities, addressing both medical and social determinants of health to improve outcomes for their patients.",
