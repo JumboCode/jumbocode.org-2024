@@ -1,5 +1,4 @@
-import projectsRaw from "@/app/(main)/projects/projectsRaw.json";
-import projectCardsRaw from "@/app/(main)/projects/projectCardsRaw.json";
+import data from "@/app/(main)/projects/projectsData.json";
 import type { ProjectPageProps } from "@/components/Projects/ProjectPage";
 import type { ProjectProps } from "@/components/Projects/CurrentProjects";
 
@@ -23,27 +22,27 @@ const TECH_STACK_MAP: Record<string, string> = {
   bun: "Bun",
 };
 
-type RawProject = {
+type Project = {
   name: string;
+  description: string;
   summary: string;
   "project-goal": string;
   "tech-stack": string[];
   "final-screens": string[];
+  logo?: string; // optional filename override, e.g. "logo.jpg" (defaults to "${slug}.png")
 };
 
-type RawProjects = Record<string, Record<string, RawProject>>;
-type RawCards = Record<string, Record<string, { name: string; description: string }>>;
+type ProjectsData = Record<string, Record<string, Project>>;
 
-const raw = projectsRaw as RawProjects;
-const rawCards = projectCardsRaw as RawCards;
+const projects = data as ProjectsData;
 
 // The most recent year in the data is treated as the current year
-const currentYear = Object.keys(raw).at(-1)!;
+const currentYear = Object.keys(projects).at(-1)!;
 
 export function getProjectPageData(slug: string): ProjectPageProps | null {
-  for (const [year, projects] of Object.entries(raw)) {
-    if (!(slug in projects)) continue;
-    const project = projects[slug];
+  for (const [year, yearProjects] of Object.entries(projects)) {
+    if (!(slug in yearProjects)) continue;
+    const project = yearProjects[slug];
     const isCurrent = year === currentYear;
 
     return {
@@ -84,14 +83,14 @@ export function getProjectPageData(slug: string): ProjectPageProps | null {
 }
 
 export function getAllProjectSlugs(): string[] {
-  return Object.values(raw).flatMap((yearProjects) => Object.keys(yearProjects));
+  return Object.values(projects).flatMap((yearProjects) => Object.keys(yearProjects));
 }
 
 export function getProjectCards(): Record<string, Record<string, ProjectProps>> {
   const result: Record<string, Record<string, ProjectProps>> = {};
-  for (const [year, projects] of Object.entries(rawCards)) {
+  for (const [year, yearProjects] of Object.entries(projects)) {
     result[year] = {};
-    for (const [slug, project] of Object.entries(projects)) {
+    for (const [slug, project] of Object.entries(yearProjects)) {
       result[year][slug] = {
         name: project.name,
         img: {
