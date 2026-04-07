@@ -1,13 +1,7 @@
-import ProjectPage, { ProjectPageProps } from "@/components/Projects/ProjectPage";
+import ProjectPage from "@/components/Projects/ProjectPage";
+import { getProjectPageData, getAllProjectSlugs } from "@/lib/projectUtils";
 import { notFound } from "next/navigation";
-import projects from "../projects.json";
 import { ROSTERS, YEARS } from "@/data/rosters";
-
-interface Projects {
-  [key: string]: ProjectPageProps;
-}
-
-const typedProjects: Projects = projects;
 
 interface ProjectShowcasePageProps {
   params: {
@@ -15,19 +9,21 @@ interface ProjectShowcasePageProps {
   };
 }
 
+export function generateStaticParams() {
+  return getAllProjectSlugs().map((slug) => ({ project: slug }));
+}
+
 export default function ProjectShowcasePage(props: ProjectShowcasePageProps) {
   const { project } = props.params;
+  if (!project) return notFound();
 
-  if (!project || !(project in typedProjects)) return notFound();
+  const projectData = getProjectPageData(project);
+  if (!projectData) return notFound();
 
   const projectPath = `/projects/${project}`;
   const rosterTeam = YEARS
     .flatMap(year => ROSTERS[year].teams)
     .find(team => team.link === projectPath);
 
-  return (
-    <>
-      <ProjectPage {...typedProjects[project]} rosterMembers={rosterTeam?.members} />
-    </>
-  );
+  return <ProjectPage {...projectData} rosterMembers={rosterTeam?.members} />;
 }

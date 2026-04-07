@@ -2,7 +2,6 @@ import clsx from "clsx"
 import Image from "next/image"
 import React from "react"
 import Button from "../button"
-import Hero from "../hero"
 import { ImageProps } from "../ImageCarousel"
 import PictureFrame from "../PictureFrame"
 import type { TeamMember } from "@/data/rosters"
@@ -12,16 +11,12 @@ export interface ProjectPageProps {
   hero: {
     projectName: string,
     schoolYear: string,
-    image: ImageProps | null
+    image: ImageProps,
   },
   overview: {
     logo: ImageProps,
     summary: string,
     projectGoal: string,
-    teamMembers: {
-      leadership: string,
-      developers: string
-    },
     teamPicture: ImageProps
   },
   techStack: Array<{
@@ -38,20 +33,30 @@ const h3Class = "text-white text-3xl font-semibold";
 export default function ProjectPage(props: ProjectPageProps) {
   return (
     <>
-      <Hero
-        title={<>{props.hero.projectName}</>}
-        subtitle={<>{props.hero.schoolYear}</>}
-
-        image={props.hero.image && props.hero.image.src ?
+      <div className="py-24 sm:py-48 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div className="flex items-center gap-6">
+            <Image
+              src={props.overview.logo.src}
+              alt={props.overview.logo.alt}
+              width={200}
+              height={84}
+              className="h-20 w-auto object-contain"
+            />
+            <h1 className="text-white font-semibold text-4xl">{props.hero.projectName}</h1>
+          </div>
+          <h2 className="mt-4 text-white/70 text-xl font-medium">{props.hero.schoolYear}</h2>
+        </div>
+        <div>
           <Image
             src={props.hero.image.src}
             alt={props.hero.image.alt}
-            width={650}
-            height={400}
+            width={700}
+            height={450}
+            className="w-full h-auto rounded-xl object-cover"
           />
-          : <></>
-        }
-      />
+        </div>
+      </div>
 
       <div className="md:grid md:grid-cols-2">
         <div>
@@ -128,30 +133,15 @@ export default function ProjectPage(props: ProjectPageProps) {
         <>
           <h3 className={clsx(h3Class, "my-12 md:mt-4")}>Final Screens</h3>
           <div className="grid justify-center md:grid-cols-2 gap-x-7 gap-y-6">
-            <Image
-              src={props.finalScreens[0].src}
-              alt={props.finalScreens[0].alt}
-              width={597}
-              height={450}
-            />
-            <Image
-              src={props.finalScreens[1].src}
-              alt={props.finalScreens[1].alt}
-              width={597}
-              height={450}
-            />
-            <Image
-              src={props.finalScreens[2].src}
-              alt={props.finalScreens[2].alt}
-              width={597}
-              height={450}
-            />
-            <Image
-              src={props.finalScreens[3].src}
-              alt={props.finalScreens[3].alt}
-              width={597}
-              height={450}
-            />
+            {props.finalScreens.map((screen, idx) => (
+              <Image
+                key={idx}
+                src={screen.src}
+                alt={screen.alt}
+                width={597}
+                height={450}
+              />
+            ))}
           </div>
         </>
       }

@@ -13,13 +13,19 @@ interface CurrentProjectsProps {
   projects: {
     [key: string]: ProjectProps;
   };
+  year: string; // e.g. "2025-2026"
+}
+
+function formatYear(year: string): string {
+  const [start, end] = year.split("-");
+  return `${start}-${end.slice(2)}`;
 }
 
 export default function CurrentProjects(props: CurrentProjectsProps) {
   return (
     <>
       <h2 className="text-white text-center md:text-left font-semibold text-4xl mb-12">
-        2024-25 Projects
+        {formatYear(props.year)} Projects
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
         {Object.keys(props.projects).map((key, idx) => {

@@ -96,7 +96,7 @@
       "leadership": "Jennifer Luo (PM), Clarence Yeh (TL), Fa Taepaisitphongse (Designer)",
       "developers": "Ava Sim, Gaby Dozortsev, Hannah Wang, Jet Yotsuuye, Kabir Goklani, Keiji Numata, Natalie Phua, Owen Prendergast, Sela Alonso, Rakshi Rangaprasad, Javier Laveaga",
       "tech-stack": ["javascript", "react", "tailwind", "mongodb", "prisma", "nextjs"],
-      "final-screens": []
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "bread-and-roses": {
       "name": "Bread & Roses",
@@ -106,7 +106,7 @@
       "leadership": "Johnny Tan (PM), Won Kim (TL), An Tran (Designer)",
       "developers": "Tomas Maranga, Hanah Kim, Justin Paik, Tammi Tran, Jason Miller, Manuel Pena, Conrad Hsu, Vina Le, Amelia Bermack, Katie Yang, Jonah Pflaster",
       "tech-stack": ["nextjs", "nextauth", "nodemailer", "prisma", "mongodb", "tailwind"],
-      "final-screens": []
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "leonard-carmichael-society": {
       "name": "Leonard Carmichael Society",
@@ -116,7 +116,7 @@
       "leadership": "Dilanur Bayraktar (PM), Brandon Dionisio (TL), Moya Techakalayatum (Designer)",
       "developers": "Anne Wu, Aray Arigngazina, Caitlyn Wei, Charlie Fitzpatrick, Hunter Niimi, Rachel Snyder, Rainier Hardjanto, Seth Morton, Sheza Chaudhry, Valentina Henao",
       "tech-stack": ["typescript", "react", "tailwind", "vite", "postgresql", "drizzle"],
-      "final-screens": []
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "a2empowerment": {
       "name": "A2Empowerment",
@@ -126,7 +126,7 @@
       "leadership": "Rofeeah Ayeni (PM), Will Soylemez (TL), Jessie Huang (Designer)",
       "developers": "Wendan Jiang, Jessie Katz, Owen Thomas, Yodahie Ermias, Gabriel Klaris, Madison Johnson, Helena Fu, Sara AbuHamra, Jasmine Schaber, Oluwaponmile(Wesley) Fafowora, Fadhili Mboya",
       "tech-stack": ["react", "vite", "tailwind", "mongodb", "nodejs", "drizzle"],
-      "final-screens": []
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "village-food-hub": {
       "name": "Village Food Hub",
@@ -136,7 +136,7 @@
       "leadership": "Idil Kolabas (PM), Jiyoon Choi (TL), Arcadia Ohnemus (Designer)",
       "developers": "Charlie Koenig, Zoya Amrit, Ella Hou, Sofia Alvazzi, Daniel Jakab, Vanessa Rose, Tanisha Laud, Amanda Wu, Alex Violet, Emily Yuan ",
       "tech-stack": ["typescript", "react", "typescript", "postgresql", "prisma", "nextjs"],
-      "final-screens": []
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "somerville-museum": {
       "name": "Somerville Museum",
@@ -146,7 +146,7 @@
       "leadership": "Holden Kittelberger (PM), Zachary White (TL), Hannah Jiang (Designer)",
       "developers": "Daniel Glorioso, Shayne Sidman, Arietta Goshtasby, Peter Morganelli, Elisa Yu, Elias Swartz, Massimo Bottari, William Goldman",
       "tech-stack": ["react", "postgresql", "nodejs", "neon", "nextjs"],
-      "final-screens": []
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "new-england-innocence-project": {
       "name": "New England Innocence Project",
@@ -156,7 +156,7 @@
       "leadership": "Sarah Svahn (PM), Sierra Small (TL), Lizzie Pimentel (Designer)",
       "developers": "Kevin Aka, Henri Comer, Leann Dinh, Mallory Ewing, Eleanor Harty, Brandon Huang, Nelson Huang, Dhruvii Mehta, Märten Tropp, Kelly Tsidji",
       "tech-stack": ["clerk", "react", "tailwind", "prisma", "postgresql", "nextjs", "neon", "nodejs"],
-      "final-screens": []
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "lgbtq-senior-housing": {
       "name": "LGBTQ Senior Housing",
@@ -166,7 +166,7 @@
       "leadership": "Charles Mitchell (PM), Haijun Si (TL), Phuong Nguyen (Designer)",
       "developers": "Andrea Cabo, Andres Ruvalcaba, Ash Sze, Benson Jiang, Cliodhna Reidy, Dylan Perkins, Hailey Baughman, Harrison Chang, Maggie Yan, May Neelon",
       "tech-stack": ["neon", "tailwind", "nextjs", "clerk", "react"],
-      "final-screens": []
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "west-medford-community-center": {
       "name": "West Medford Community Center",
@@ -176,7 +176,7 @@
       "leadership": "Daniel Graham (Co-PM), Neya Krishnan (Co-PM), Winston Hsiao (Co-TL), Alyssa Williams (Co-TL), Andy Xu (Designer)",
       "developers": "Alyssa Williams, Tika Capon, Agatha Yang, Ashley Huang, Johann Zhang, Kalyan Patel, Katerine Deane, Lisa Dang, Allen Wang, Sophia Zhou, Ali Macun",
       "tech-stack": ["react", "typescript", "tailwind", "nextjs", "mongodb", "prisma"],
-      "final-screens": []
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "dillar-academy": {
       "name": "Dillar Academy",
@@ -186,7 +186,7 @@
       "leadership": "Lillian Tran (PM), Megan Yi (TL), Sydnie Chen (Designer)",
       "developers": "Aryaa Modi, Claire Lee, Donatello Sassaroli, Fahim Rashid, Frank Li, John Puka, Madeline Lei, Spencer Anderson, Toki Zhumadil, Tony Nguyen, Yi Gu ",
       "tech-stack": ["mongodb", "react", "vite", "tailwind"],
-      "final-screens": []
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "the-wily-network": {
       "name": "The Wily Network",
@@ -196,7 +196,7 @@
       "leadership": "Avery Hanna (PM), Alana Sendlakowski (TL), Shannon Chen (Designer)",
       "developers": "Kenny Zheng, Alekha Rao, Oliver Bello, Chiara Martello, Lawer Nyako, Kerem Ozturk, Allison Zhang, Jonathan Chung, Khrystyna Blyshchak ",
       "tech-stack": ["javascript", "react", "tailwind", "mongodb", "nextjs"],
-      "final-screens": []
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "office-of-university-counsel": {
       "name": "Office of University Counsel",
@@ -206,7 +206,7 @@
       "leadership": "Rebecca Dinsmore (PM), Sachin Zachariah (TL), Livia Bednarz (Designer)",
       "developers": "Andrew Bacigalupi, Jordan Pittignano, Josh Lamothe, Keegan Carnell, Liam Smith, Lindsay Ulrey, Zach Klein, Sandra Alnamous",
       "tech-stack": ["javascript", "python", "tailwind", "postgresql", "neon", "nextjs"],
-      "final-screens": []
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     }
   }
 }

@@ -1,5 +1,4 @@
 "use client"
-import clsx from "clsx";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -22,37 +21,44 @@ interface PastProjectsProps {
 }
 
 export default function PastProjects(props: PastProjectsProps) {
-  const [selectedYear, setYear] = useState({
-    label: "Past Projects",
-    value: "2023-2024",
-  });
+  const years = Object.keys(props.projects).reverse();
+  const [selectedYear, setYear] = useState(years[0] ?? "");
 
   return (
     <>
-      <Dropdown
-        title={selectedYear.label}
-        items={Object.keys(props.projects).reverse()}
-        onSelect={(year) => setYear({ label: year, value: year })}
-        className="mt-12 mb-4"
-      />
+      <div className="mt-12 mb-8">
+        <div className="relative inline-block">
+          <select
+            value={selectedYear}
+            onChange={(e) => setYear(e.target.value)}
+            className="appearance-none bg-transparent border border-off_white/40 hover:border-off_white text-white rounded-lg pl-4 pr-12 py-2.5 text-base font-medium cursor-pointer focus:outline-none focus:border-brand transition-colors"
+          >
+            {years.map((year) => (
+              <option key={year} value={year} className="text-white bg-black">
+                {year}
+              </option>
+            ))}
+          </select>
+          <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center">
+            <svg className="w-4 h-4 text-off_white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </div>
+      </div>
       <div className="gap-x-6 space-y-8">
-        {/* eslint-disable-next-line @typescript-eslint/no-unused-vars */}
-        {
-          Object.entries(props.projects[selectedYear.value]).map(([projectId, project]) => (
-            <div key={projectId}>
-              <PastProjectCard
-                name={project.name}
-                img={project.img}
-                description={project.description}
-                href={`/projects/${projectId}`}
-              />
-            </div>
-
-          ))}
-
+        {selectedYear && Object.entries(props.projects[selectedYear]).map(([projectId, project]) => (
+          <div key={projectId}>
+            <PastProjectCard
+              name={project.name}
+              img={project.img}
+              description={project.description}
+              href={`/projects/${projectId}`}
+            />
+          </div>
+        ))}
       </div>
     </>
-
   );
 }
 
@@ -85,47 +91,5 @@ function PastProjectCard(props: PastProjectCardProps) {
         </div>
       </div>
     </a>
-  );
-}
-
-
-interface DropdownProps {
-  title: string;
-  items: string[];
-  onSelect: (item: string) => void;
-  className?: string;
-}
-
-function Dropdown(props: DropdownProps) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div className={clsx("relative inline-block text-left", props.className)}>
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="bg-gray-800 text-white px-4 p-2 rounded-md w-full flex justify-between items-center"
-      >
-        {props.title}
-        <span className={`ml-2 transform ${isOpen ? "rotate-180" : "rotate-0"}`}>
-          ▼
-        </span>
-      </button>
-      {isOpen && (
-        <ul className="absolute left-0 w-full bg-gray-900 text-white rounded-md shadow-lg z-10">
-          {props.items.map((item, idx) => (
-            <li
-              key={idx}
-              onClick={() => {
-                props.onSelect(item);
-                setIsOpen(false);
-              }}
-              className="rounded-md px-4 py-2 hover:bg-gray-700 cursor-pointer"
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
   );
 }
