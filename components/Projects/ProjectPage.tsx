@@ -140,6 +140,7 @@ export default function ProjectPage(props: ProjectPageProps) {
                 alt={screen.alt}
                 width={597}
                 height={450}
+                className="rounded-xl"
               />
             ))}
           </div>
