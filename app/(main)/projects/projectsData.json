@@ -172,7 +172,7 @@
       "summary": "Boston Community Pediatrics is a nonprofit organization that brings equity to pediatric healthcare by giving all patients (particularly those on MassHealth) direct access to their primary care provider, as well as to comprehensive prevention-oriented medical care, case management services, and integrated behavioral health services.",
       "project-goal": "Create a website that allows for the admins to manage the volunteers and for the volunteers to receive more guidance throughout the process. The site supports three user types — admins, volunteers, and public viewers — where admins can manage events, approve sign-ups, and message volunteers, while volunteers can register for roles, add guests, and access resources. Public visitors can browse events but must log in to sign up.",
       "tech-stack": ["react", "tailwind", "nextjs", "Clerk", "Prisma", "Neon", "Clerk"],
-      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+      "final-screens": ["solution-1.jpeg", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "bostons-higher-ground": {
       "name": "Boston's Higher Ground",
@@ -212,7 +212,7 @@
       "summary": "Food Link is creating an equitable food system throughout Greater Boston by rescuing and distributing high-quality, customized food to under-resourced communities.",
       "project-goal": "Our goal is to create a centralized volunteer training hub with categorized videos and PDFs to streamline Food Link's volunteer training process.",
       "tech-stack": ["react", "tailwind", "typescript", "nodejs", "vite", "neon", "prisma"],
-      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+      "final-screens": ["solution-1.jpeg", "solution-2.jpeg", "solution-3.jpeg", "solution-4.jpeg"]
     },
     "lexington-zero-waste": {
       "name": "Lexington Zero Waste",
