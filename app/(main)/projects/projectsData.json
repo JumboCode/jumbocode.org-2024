@@ -178,16 +178,16 @@
       "name": "Boston's Higher Ground",
       "description": "Boston's Higher Ground is a nonprofit organization that works with residents and partners to improve outcomes in education, housing, and health for children and families in Roxbury, Dorchester, and Mattapan.",
       "summary": "Boston's Higher Ground is a nonprofit organization that works with residents and partners to improve outcomes in education, housing, and health for children and families in Roxbury, Dorchester, and Mattapan.",
-      "project-goal": "create a central, web-based dashboard that visualizes and generates reports from Student and Housing data collected by Higher Ground's education and housing initiatives.",
+      "project-goal": "Create a central, web-based dashboard that visualizes and generates reports from Student and Housing data collected by Higher Ground's education and housing initiatives.",
       "tech-stack": ["react", "typescript", "nextjs", "tailwind", "drizzle"],
       "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "breaktime": {
       "name": "Breaktime",
-      "description": "Breaktime is a nonprofit organization that provides support and resources to individuals experiencing homelessness in the Greater Boston area. They offer a range of services, including emergency shelter, case management, and access to healthcare and employment resources, with the goal of helping individuals transition out of homelessness and into stable housing.",
-      "summary": "Breaktime is a nonprofit organization that provides support and resources to individuals experiencing homelessness in the Greater Boston area. They offer a range of services, including emergency shelter, case management, and access to healthcare and employment resources, with the goal of helping individuals transition out of homelessness and into stable housing.",
-      "project-goal": "Our goal is to create a web application that allows Breaktime to manage their shelter operations more efficiently. This includes features for tracking bed availability, managing client information, and facilitating communication between staff members.",
-      "tech-stack": ["react", "tailwind", "typescript", "nodejs", "postgresql", "nextjs"],
+      "description": "Breaktime's mission is to break the cycle of homelessness by equipping young adults with the job and financial security they need to establish housing security.",
+      "summary": "Breaktime's new space, the Hub, offers services such as showers, clothing, and laundry to Young Adults experiencing homelessness. The space allows their associates to cover basic necessities and support their path to stable housing.",
+      "project-goal": "Build a Progressive Web App (PWA) that will provide users with an intuitive way to browse, schedule, and manage appointments, while giving staff members powerful tools to coordinate bookings, track availability, and communicate seamlessly with clients.",
+      "tech-stack": ["react", "tailwind", "mongodb", "clerk"],
       "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "commonwealth-kitchen": {
