@@ -12,7 +12,7 @@ export default function Button({
   variant: "primary" | "secondary" | "ghost";
   icon?: React.ElementType;
 }) {
-  const isExternal = !href.startsWith("/");
+  const isExternal = !href.startsWith("/") && !href.startsWith("#");
   const Element = isExternal ? "a" : Link;
   const Icon = icon;
   return (
