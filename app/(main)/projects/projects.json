@@ -1340,6 +1340,13 @@
           "src": "/projects/tech-stacks/prisma.png",
           "alt": "Prisma Logo"
         }
+      },
+      {
+        "name": "Cloudinary",
+        "logo": {
+          "src":"/projects/tech-stacks/cloudinary.png",
+          "alt": "Cloudinary Logo"
+        }
       }
     ],
     "finalScreens": [

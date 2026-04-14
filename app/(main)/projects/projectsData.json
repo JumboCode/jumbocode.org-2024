@@ -152,10 +152,10 @@
   "2025-2026": {
     "artists-for-humanity": {
       "name": "Artists for Humanity",
-      "description": "Artists For Humanity (AFH) is a nonprofit organization that provides underserved Boston youth with paid employment in the arts, empowering them to become self-sufficient adults and leaders in their communities. AFH offers a unique blend of art education and professional development, fostering creativity, confidence, and career readiness among its participants.",
-      "summary": "Artists For Humanity (AFH) is a nonprofit organization that provides underserved Boston youth with paid employment in the arts, empowering them to become self-sufficient adults and leaders in their communities. AFH offers a unique blend of art education and professional development, fostering creativity, confidence, and career readiness among its participants.",
-      "project-goal": "Our goal is to create a web application that allows AFH to manage their youth employment program more efficiently. This includes features for tracking student progress, managing schedules, and facilitating communication between students, mentors, and staff.",
-      "tech-stack": ["react", "tailwind", "typescript", "nodejs", "postgresql", "nextjs"],
+      "description": "Artists For Humanity (AFH) empowers under-resourced teens through paid employment in art and design, mentorship, and real-world creative opportunities. AFH helps young people build confidence, professional skills, and pathways to college and careers while using art to strengthen their communities.",
+      "summary": "Artists For Humanity's project is a digital artwork archive and portfolio platform for AFH teen artists to upload, organize, and showcase their work in a professional, public-facing space. The platform supports artist profiles, a curated gallery, and an admin moderation workflow so AFH staff can review submissions, maintain quality and safety, and connect youth talent with schools, employers, and community partners.",
+      "project-goal": "Our goal is to build a secure, easy-to-use web platform that lets AFH artists maintain living portfolios and gain visibility for their work, while giving staff efficient tools to manage and approve submissions. Since the initial spec, we expanded the workflow to support guest uploads and post-signup artwork claiming so more artists can contribute with less friction.",
+      "tech-stack": ["nextjs", "react", "typescript", "nextauth", "prisma", "postgresql", "cloudinary"],
       "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
     "beantown-baby-diaper-bank": {
@@ -224,9 +224,9 @@
     },
     "massachusetts-history-day": {
       "name": "Massachusetts History Day",
-      "description": "Massachusetts History Day is an annual event held by the Massachusetts Historical Society to promote the study and appreciation of history among students in Massachusetts. They organize an annual history competition for students in grades 6-12 that encourage students to research and present historical topics in a variety of formats.",
-      "summary": "Massachusetts History Day is a nonprofit organization that promotes the study and appreciation of history among students in Massachusetts. They organize an annual history competition for students in grades 6-12, encouraging student to research and present historical topics in a variety of formats, as well as promote crticial thinking, creativity, and communication skills.",
-      "project-goal": "Create a data visualization dashboard for program administrators to track trends and observe projects of teacher and student participation in program. This includes visualizations of student and teacher participation by school, contest, and region, as well as the ability to filter by year and project category.",
+      "description": "Massachusetts History Day is an annual event held by the Massachusetts Historical Society to promote the study and appreciation of history among students in Massachusetts. They organize an annual history competition for grades 6-12 that encourage students to research and present historical topics in a variety of formats.",
+      "summary": "Massachusetts History Day is an annual event held by the Massachusetts Historical Society to promote the study and appreciation of history among students in Massachusetts. They organize an annual history competition for grades 6-12 that encourage students to research and present historical topics in a variety of formats, as well as promote crticial thinking, creativity, and communication skills.",
+      "project-goal": "Create a data visualization dashboard for program administrators to track trends and observe patterns of teacher and student participation in program. This includes visualizations of student and teacher participation by school, contest, and region in bar/line charts and a heat map, as well as the ability to filter data by year and project category.",
       "tech-stack": ["react", "typescript", "tailwind", "nodejs", "nextjs", "postgresql", "neon", "drizzle", "MapLibre", "D3.js"],
       "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
     },
