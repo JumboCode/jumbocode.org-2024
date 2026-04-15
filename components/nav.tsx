@@ -3,6 +3,7 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 
 export default function Nav() {
   return (
@@ -18,11 +19,38 @@ export default function Nav() {
 function AboutDropdown() {
   const location = usePathname();
   const isActive = location === "/about" || location === "/members";
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  // Close when navigating
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [location]);
+
+  // Close on click outside
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setMobileOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  function handleClick(e: React.MouseEvent) {
+    // On mobile (no hover), first tap opens the dropdown; second tap navigates
+    if (window.innerWidth < 768 && !mobileOpen) {
+      e.preventDefault();
+      setMobileOpen(true);
+    }
+  }
 
   return (
-    <div className="group relative">
+    <div className="group relative" ref={ref}>
       <Link
         href="/about"
+        onClick={handleClick}
         className={clsx(
           "flex items-center gap-x-1 font-medium",
           isActive ? "text-white" : "text-white/60"
@@ -41,7 +69,10 @@ function AboutDropdown() {
           <path d="M2 4l4 4 4-4" />
         </svg>
       </Link>
-      <div className="absolute left-1/2 top-full z-10 hidden -translate-x-1/2 pt-2 group-hover:block">
+      <div className={clsx(
+        "absolute left-1/2 top-full z-10 -translate-x-1/2 pt-2",
+        mobileOpen ? "block" : "hidden group-hover:block"
+      )}>
         <div className="flex flex-col overflow-hidden rounded-md bg-background shadow-lg ring-1 ring-white/10">
           <DropdownLink href="/about" label="About" />
           <DropdownLink href="/members" label="Members" />
