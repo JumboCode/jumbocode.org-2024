@@ -86,7 +86,7 @@ interface PastProjectCardProps {
 function PastProjectCard(props: PastProjectCardProps) {
   return (
     <a href={props.href} className="min-w-full">
-      <div className="grid grid-cols-3 space-x-3 border border-off-white p-6 rounded-xl hover:border-gray-500 hover:filter hover:brightness-75 transition-all">
+      <div className="flex flex-col gap-4 md:grid md:grid-cols-3 md:gap-0 md:space-x-3 border border-off-white p-6 rounded-xl hover:border-gray-500 hover:filter hover:brightness-75 transition-all">
         <div>
           {props.logo && (
             <Image
@@ -104,7 +104,7 @@ function PastProjectCard(props: PastProjectCardProps) {
           <Image
             src={props.img.src}
             alt={props.img.alt}
-            className="w-full h-64 object-cover rounded-lg mb-4"
+            className="w-full h-64 object-cover rounded-lg"
             width={500}
             height={500}
           />
