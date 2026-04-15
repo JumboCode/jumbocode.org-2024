@@ -18,7 +18,9 @@ type Frame = {
 const PictureFrame: React.FC<Frame> = ({ src, name, description }) => {
     return (
         <div className="flex flex-col border border-off_white p-3 rounded-lg">
-            <Image src={src} alt={name} width={300} height={300} className="object-cover w-full rounded-lg mb-3" />
+            <div className="w-full aspect-square rounded-lg mb-3 bg-white/10">
+                <Image src={src} alt={name} width={300} height={300} className="object-cover w-full h-full rounded-lg" />
+            </div>
             <h2 className="text-base font-bold text-white leading-snug mb-0.5">
                 {name}
             </h2>
