@@ -234,6 +234,7 @@ const rawTeams: Team[] = [
             { name: "Cole Hamilton", description: "Developer" },
             { name: "Michelle Zakaria", description: "Developer" },
             { name: "Nishesh Nath", description: "Developer" },
+            { name: "Alex Vu", description: "Developer" },
         ],
     },
     {
