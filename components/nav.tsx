@@ -21,7 +21,8 @@ function AboutDropdown() {
 
   return (
     <div className="group relative">
-      <button
+      <Link
+        href="/about"
         className={clsx(
           "flex items-center gap-x-1 font-medium",
           isActive ? "text-white" : "text-white/60"
@@ -39,7 +40,7 @@ function AboutDropdown() {
         >
           <path d="M2 4l4 4 4-4" />
         </svg>
-      </button>
+      </Link>
       <div className="absolute left-1/2 top-full z-10 hidden -translate-x-1/2 pt-2 group-hover:block">
         <div className="flex flex-col overflow-hidden rounded-md bg-background shadow-lg ring-1 ring-white/10">
           <DropdownLink href="/about" label="About" />
