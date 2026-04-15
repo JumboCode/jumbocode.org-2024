@@ -24,13 +24,15 @@ const TECH_STACK_MAP: Record<string, string> = {
   bun: "Bun",
 };
 
+const FINAL_SCREEN_BASENAMES = ["solution-1", "solution-2", "solution-3", "solution-4"];
+
 type Project = {
   name: string;
   description: string;
   summary: string;
   "project-goal": string;
   "tech-stack": string[];
-  "final-screens": string[];
+  "final-screens"?: string[];
 };
 
 type ProjectsData = Record<string, Record<string, Project>>;
@@ -43,7 +45,7 @@ const currentYear = Object.keys(projects).at(-1)!;
 function findProjectFile(year: string, slug: string, ...basenames: string[]): string {
   const base = path.join(process.cwd(), "public", "projects", year, slug);
   for (const basename of basenames) {
-    for (const ext of ["png", "jpg", "jpeg"]) {
+    for (const ext of ["png", "jpg", "jpeg", "JPG"]) {
       if (fs.existsSync(path.join(base, `${basename}.${ext}`))) {
         return `${basename}.${ext}`;
       }
@@ -73,7 +75,7 @@ export function getProjectPageData(slug: string): ProjectPageProps | null {
         projectName: project.name,
         schoolYear: isCurrent ? `Current Project (${year})` : `Past Project (${year})`,
         image: {
-          src: `/projects/${year}/${slug}/hero.png`,
+          src: `/projects/${year}/${slug}/${findProjectFile(year, slug, "hero")}`,
           alt: `${project.name} Hero Image`,
         },
       },
@@ -96,10 +98,10 @@ export function getProjectPageData(slug: string): ProjectPageProps | null {
           alt: `${item.charAt(0).toUpperCase() + item.slice(1)} Logo`,
         },
       })),
-      finalScreens: project["final-screens"].map((screen) => ({
-        src: `/projects/${year}/${slug}/${screen}`,
-        alt: "[TBD]",
-      })),
+      finalScreens: (project["final-screens"]
+        ? project["final-screens"].map((screen) => `/projects/${year}/${slug}/${screen}`)
+        : FINAL_SCREEN_BASENAMES.map((base) => `/projects/${year}/${slug}/${findProjectFile(year, slug, base)}`)
+      ).map((src) => ({ src, alt: "[TBD]" })),
     };
   }
   return null;
@@ -116,8 +118,6 @@ export function getProjectCards(): Record<string, Record<string, ProjectProps>> 
     for (const [slug, project] of Object.entries(yearProjects)) {
       const isCurrent = year === currentYear;
       const logoFile = findLogoFile(year, slug);
-      // Current projects: show the logo (or slug.png fallback) as the card image
-      // Past projects: show the slug-named screenshot as the card image, logo separately
       const imgFile = isCurrent
         ? logoFile
         : findProjectFile(year, slug, "hero");

@@ -5,6 +5,7 @@ const YEAR = "2025-2026";
 const toFilename = (name: string) =>
     `${YEAR}_${name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/'/g, '').replace(/\s+/g, '_')}`;
 
+
 export const eboard: EboardMember[] = [
     { src: `${CLOUDINARY_BASE}/${toFilename("Holden Kittelberger")}.png`, name: "Holden Kittelberger", description: "President" },
     { src: `${CLOUDINARY_BASE}/${toFilename("Lillian Tran")}.png`, name: "Lillian Tran", description: "President" },
@@ -224,7 +225,7 @@ const rawTeams: Team[] = [
             { name: "Lakshita Jain", description: "Project Manager" },
             { name: "Vanessa Rose", description: "Technical Lead" },
             { name: "Chloe Wong", description: "Designer" },  
-            { name: "Armaan Rajeev Thadani", description: "Developer" },
+            { name: "Armaan Thadani", description: "Developer" },
             { name: "Joshua Guirao", description: "Developer" },
             { name: "Kayla Lee", description: "Developer" },
             { name: "Davae Lynch", description: "Developer" },
@@ -232,7 +233,6 @@ const rawTeams: Team[] = [
             { name: "Kalen Lauring", description: "Developer" },
             { name: "Cole Hamilton", description: "Developer" },
             { name: "Michelle Zakaria", description: "Developer" },
-            { name: "Carlos Lozoya", description: "Developer" },
             { name: "Nishesh Nath", description: "Developer" },
         ],
     },
