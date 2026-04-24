@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "../button";
+import Link from "next/link";
 import { ImageProps } from "../ImageCarousel";
 
 export interface ProjectProps {
@@ -42,13 +43,15 @@ function CurrentProjectCard(props: ProjectProps) {
   return (
     <>
       <div className="border border-gray rounded-xl p-8 flex flex-col">
-        <Image
-          src={props.img.src}
-          alt={props.img.alt}
-          width={296}
-          height={312}
-          className="border border-transparent rounded-xl mx-auto h-48 w-48 object-contain bg-white p-2"
-        />
+        <Link href={props.href}>
+          <Image
+            src={props.img.src}
+            alt={props.img.alt}
+            width={296}
+            height={312}
+            className="border border-transparent rounded-xl mx-auto h-48 w-48 object-contain bg-white p-2 cursor-pointer hover:opacity-80 transition-all duration-200 hover:scale-105"
+          />
+        </Link>
         <h3 className="text-white text-2xl font-semibold my-4 lg:my-6">
           {props.name}
         </h3>
