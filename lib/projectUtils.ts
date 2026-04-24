@@ -72,6 +72,7 @@ export function getProjectPageData(slug: string): ProjectPageProps | null {
     const isCurrent = year === currentYear;
 
     return {
+      projectKey: slug,
       hero: {
         projectName: project.name,
         schoolYear: isCurrent ? `Current Project (${year})` : `Past Project (${year})`,
