@@ -1,0 +1,238 @@
+{
+  "2022-2023": {
+    "potencia": {
+      "name": "Potencia",
+      "description": "Connecting adult immigrants and college students for English lessons in the greater Boston area",
+      "summary": "Potencia is a non-profit organization dedicated to bridging the gap between college students and adult immigrants in the Greater Boston area. By facilitating individual and group tutoring sessions, Potencia helps learners develop English language skills while fostering an understanding of American culture.",
+      "project-goal": "The Potencia Mobile Application is complete with scheduling features and payment support, allowing tutees to purchase and schedule classes directly on the app. Tutors can also manage their classes, directly chat with tutees, and track their teaching hours on the app, streamlining scheduling and communication between tutors and tutees.",
+      "tech-stack": ["javascript", "react", "tailwind", "mongodb", "prisma", "nextjs"],
+      "final-screens": ["final-solution-1.png", "final-solution-2.png", "final-solution-3.png", "final-solution-4.png"]
+    }
+  },
+  "2023-2024": {
+    "homestart": {
+      "name": "HomeStart",
+      "description": "Centralizing feedback data to allow for easier distribution of essential housing services and solutions",
+      "summary": "HomeStart is a Boston non-profit that provides services for people who are currently experiencing homelessness, have recently moved from homelessness to housing, or are at risk of becoming homeless through eviction.",
+      "project-goal": "Create a web-app for a phone or tablet platform that allows clients to answer surveys and admin to manage and analyze the data.",
+      "tech-stack": ["javascript", "react", "tailwind", "mongodb", "prisma", "nextjs"],
+      "final-screens": ["survey_img1.png", "survey_img2.png", "survey_img3.png", "admin_data_overview.png"]
+    },
+    "theater-at-first": {
+      "name": "Theatre@First",
+      "description": "An all-in-one inventory management system for designers to check items that are in or out of stock.",
+      "summary": "Theatre@First is an all-volunteer community theatre based in Somerville, MA. Founded in 2003, we fill a vital niche in the vibrant Davis Square arts scene. We draw upon the talents and support of individuals and organizations throughout the community to provide opportunities for our participants and audiences to experience quality live theatre in a variety of local venues.",
+      "project-goal": "Theatre@First inevitably collects large quantities of props, furniture, costumes, and other materials in their inventory. As this happens, it can be difficult for them to keep track of what they own, where it is, and what condition it is in. We have built an inventory system for Theatre@First in Somerville, MA that allows them to keep track of all the stuff they have collected. This includes uploading pictures, assigning locations within the theatre, and recording the condition (pristine, needs repair, etc.).",
+      "tech-stack": ["react", "tailwind", "typescript", "nodejs"],
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+    },
+    "the-legacy-project": {
+      "name": "The Legacy Project",
+      "description": "Documenting and preserving the stories of the elder generation.",
+      "summary": "The Legacy Project is a non-profit organization that documents and preserves the stories of the elder generation. Tufts University students create meaningful intergenerational connections by visiting the Medford Rehabilitation center weekly, forming one-on-one relationships with residents, sharing lived experiences, and recording their stories.",
+      "project-goal": "The project goal is to create a minimum viable product with the streamlined chapter enrollment process, tiered user roles and permissions, and an improved landing page experience. Visit the site at: https://www.thelegacyproj.org/public",
+      "tech-stack": ["react", "tailwind", "typescript", "mongodb", "prisma", "nextjs"],
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+    },
+    "dress-for-success": {
+      "name": "Dress for Success",
+      "description": "Tracking and managing professional attire inventory to empower women on their path to economic independence.",
+      "summary": "Dress for Success is a global not-for-profit organization that empowers women to achieve economic independence by providing a network of support, professional attire and the development tools to help women thrive in work and in life.",
+      "project-goal": "Create an admin-only web application that keeps track of Dress for Success' overall inventory of clothing items.",
+      "tech-stack": ["react", "tailwind", "typescript", "postgresql", "neon", "bun", "clerk"],
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+    },
+    "bi-women-quarterly": {
+      "name": "Bi Women Quarterly",
+      "description": "Creating a submission portal to streamline writer submissions and simplify management for BWQ staff.",
+      "summary": "Bi Women Quarterly features the voices of women with bi+ sexualities (i.e., bi, pan, fluid, and other non-binary sexualities). We see \"woman\" as a broad category with space for an array of gender identities and expressions. We welcome contributions from bi+ women who identify as trans, non-binary, cis, and beyond.",
+      "project-goal": "A website that would allow users to provide necessary information and submission while allowing BWQ staff to easily collect submissions without excess work, streamlining the submission process for all parties. BWQ staff would be able to access all submissions from a single place as well as submitters having an interface where they are prompted for information BWQ staff determine.",
+      "tech-stack": ["react", "nextjs", "mongodb", "typescript", "tailwind"],
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+    }
+  },
+  "2024-2025": {
+    "english-at-large": {
+      "name": "English at Large",
+      "description": "English At Large programs serve adult immigrants who live or work in Greater Boston to provide individual and small group instruction to immigrant neighbors and friends, helping them build their English language skills and understanding of American culture as they gain the skills and confidence they need to join in their communities and achieve their life goals.",
+      "summary": "English At Large is a non-profit organization dedicated to providing English language and American culture learning services for adult immigrants across Greater Boston.",
+      "project-goal": "Currently, tutors face challenges when searching for resources to use with their tutees, relying on a physical library and a shared Google Drive folder. This process often takes significant time, resulting in a lengthy trial-and-error period to find materials that best fit their tutees' needs. Additionally, as the collection of books and resources continues to grow, admins are seeking a more reliable and scalable solution for inventory management.",
+      "tech-stack": ["javascript", "react", "tailwind", "mongodb", "prisma", "nextjs"],
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+    },
+    "bread-and-roses": {
+      "name": "Bread & Roses",
+      "description": "Bread & Roses' mission is to address the core necessities of the Merrimack Valley's community members with a holistic and welcoming approach focusing on food insecurity and promoting self-empowerment.",
+      "summary": "Bread & Roses' mission is to address the core necessities of the Merrimack Valley's community members with a holistic and welcoming approach focusing on food insecurity and promoting self-empowerment.",
+      "project-goal": "Bread & Roses' admin currently manually schedules volunteering events through a form on the website and in person talks. Also, it's difficult to mass communicate to all their active members in case of any schedule/shift changes and announcements. Our goal is to create a centralized system that facilitates the event scheduling process for both volunteers and admins, as well as allowing admins to mass communicate with volunteers on any schedule changes.",
+      "tech-stack": ["nextjs", "nextauth", "nodemailer", "prisma", "mongodb", "tailwind"],
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+    },
+    "leonard-carmichael-society": {
+      "name": "Leonard Carmichael Society",
+      "description": "LCS Tutoring is a community service organization at Tufts devoted to pairing Jumbos with K-12 students in the Medford/Somerville areas for free tutoring.",
+      "summary": "LCS Tutoring is a community service organization at Tufts devoted to pairing Jumbos with K-12 students in the Medford/Somerville areas for free tutoring.",
+      "project-goal": "Our goal is to create a web-app that collects tutor-tutee preferences and automates the matching process to reduce administrative efforts.",
+      "tech-stack": ["typescript", "react", "tailwind", "vite", "postgresql", "drizzle"],
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+    },
+    "a2empowerment": {
+      "name": "A2Empowerment",
+      "description": "A2Empowerment is a nonprofit that empowers women through education by working with Cameroonian Partners to provide academic scholarships and mentorship to students.",
+      "summary": "A2Empowerment is a nonprofit that empowers women through education by working with Cameroonian Partners to provide academic scholarships and mentorship to students.",
+      "project-goal": "A2Empowerment needs a streamlined process to receive student feedback and documents from their partners in Cameroon. Currently, they use emails and paper to complete this process. Our goal is to create a web-app that collects student and mentor survey feedback as well as any receipts and report cards that need to be collected for processing.",
+      "tech-stack": ["react", "vite", "tailwind", "mongodb", "nodejs", "drizzle"],
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+    },
+    "village-food-hub": {
+      "name": "Village Food Hub",
+      "description": "Village Food Hub is a nonprofit organization founded to strengthen our community food system and make it more equitable by increasing access to healthy and nutritious food, while also reducing waste and promoting environmental sustainability.",
+      "summary": "Village Food Hub is a non-profit food pantry located in Andover, MA that increases access to healthy, nutritious food to create a more equitable food system.",
+      "project-goal": "Currently, the pantry has no system to track its food inventory or to record information about the individuals who donate or receive food, which is key for grant applications. Our goal is to create a web application that keeps track of Village Food Hub's overall pantry inventory and collects demographics of the food pantry customers.",
+      "tech-stack": ["typescript", "react", "postgresql", "prisma", "nextjs"],
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+    },
+    "somerville-museum": {
+      "name": "Somerville Museum",
+      "description": "The Somerville Museum is a local cultural institution that serves to educate and preserve the historical, artistical, and musical significance of the area.",
+      "summary": "The Somerville Museum is a local cultural institution that serves to educate and preserve the historical, artistical, and musical significance of the area.",
+      "project-goal": "Create a web application that allows Somerville Museum to easily keep track of inventory for historical clothing. Display items, which can be searched, sorted, and filtered.",
+      "tech-stack": ["react", "postgresql", "nodejs", "neon", "nextjs"],
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+    },
+    "new-england-innocence-project": {
+      "name": "New England Innocence Project",
+      "description": "The New England Innocence Project (NEIP) works to correct and prevent wrongful convictions and ensure justice within the criminal legal system for innocent people throughout New England who are imprisoned for a crime they did not commit.",
+      "summary": "The New England Innocence Project works to correct and prevent wrongful convictions and ensure justice within the criminal legal system for innocent people throughout New England who are imprisoned for a crime they did not commit. They provide legal and support services for exonerees as well as education and advocacy support for reforms.",
+      "project-goal": "This project is to create an exoneree database web application that allows NEIP employees to easily access, store, and analyze client profiles and information, which will help them fight for more legislation rather than just relying on \"knowing it\".",
+      "tech-stack": ["clerk", "react", "tailwind", "prisma", "postgresql", "nextjs", "neon", "nodejs"],
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+    },
+    "lgbtq-senior-housing": {
+      "name": "LGBTQ Senior Housing",
+      "description": "LGBTQ Senior Housing facilitates access to welcoming, safe and affordable housing for low-income LGBTQ seniors; to define onsite housing services and programming that addresses the needs of LGBTQ seniors; and to support community space to serve seniors in the Greater Boston community.",
+      "summary": "LGBTQ Senior Housing facilitates access to welcoming, safe and affordable housing for low-income LGBTQ seniors, including through a formal role in the development of such housing; to define onsite housing services and programming that addresses the needs of LGBTQ seniors; and to support community space to serve seniors in the Greater Boston community.",
+      "project-goal": "To develop a scheduling web app with a public event calendar that allows residents and community members to create, sign up for events, request reservations, and receive updates, enabling LGBTQ Senior Housing to communicate efficiently.",
+      "tech-stack": ["neon", "tailwind", "nextjs", "clerk", "react"],
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+    },
+    "west-medford-community-center": {
+      "name": "West Medford Community Center",
+      "description": "The West Medford Community Center connects the diverse people of West Medford and the Mystic River Valley through social, educational, cultural, health and recreational activities.",
+      "summary": "The WMCC connects the diverse people of West Medford and the Mystic River Valley through social, educational, cultural, health and recreational activities.",
+      "project-goal": "Our goal is to streamline the newsletter creation and publication process by creating a centralized web interface, which will allow volunteers to independently create and edit newsletters using templates, while administrators will finalize and publish the content. We are also creating a newsletter viewer page to provide easy access to all past newsletters.",
+      "tech-stack": ["react", "typescript", "tailwind", "nextjs", "mongodb", "prisma"],
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+    },
+    "dillar-academy": {
+      "name": "Dillar Academy",
+      "description": "Dillar Academy helps Uyghur people around the world learn English without cost. With the help and commitment of their volunteer teachers, their goal is to bridge the educational disparity gap for Uyghurs worldwide.",
+      "summary": "Dillar Academy helps Uyghur people around the world learn English without cost. With the help and commitment of their volunteer teachers, their goal is to bridge the educational disparity gap for Uyghurs worldwide.",
+      "project-goal": "Our goal is to create a portal website that helps students discover and enroll in English classes, as well as allows admin to easily add and remove new classes. Currently, Dillar Academy operates from a free Wix site, so they are looking for a long-term alternative that can help them manage an increasing amount of students.",
+      "tech-stack": ["mongodb", "react", "vite", "tailwind"],
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+    },
+    "the-wily-network": {
+      "name": "The Wily Network",
+      "description": "The Wily Network supports Boston-area students who are navigating college without emotional or financial support from their families. They offer clinical coaching, financial resources, community building, and networking in addition to the gift giving program our product focuses on.",
+      "summary": "The Wily Network supports Boston-area students who are navigating college without emotional or financial support from their families. They offer clinical coaching, financial resources, community building, and networking in addition to the gift giving program our product focuses on.",
+      "project-goal": "It is difficult to organize gift giving for scholars' birthdays and holidays as managed via Google form and email.",
+      "tech-stack": ["javascript", "react", "tailwind", "mongodb", "nextjs"],
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+    },
+    "office-of-university-counsel": {
+      "name": "Office of University Counsel",
+      "description": "The Office of University Counsel (OUC) provides legal guidance across Tufts University, handling matters such as university operations, litigation, student affairs, intellectual property, employment, and regulatory compliance.",
+      "summary": "The Office of University Counsel (OUC) provides legal guidance across Tufts University, handling matters such as university operations, litigation, student affairs, intellectual property, employment, and regulatory compliance. Led by Senior Vice President and General Counsel Mary Jeka, OUC works to minimize legal risks, manage litigation, and ensure compliance while delivering reliable and professional legal services.",
+      "project-goal": "We are developing a streamlined database to help Tufts' Office of University Counsel efficiently access and filter information from the Physician Payments Sunshine Act. This tool will consolidate financial data related to medical, dental, and veterinary school employees, making it easier to review and manage compliance with transparency regulations.",
+      "tech-stack": ["javascript", "python", "tailwind", "postgresql", "neon", "nextjs"],
+      "final-screens": ["solution-1.png", "solution-2.png", "solution-3.png", "solution-4.png"]
+    }
+  },
+  "2025-2026": {
+    "artists-for-humanity": {
+      "name": "Artists for Humanity",
+      "description": "Artists For Humanity (AFH) empowers under-resourced teens through paid employment in art and design, mentorship, and real-world creative opportunities. AFH helps young people build confidence, professional skills, and pathways to college and careers while using art to strengthen their communities.",
+      "summary": "Artists For Humanity's project is a digital artwork archive and portfolio platform for AFH teen artists to upload, organize, and showcase their work in a professional, public-facing space. The platform supports artist profiles, a curated gallery, and an admin moderation workflow so AFH staff can review submissions, maintain quality and safety, and connect youth talent with schools, employers, and community partners.",
+      "project-goal": "Our goal is to build a secure, easy-to-use web platform that lets AFH artists maintain living portfolios and gain visibility for their work, while giving staff efficient tools to manage and approve submissions. Since the initial spec, we expanded the workflow to support guest uploads and post-signup artwork claiming so more artists can contribute with less friction.",
+      "tech-stack": ["nextjs", "react", "typescript", "nextauth", "prisma", "postgresql", "cloudinary"]
+    },
+    "beantown-baby-diaper-bank": {
+      "name": "Beantown Baby Diaper Bank",
+      "description": "The Beantown Baby Diaper Bank is a nonprofit organization located in Lexington that collects, buys and distributes free diapers to the families in need through partner agencies, founded by Rachel Segaloff.",
+      "summary": "The Beantown Baby Diaper Bank is a nonprofit organization located in Lexington that collects, buys and distributes free diapers to the families in need through partner agencies, founded by Rachel Segaloff.",
+      "project-goal": "Build a data visualization module that's more engaging than static charts and incentivize users to donate money by showing them the individual impact they could make.",
+      "tech-stack": ["react", "mantine", "typescript", "leaflet", "nextjs", "prisma", "postgresql", "Clerk", "PostGIS"]
+    },
+    "boston-community-pediatrics": {
+      "name": "Boston Community Pediatrics",
+      "description": "Boston Community Pediatrics is a nonprofit organization that brings equity to pediatric healthcare by giving all patients (particularly those on MassHealth) direct access to their primary care provider, as well as to comprehensive prevention-oriented medical care, case management services, and integrated behavioral health services.",
+      "summary": "Boston Community Pediatrics is a nonprofit organization that brings equity to pediatric healthcare by giving all patients (particularly those on MassHealth) direct access to their primary care provider, as well as to comprehensive prevention-oriented medical care, case management services, and integrated behavioral health services.",
+      "project-goal": "Create a website that allows for the admins to manage the volunteers and for the volunteers to receive more guidance throughout the process. The site supports three user types — admins, volunteers, and public viewers — where admins can manage events, approve sign-ups, and message volunteers, while volunteers can register for roles, add guests, and access resources. Public visitors can browse events but must log in to sign up.",
+      "tech-stack": ["react", "tailwind", "nextjs", "clerk", "prisma", "neon", "clerk"]
+    },
+    "bostons-higher-ground": {
+      "name": "Boston's Higher Ground",
+      "description": "Boston's Higher Ground is a nonprofit organization that works with residents and partners to improve outcomes in education, housing, and health for children and families in Roxbury, Dorchester, and Mattapan.",
+      "summary": "Boston's Higher Ground is a nonprofit organization that works with residents and partners to improve outcomes in education, housing, and health for children and families in Roxbury, Dorchester, and Mattapan.",
+      "project-goal": "Create a central, web-based dashboard that visualizes and generates reports from Student and Housing data collected by Higher Ground's education and housing initiatives.",
+      "tech-stack": ["react", "typescript", "nextjs", "tailwind", "drizzle"]
+    },
+    "breaktime": {
+      "name": "Breaktime",
+      "description": "Breaktime's mission is to break the cycle of homelessness by equipping young adults with the job and financial security they need to establish housing security.",
+      "summary": "Breaktime's new space, the Hub, offers services such as showers, clothing, and laundry to Young Adults experiencing homelessness. The space allows their associates to cover basic necessities and support their path to stable housing.",
+      "project-goal": "Build a Progressive Web App (PWA) that will provide users with an intuitive way to browse, schedule, and manage appointments, while giving staff members powerful tools to coordinate bookings, track availability, and communicate seamlessly with clients.",
+      "tech-stack": ["react", "tailwind", "mongodb", "clerk"]
+    },
+    "commonwealth-kitchen": {
+      "name": "Commonwealth Kitchen",
+      "description": "",
+      "summary": "",
+      "project-goal": "",
+      "tech-stack": []
+    },
+    "food-for-free": {
+      "name": "Food for Free",
+      "description": "Food for Free is a nonprofit organization that aims to end hunger in Eastern Massachusettes. Their mission is to improve access to healthy food to overcome barriers and strengthen the community food system.",
+      "summary": "Food for Free is a nonprofit organization that aims to end hunger in Eastern Massachusettes. Their mission is to improve access to healthy food to overcome barriers and strengthen the community food system.",
+      "project-goal": "Create a web-based dashboard application to allow recipient partners and admins to access food distribution data, key stats, delivery history and file exports.",
+      "tech-stack": ["react", "typescript", "tailwind", "nextjs", "postgresql", "prisma", "salesforce"]
+    },
+    "food-link": {
+      "name": "Food Link",
+      "description": "Food Link is creating an equitable food system throughout Greater Boston by rescuing and distributing high-quality, customized food to under-resourced communities.",
+      "summary": "Food Link is creating an equitable food system throughout Greater Boston by rescuing and distributing high-quality, customized food to under-resourced communities.",
+      "project-goal": "Our goal is to create a centralized volunteer training hub with categorized videos and PDFs to streamline Food Link's volunteer training process.",
+      "tech-stack": ["react", "tailwind", "typescript", "nodejs", "vite", "neon", "prisma"]
+    },
+    "lexington-zero-waste": {
+      "name": "Lexington Zero Waste",
+      "description": "Lexington Zero Waste educates and empowers individuals and communities to make more sustainable consumption choices that protect the planet. In collaboration with Lexington Climate Action Network and LPS Green Teams, they run LexShareWare, a free service allowing users to borrow reusable dishware and other supplies for large events.",
+      "summary": "Lexington Zero Waste educates and empowers individuals and communities to make more sustainable consumption choices that protect the planet. In collaboration with Lexington Climate Action Network and LPS Green Teams, they run LexShareWare, a free service allowing users to borrow reusable dishware and other supplies for large events.",
+      "project-goal": "Our goal is to create a web application that lets users borrow and return items from LexShareWare, search the catalog, and view their borrowing history. Admins can manage items and monitor user activity.",
+      "tech-stack": ["react", "typescript", "tailwind", "nextjs", "postgresql", "prisma", "neon", "clerk", "supabase"]
+    },
+    "massachusetts-history-day": {
+      "name": "Massachusetts History Day",
+      "description": "Massachusetts History Day is an annual event held by the Massachusetts Historical Society to promote the study and appreciation of history among students in Massachusetts. They organize an annual history competition for grades 6-12 that encourage students to research and present historical topics in a variety of formats.",
+      "summary": "Massachusetts History Day is an annual event held by the Massachusetts Historical Society to promote the study and appreciation of history among students in Massachusetts. They organize an annual history competition for grades 6-12 that encourage students to research and present historical topics in a variety of formats, as well as promote critical thinking, creativity, and communication skills.",
+      "project-goal": "Create a data visualization dashboard for program administrators to track trends and observe patterns of teacher and student participation in program. This includes visualizations of student and teacher participation by school, contest, and region in bar/line charts and a heat map, as well as the ability to filter data by year and project category.",
+      "tech-stack": ["react", "typescript", "tailwind", "nodejs", "nextjs", "postgresql", "neon", "drizzle", "maplibre", "D3.js"]
+    },
+    "school-on-wheels": {
+      "name": "School on Wheels",
+      "description": "",
+      "summary": "",
+      "project-goal": "",
+      "tech-stack": []
+    },
+    "the-loop-lab": {
+      "name": "The Loop Lab",
+      "description": "The Loop Lab is a nonprofit organization specializing in digital storytelling and workforce development. Their mission is to give young adult experience in business development, entrepreneurial strategies, and media arts through job training and paid fellowships.",
+      "summary": "The Loop Lab is a nonprofit organization specializing in digital storytelling and workforce development. Their mission is to give young adult experience in business development, entrepreneurial strategies, and media arts through job training and paid fellowships.",
+      "project-goal": "Create a web application that allows Loop Lab to easily track apprentice hours. The platform will allow apprentices to log their hours and communicate with employers in one centralized place.",
+      "tech-stack": ["react", "tailwind", "nodejs", "postgresql", "neon", "prisma", "clerk"]
+    }
+  }
+}

@@ -2,8 +2,9 @@
 *
 *   This file creates a picture frame component. It takes in a picture, name,
 *   and description as props and displays them in a frame.
-* 
+*
 *   Created by Holden Kittelberger on 2/5/2025
+*   Edited by Dan Glorioso on 3/30/2026
 *
 */
 
@@ -17,13 +18,15 @@ type Frame = {
 
 const PictureFrame: React.FC<Frame> = ({ src, name, description }) => {
     return (
-        <div className="flex flex-col border border-off_white p-3 rounded-lg lg:p-4 sm:text-sm">
-            <Image src={src} alt={name} width={300} height={300} className="object-cover w-full rounded-lg mb-3 lg:mb-5" />
-            <h2 className="text-sm md:text-lg lg:text-xl font-bold text-white mb-2 sm:mb-1">
-            {name}
+        <div className="flex flex-col border border-off_white p-3 rounded-lg">
+            <div className="w-full aspect-square rounded-lg mb-3 bg-white/10">
+                <Image src={src} alt={name} width={300} height={300} className="object-cover w-full h-full rounded-lg" />
+            </div>
+            <h2 className="text-base font-bold text-white leading-snug mb-0.5">
+                {name}
             </h2>
-            <p className="text-sm md:text-lg lg:text-xl text-white mb-2">
-            {description}
+            <p className="text-sm text-white/60">
+                {description}
             </p>
         </div>
     );

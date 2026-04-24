@@ -2,13 +2,15 @@ import Button from "@/components/button";
 import Hero from "@/components/hero";
 import CurrentProjects from "@/components/Projects/CurrentProjects";
 import PastProjects from "@/components/Projects/PastProjects";
-import projects from "./projectCards.json";
+import { Suspense } from "react";
+import { getProjectCards } from "@/lib/projectUtils";
 
 export default function MainProjectPage() {
-  const currentYear = "2024-2025"
-  const currentProjects = projects[currentYear];
+  const projectsByYear = getProjectCards();
+  const currentYear = Object.keys(projectsByYear).at(-1)!;
+  const currentProjects = projectsByYear[currentYear] ?? {};
   const pastProjects = Object.fromEntries(
-    Object.entries(projects).filter(([year]) => year !== currentYear)
+    Object.entries(projectsByYear).filter(([year]) => year !== currentYear)
   );
   return (
     <>
@@ -23,9 +25,10 @@ export default function MainProjectPage() {
           />
         }
       />
-      <CurrentProjects projects={currentProjects} />
-      <PastProjects projects={pastProjects} />
+      <CurrentProjects projects={currentProjects} year={currentYear} />
+      <Suspense fallback={<div>Loading past projects...</div>}>
+        <PastProjects projects={pastProjects} />
+      </Suspense>
     </>
   )
 }
-
