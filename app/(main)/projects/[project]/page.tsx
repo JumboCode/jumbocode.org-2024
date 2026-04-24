@@ -25,5 +25,5 @@ export default function ProjectShowcasePage(props: ProjectShowcasePageProps) {
     .flatMap(year => ROSTERS[year].teams)
     .find(team => team.link === projectPath);
 
-  return <ProjectPage {...projectData} rosterMembers={rosterTeam?.members} />;
+  return <ProjectPage {...projectData} projectKey={project} rosterMembers={rosterTeam?.members} />;
 }

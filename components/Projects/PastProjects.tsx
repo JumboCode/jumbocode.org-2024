@@ -67,6 +67,7 @@ export default function PastProjects(props: PastProjectsProps) {
               logo={project.logo}
               description={project.description}
               href={`/projects/${projectId}`}
+              projectKey={projectId}
             />
           </div>
         ))}
@@ -83,9 +84,9 @@ interface PastProjectCardProps {
   href: string;
 }
 
-function PastProjectCard(props: PastProjectCardProps) {
+function PastProjectCard(props: PastProjectCardProps & { projectKey: string }) {
   return (
-    <a href={props.href} className="min-w-full">
+    <a id={props.projectKey} href={props.href} className="min-w-full">
       <div className="flex flex-col gap-4 md:grid md:grid-cols-3 md:gap-0 md:space-x-3 border border-off-white p-6 rounded-xl hover:border-gray-500 hover:filter hover:brightness-75 transition-all">
         <div>
           {props.logo && (

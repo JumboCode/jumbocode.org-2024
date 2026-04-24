@@ -32,17 +32,17 @@ export default function CurrentProjects(props: CurrentProjectsProps) {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
         {Object.keys(props.projects).map((key, idx) => {
           const project = props.projects[key];
-          return <CurrentProjectCard key={idx} {...project} />;
+          return <CurrentProjectCard key={idx} projectKey={key}{...project} />;
         })}
       </div>
     </>
   );
 }
 
-function CurrentProjectCard(props: ProjectProps) {
+function CurrentProjectCard(props: ProjectProps & {projectKey: string}) {
   return (
     <>
-      <div className="border border-gray rounded-xl p-8 flex flex-col">
+      <div id={props.projectKey} className="border border-gray rounded-xl p-8 flex flex-col">
         <Link href={props.href}>
           <Image
             src={props.img.src}
