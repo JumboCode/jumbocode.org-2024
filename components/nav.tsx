@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Nav() {
   return (
-    <nav className="flex gap-x-4 sm:gap-x-6">
+    <nav className="flex flex-grow justify-end gap-x-4 sm:gap-x-6">
       <NavLink href="/" label="Home" />
       <AboutDropdown />
       <NavLink href="/projects" label="Projects" />
