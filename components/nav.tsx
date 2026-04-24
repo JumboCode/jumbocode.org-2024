@@ -58,7 +58,7 @@ function AboutDropdown() {
       >
         About
         <svg
-          className="h-3 w-3 transition-transform group-hover:rotate-180"
+          className="h-3 w-3 transition-transform group-hover:rotate-180 relative top-0.5"
           viewBox="0 0 12 12"
           fill="none"
           stroke="currentColor"
