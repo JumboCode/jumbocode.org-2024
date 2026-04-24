@@ -22,6 +22,7 @@ const TECH_STACK_MAP: Record<string, string> = {
   drizzle: "Drizzle",
   mongodb: "MongoDB",
   bun: "Bun",
+  maplibre: "MapLibre"
 };
 
 const FINAL_SCREEN_BASENAMES = ["solution-1", "solution-2", "solution-3", "solution-4"];
@@ -95,7 +96,7 @@ export function getProjectPageData(slug: string): ProjectPageProps | null {
         name: TECH_STACK_MAP[item] ?? item,
         logo: {
           src: `/projects/tech-stacks/${item}.png`,
-          alt: `${TECH_STACK_MAP[item] ?? item} Logo`
+          alt: `${item.charAt(0).toUpperCase() + item.slice(1)} Logo`,
         },
       })),
       finalScreens: (project["final-screens"]
