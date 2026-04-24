@@ -95,7 +95,7 @@ export function getProjectPageData(slug: string): ProjectPageProps | null {
         name: TECH_STACK_MAP[item] ?? item,
         logo: {
           src: `/projects/tech-stacks/${item}.png`,
-          alt: `${item.charAt(0).toUpperCase() + item.slice(1)} Logo`,
+          alt: `${TECH_STACK_MAP[item] ?? item} Logo`
         },
       })),
       finalScreens: (project["final-screens"]

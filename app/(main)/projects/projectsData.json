@@ -169,7 +169,7 @@
       "description": "Boston Community Pediatrics is a nonprofit organization that brings equity to pediatric healthcare by giving all patients (particularly those on MassHealth) direct access to their primary care provider, as well as to comprehensive prevention-oriented medical care, case management services, and integrated behavioral health services.",
       "summary": "Boston Community Pediatrics is a nonprofit organization that brings equity to pediatric healthcare by giving all patients (particularly those on MassHealth) direct access to their primary care provider, as well as to comprehensive prevention-oriented medical care, case management services, and integrated behavioral health services.",
       "project-goal": "Create a website that allows for the admins to manage the volunteers and for the volunteers to receive more guidance throughout the process. The site supports three user types — admins, volunteers, and public viewers — where admins can manage events, approve sign-ups, and message volunteers, while volunteers can register for roles, add guests, and access resources. Public visitors can browse events but must log in to sign up.",
-      "tech-stack": ["react", "tailwind", "nextjs", "Clerk", "Prisma", "Neon", "Clerk"]
+      "tech-stack": ["react", "tailwind", "nextjs", "clerk", "prisma", "neon", "clerk"]
     },
     "bostons-higher-ground": {
       "name": "Boston's Higher Ground",
@@ -218,7 +218,7 @@
       "description": "Massachusetts History Day is an annual event held by the Massachusetts Historical Society to promote the study and appreciation of history among students in Massachusetts. They organize an annual history competition for grades 6-12 that encourage students to research and present historical topics in a variety of formats.",
       "summary": "Massachusetts History Day is an annual event held by the Massachusetts Historical Society to promote the study and appreciation of history among students in Massachusetts. They organize an annual history competition for grades 6-12 that encourage students to research and present historical topics in a variety of formats, as well as promote crticial thinking, creativity, and communication skills.",
       "project-goal": "Create a data visualization dashboard for program administrators to track trends and observe patterns of teacher and student participation in program. This includes visualizations of student and teacher participation by school, contest, and region in bar/line charts and a heat map, as well as the ability to filter data by year and project category.",
-      "tech-stack": ["react", "typescript", "tailwind", "nodejs", "nextjs", "postgresql", "neon", "drizzle", "MapLibre", "D3.js"]
+      "tech-stack": ["react", "typescript", "tailwind", "nodejs", "nextjs", "postgresql", "neon", "drizzle", "maplibre", "D3.js"]
     },
     "school-on-wheels": {
       "name": "School on Wheels",
