@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Button from "@/components/button";
 import Hero from "@/components/hero";
 import CurrentProjects from "@/components/Projects/CurrentProjects";
