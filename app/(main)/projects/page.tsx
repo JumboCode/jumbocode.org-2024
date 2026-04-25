@@ -3,7 +3,6 @@ import Button from "@/components/button";
 import Hero from "@/components/hero";
 import CurrentProjects from "@/components/Projects/CurrentProjects";
 import PastProjects from "@/components/Projects/PastProjects";
-import { Suspense } from "react";
 import { getProjectCards } from "@/lib/projectUtils";
 
 export default function MainProjectPage() {
