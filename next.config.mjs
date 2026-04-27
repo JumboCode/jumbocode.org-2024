@@ -8,8 +8,10 @@ const nextConfig = {
       },
     ],
   },
-  outputFileTracingExcludes: {
-    "*": ["./public/projects/**/*"],
+  experimental: {
+    outputFileTracingExcludes: {
+      "*": ["./public/projects/**/*"],
+    },
   },
 };
 
