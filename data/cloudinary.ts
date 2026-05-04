@@ -1,1 +1,1 @@
-export const CLOUDINARY_BASE = "https://res.cloudinary.com/dreeltj8w/image/upload";
+export const CLOUDINARY_BASE = "https://res.cloudinary.com/dreeltj8w/image/upload/f_auto,q_auto";

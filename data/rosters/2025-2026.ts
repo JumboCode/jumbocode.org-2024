@@ -171,7 +171,6 @@ const rawTeams: Team[] = [
             { name: "Madison Johnson", description: "Designer" },
             { name: "Alex Li", description: "Developer" },
             { name: "Bill Pham", description: "Developer" },
-            { name: "Sophia Yung", description: "Developer" },
             { name: "Kevin Aka", description: "Developer" },
             { name: "Adetoye Adebayo", description: "Developer" },
             { name: "Elijah Chandler", description: "Developer" },
