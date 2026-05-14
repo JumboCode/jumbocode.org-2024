@@ -222,10 +222,10 @@
     },
     "school-on-wheels": {
       "name": "School on Wheels",
-      "description": "",
-      "summary": "",
-      "project-goal": "",
-      "tech-stack": []
+      "description": "School on Wheels of Massachusetts supports the academic, social and emotional growth of students impacted by homelessness and poverty. Their vision is for all students impacted by homelessness and poverty to have the academic, social and emotional support necessary to achieve a bright and productive future that will help end the cycle of homelessness.",
+      "summary": "School on Wheels of Massachusetts (SOWMA) has three main initiatives that allow them to achieve their mission. Their tutoring program is designed to foster the academic, social and emotional growth of students impacted by homelessness and poverty. The Bridge Mentoring Program helps high school and college-age students explore educational and career opportunities. Lastly, donations enable us to provide fully-stocked quality backpacks and new school supplies to students from kindergarten through college.",
+      "project-goal": "Our goal is to create a unified real-time dashboard that allows the whole SOWMA team to see important social media metrics along with website and newsletter metrics enabling them to keep track of their organization’s growth at a glance.",
+      "tech-stack": ["prisma", "nodejs", "clerk", "react", "typescript"]
     },
     "the-loop-lab": {
       "name": "The Loop Lab",
