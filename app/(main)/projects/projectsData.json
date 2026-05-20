@@ -194,8 +194,8 @@
     },
     "food-for-free": {
       "name": "Food for Free",
-      "description": "Food for Free is a nonprofit organization that aims to end hunger in Eastern Massachusettes. Their mission is to improve access to healthy food to overcome barriers and strengthen the community food system.",
-      "summary": "Food for Free is a nonprofit organization that aims to end hunger in Eastern Massachusettes. Their mission is to improve access to healthy food to overcome barriers and strengthen the community food system.",
+      "description": "Food for Free is a nonprofit organization that aims to end hunger in Eastern Massachusetts. Their mission is to improve access to healthy food to overcome barriers and strengthen the community food system.",
+      "summary": "Food for Free is a nonprofit organization that aims to end hunger in Eastern Massachusetts. Their mission is to improve access to healthy food to overcome barriers and strengthen the community food system.",
       "project-goal": "Create a web-based dashboard application to allow recipient partners and admins to access food distribution data, key stats, delivery history and file exports.",
       "tech-stack": ["react", "typescript", "tailwind", "nextjs", "postgresql", "prisma", "salesforce"]
     },
