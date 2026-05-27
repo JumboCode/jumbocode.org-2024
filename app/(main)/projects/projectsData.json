@@ -187,10 +187,10 @@
     },
     "commonwealth-kitchen": {
       "name": "Commonwealth Kitchen",
-      "description": "",
-      "summary": "",
-      "project-goal": "",
-      "tech-stack": []
+      "description": "Commonwealth Kitchen's mission is to help launch and grow small food businesses. They emphasize the power of equity and inclusion in entrepreneurship in order to help their members thrive.",
+      "summary": "Commonwealth Kitchen is an organization that helps small food businesses launch, grow and thrive. We have created a resource marketplace so people across the different businesses in the CWK network can share equipment, vehicles, ingredients and more.",
+      "project-goal": "Our goal is to create a web-app that connects people who need some resource with those who have it, all within the Commonwealth Kitchen network. This allows all member businesses to take advantage of the people and assets that already exist in an easy and accessible way.",
+      "tech-stack": ["tailwind", "react", "nodejs", "nextjs", "typescript"]
     },
     "food-for-free": {
       "name": "Food for Free",
