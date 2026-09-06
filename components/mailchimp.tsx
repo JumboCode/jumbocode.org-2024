@@ -53,7 +53,7 @@ export default function SignupPage() {
                 <div id="mc_embed_signup">
                     <form action="https://jumbocode.us11.list-manage.com/subscribe/post?u=d3c507093f7b2f71584f684c0&amp;id=25ebfbc332&amp;f_id=004ac1e3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_self" noValidate>
                         <div id="mc_embed_signup_scroll">
-                            <h2>Subscribe to JumboCode E-list</h2>
+                            <h2>Subscribe</h2>
                             <div className="indicates-required">
                                 <span className="asterisk">*</span> indicates required
                             </div>
@@ -63,34 +63,49 @@ export default function SignupPage() {
                                 </label>
                                 <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" required />
                             </div>
+                            <div className="mc-field-group">
+                                <label htmlFor="mce-FNAME">
+                                    First Name <span className="asterisk">*</span>
+                                </label>
+                                <input type="text" name="FNAME" className="required text" id="mce-FNAME" required />
+                            </div>
+                            <div className="mc-field-group">
+                                <label htmlFor="mce-LNAME">
+                                    Last Name <span className="asterisk">*</span>
+                                </label>
+                                <input type="text" name="LNAME" className="required text" id="mce-LNAME" required />
+                            </div>
                             <div className="mc-field-group input-group">
-                                <strong>Graduating class:</strong>
+                                <strong>Class of... </strong>
                                 <ul>
                                     <li>
-                                        <input type="radio" name="group[35583]" id="mce-group[35583]-35583-1" value="2" />
-                                        <label htmlFor="mce-group[35583]-35583-1" style={{ marginLeft: '8px' }}>Class of 2026</label>
+                                        <input type="radio" name="group[35583]" id="mce-group[35583]-35583-0" value="4" />
+                                        <label htmlFor="mce-group[35583]-35583-0" style={{ marginLeft: '8px' }}>Class of 2027</label>
                                     </li>
                                     <li>
-                                        <input type="radio" name="group[35583]" id="mce-group[35583]-35583-2" value="4" />
-                                        <label htmlFor="mce-group[35583]-35583-2" style={{ marginLeft: '8px' }}>Class of 2027</label>
+                                        <input type="radio" name="group[35583]" id="mce-group[35583]-35583-1" value="8" />
+                                        <label htmlFor="mce-group[35583]-35583-1" style={{ marginLeft: '8px' }}>Class of 2028</label>
                                     </li>
                                     <li>
-                                        <input type="radio" name="group[35583]" id="mce-group[35583]-35583-3" value="8" />
-                                        <label htmlFor="mce-group[35583]-35583-3" style={{ marginLeft: '8px' }}>Class of 2028</label>
+                                        <input type="radio" name="group[35583]" id="mce-group[35583]-35583-2" value="16" />
+                                        <label htmlFor="mce-group[35583]-35583-2" style={{ marginLeft: '8px' }}>Class of 2029</label>
                                     </li>
                                     <li>
-                                        <input type="radio" name="group[35583]" id="mce-group[35583]-35583-4" value="16" />
-                                        <label htmlFor="mce-group[35583]-35583-4" style={{ marginLeft: '8px' }}>Class of 2029</label>
+                                        <input type="radio" name="group[35583]" id="mce-group[35583]-35583-3" value="64" />
+                                        <label htmlFor="mce-group[35583]-35583-3" style={{ marginLeft: '8px' }}>Class of 2030</label>
                                     </li>
                                     <li>
-                                        <input type="radio" name="group[35583]" id="mce-group[35583]-35583-5" value="64" />
-                                        <label htmlFor="mce-group[35583]-35583-5" style={{ marginLeft: '8px' }}>Class of 2030</label>
+                                        <input type="radio" name="group[35583]" id="mce-group[35583]-35583-4" value="1" />
+                                        <label htmlFor="mce-group[35583]-35583-4" style={{ marginLeft: '8px' }}>Class of 2031</label>
                                     </li>
                                     <li>
-                                        <input type="radio" name="group[35583]" id="mce-group[35583]-35583-6" value="32" />
-                                        <label htmlFor="mce-group[35583]-35583-6" style={{ marginLeft: '8px' }}>Alumni</label>
+                                        <input type="radio" name="group[35583]" id="mce-group[35583]-35583-5" value="2" />
+                                        <label htmlFor="mce-group[35583]-35583-5" style={{ marginLeft: '8px' }}>Alumni</label>
                                     </li>
                                 </ul>
+                                <span id="mce-group[35583]-HELPERTEXT" className="helper_text">
+                                    Please select your graduating class
+                                </span>
                             </div>
                             <div id="mce-responses" className="clear foot">
                                 <div className="response" id="mce-error-response" style={{ display: 'none' }}></div>
