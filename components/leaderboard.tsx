@@ -22,18 +22,14 @@ interface TeamEvent {
 
 // All expected teams
 const ALL_TEAMS = [
-  "Artists for Humanity",
-  "Beantown Baby Diaper Bank",
-  "Boston Community Pediatrics",
-  "Boston's Higher Ground",
-  "Breaktime",
-  "Commonwealth Kitchen",
-  "Food for Free",
-  "Food Link",
-  "Lexington Zero Waste",
-  "Massachusetts History Day",
-  "School on Wheels",
-  "The Loop Lab",
+  "Damien's Place",
+  "Hearty Meals for All",
+  "Massachusetts River Alliance",
+  "African Bridge Network",
+  "Somerville Media Center",
+  "Just a Start",
+  "Teen Empowerment",
+  "Mystic Learning Center",
 ];
 
 export default function Leaderboard() {
@@ -158,7 +154,7 @@ export default function Leaderboard() {
     <div className="flex flex-col items-center justify-center mt-8 max-w-4xl mx-auto px-4">
       {/* Title */}
       <h2 className="text-3xl font-bold text-white mb-8 text-center">
-        JumboCup Spring 2026 Leaderboard
+        JumboCup Fall 2026 Leaderboard
       </h2>
 
       {/* Podium Section */}
