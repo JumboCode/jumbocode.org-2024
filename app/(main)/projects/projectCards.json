@@ -166,5 +166,115 @@
       "description": "The Office of University Counsel (OUC) provides legal guidance across Tufts University, handling matters such as university operations, litigation, student affairs, intellectual property, employment, and regulatory compliance. Led by Senior Vice President and General Counsel Mary Jeka, OUC works to minimize legal risks, manage litigation, and ensure compliance while delivering reliable and professional legal services.",
       "href": "/projects/office-of-university-counsel"
     }
+  },
+  "2025-2026": {
+    "artists-for-humanity": {
+      "name": "Artists For Humanity",
+      "img": {
+        "src": "/projects/2025-2026/artists-for-humanity/artists-for-humanity.png",
+        "alt": "Artists For Humanity Logo"
+      },
+      "description": "",
+      "href": "/projects/artists-for-humanity"
+    },
+    "beantown-baby-diaper-bank": {
+      "name": "Beantown Baby Diaper Bank",
+      "img": {
+        "src": "/projects/2025-2026/beantown-baby-diaper-bank/beantown-baby-diaper-bank.png",
+        "alt": "Beantown Baby Diaper Bank Logo"
+      },
+      "description": "",
+      "href": "/projects/beantown-baby-diaper-bank"
+    },
+    "boston-community-pediatrics": {
+      "name": "Boston Community Pediatrics",
+      "img": {
+        "src": "/projects/2025-2026/boston-community-pediatrics/boston-community-pediatrics.png",
+        "alt": "Boston Community Pediatrics Logo"
+      },
+      "description": "",
+      "href": "/projects/boston-community-pediatrics"
+    },
+    "bostons-higher-ground": {
+      "name": "Boston's Higher Ground",
+      "img": {
+        "src": "/projects/2025-2026/bostons-higher-ground/bostons-higher-ground.png",
+        "alt": "Boston's Higher Ground Logo"
+      },
+      "description": "",
+      "href": "/projects/bostons-higher-ground"
+    },
+    "breaktime": {
+      "name": "Breaktime",
+      "img": {
+        "src": "/projects/2025-2026/breaktime/breaktime.png",
+        "alt": "Breaktime Logo"
+      },
+      "description": "",
+      "href": "/projects/breaktime"
+    },
+    "commonwealth-kitchen": {
+      "name": "Commonwealth Kitchen",
+      "img": {
+        "src": "/projects/2025-2026/commonwealth-kitchen/commonwealth-kitchen.png",
+        "alt": "Commonwealth Kitchen Logo"
+      },
+      "description": "",
+      "href": "/projects/commonwealth-kitchen"
+    },
+    "food-for-free": {
+      "name": "Food for Free",
+      "img": {
+        "src": "/projects/2025-2026/food-for-free/food-for-free.png",
+        "alt": "Food for Free Logo"
+      },
+      "description": "",
+      "href": "/projects/food-for-free"
+    },
+    "food-link": {
+      "name": "Food Link",
+      "img": {
+        "src": "/projects/2025-2026/food-link/food-link.png",
+        "alt": "Food Link Logo"
+      },
+      "description": "",
+      "href": "/projects/food-link"
+    },
+    "lexington-zero-waste": {
+      "name": "Lexington Zero Waste",
+      "img": {
+        "src": "/projects/2025-2026/lexington-zero-waste/lexington-zero-waste.png",
+        "alt": "Lexington Zero Waste Logo"
+      },
+      "description": "",
+      "href": "/projects/lexington-zero-waste"
+    },
+    "massachusetts-history-day": {
+      "name": "Massachusetts History Day",
+      "img": {
+        "src": "/projects/2025-2026/massachusetts-history-day/massachusetts-history-day.png",
+        "alt": "Massachusetts History Day Logo"
+      },
+      "description": "",
+      "href": "/projects/massachusetts-history-day"
+    },
+    "school-on-wheels": {
+      "name": "School on Wheels",
+      "img": {
+        "src": "/projects/2025-2026/school-on-wheels/school-on-wheels.png",
+        "alt": "School on Wheels Logo"
+      },
+      "description": "",
+      "href": "/projects/school-on-wheels"
+    },
+    "the-loop-lab": {
+      "name": "The Loop Lab",
+      "img": {
+        "src": "/projects/2025-2026/the-loop-lab/the-loop-lab.png",
+        "alt": "The Loop Lab Logo"
+      },
+      "description": "",
+      "href": "/projects/the-loop-lab"
+    }
   }
 }

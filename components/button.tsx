@@ -12,13 +12,15 @@ export default function Button({
   variant: "primary" | "secondary" | "ghost";
   icon?: React.ElementType;
 }) {
-  const Element = href.startsWith("/") ? Link : "a";
+  const isExternal = !href.startsWith("/") && !href.startsWith("#");
+  const Element = isExternal ? "a" : Link;
   const Icon = icon;
   return (
     <Element
       href={href}
+      {...(isExternal && { target: "_blank", rel: "noopener noreferrer" })}
       className={clsx(
-        "block max-w-max px-4 py-2 rounded-lg font-semibold",
+        "block max-w-max px-4 py-2 rounded-lg font-semibold text-center",
         "flex items-center gap-2",
         "hover:ring-2 hover:ring-offset-2 hover:ring-offset-black transition-shadow duration-200",
         variant === "primary" && "bg-brand text-gray-900 hover:ring-brand",

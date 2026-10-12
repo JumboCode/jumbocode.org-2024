@@ -1,6 +1,3 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always",
-    "source.organizeImports": "always"
-  }
+    "snyk.advanced.autoSelectOrganization": true
 }

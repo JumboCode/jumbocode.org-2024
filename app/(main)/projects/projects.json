@@ -66,6 +66,62 @@
           "src": "/projects/tech-stacks/nextjs.png",
           "alt": "Nextjs Logo"
         }
+      },
+      {
+        "name": "Supabase",
+        "logo": {
+          "src": "/projects/tech-stacks/supabase.png",
+          "alt": "Supabase Logo"
+        }
+      },
+      {
+        "name": "Mantine",
+        "logo": {
+          "src": "/projects/tech-stacks/mantine.png",
+          "alt": "Mantine Logo"
+        }
+      },
+      {
+        "name": "Leaflet",
+        "logo": {
+          "src": "/projects/tech-stacks/leaflet.png",
+          "alt": "Leaflet Logo"
+        }
+      },
+      {
+        "name": "PostGIS",
+        "logo": {
+          "src": "/projects/tech-stacks/postgis.png",
+          "alt": "PostGIS Logo"
+        }
+      },
+      {
+        "name": "Vercel",
+        "logo": {
+          "src": "/projects/tech-stacks/vercel.png",
+          "alt": "Vercel Logo"
+        }
+      },
+      {
+        "name": "Salesforce",
+        "logo": {
+          "src": "/projects/tech-stacks/salesforce.png",
+          "alt": "Salesforce Logo"
+        }
+      },
+      {
+        "name": "MapLibre",
+        "logo": {
+          "src": "/projects/tech-stacks/maplibre.png",
+          "alt": "MapLibre Logo"
+        }
+      },
+      {
+        "name": "D3.js",
+        "logo": {
+          "src": "/projects/tech-stacks/D3.js.png",
+          "alt": "D3.js Logo"
+        }
       }
     ],
     "finalScreens": [
@@ -1283,6 +1339,13 @@
         "logo": {
           "src": "/projects/tech-stacks/prisma.png",
           "alt": "Prisma Logo"
+        }
+      },
+      {
+        "name": "Cloudinary",
+        "logo": {
+          "src":"/projects/tech-stacks/cloudinary.png",
+          "alt": "Cloudinary Logo"
         }
       }
     ],
