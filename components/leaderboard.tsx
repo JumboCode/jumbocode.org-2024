@@ -30,6 +30,7 @@ const ALL_TEAMS = [
   "Just a Start",
   "Teen Empowerment",
   "Mystic Learning Center",
+  "DevOps",
 ];
 
 export default function Leaderboard() {
